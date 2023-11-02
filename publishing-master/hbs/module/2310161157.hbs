@@ -1,0 +1,29 @@
+<div>
+  {{JSON 'array' '/assets/json/2310161157.json'}}
+
+  <table class='Table_1'>
+    <colgroup>
+      <col class='w-[8%]' />
+      <col class='w-[20%]' />
+      <col />
+    </colgroup>
+    <thead>
+      <tr>
+        <th>NO</th>
+        <th>구분</th>
+        <th>검사명</th>
+        <th>상세설명</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#EACH array}}
+        <tr>
+          <td>{{number}}</td>
+          <td>{{obj.img}}</td>
+          <td>{{{obj.desc}}}</td>
+          <td>{{{obj.title}}}</td>
+        </tr>
+      {{/EACH}}
+    </tbody>
+  </table>
+</div>

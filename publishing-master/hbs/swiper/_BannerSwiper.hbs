@@ -1,0 +1,99 @@
+{{NULL_CHECK 'id' 'hbs/swiper/_BannerSwiper.hbs'}}
+<div class='RR relative'>
+  <div id='_BannerSwiper-{{id}}' class='swiper _BannerSwiper'>
+    <div id='_BannerSwiper-{{id}}-Navigation' class='RR _BannerSwiper-Navigation'>
+      <div class='NavBtn PrevBtn'>
+        <img src='/assets/icon/swiper/prev_btn.svg' alt='' />
+      </div>
+      <div class='NavBtn NextBtn'>
+        <img src='/assets/icon/swiper/next_btn.svg' alt='' />
+      </div>
+    </div>
+    <div class='swiper-wrapper'>
+      {{#LOOP 5}}
+        <div class='RR swiper-slide' data-key='{{index}}'>
+          <div>
+            <img style='display:block; width:100%; aspect-ratio:360/200;' src='https://picsum.photos/360/200.jpg?random={{index}}' alt='' />
+          </div>
+        </div>
+      {{/LOOP}}
+    </div>
+    <div id='_BannerSwiper-{{id}}-PagenationFraction' class='RR _BannerSwiper-PagenationFraction'>
+      <div class='current'></div>
+      <div class='bar'>/</div>
+      <div class='total'></div>
+    </div>
+    <div id='_BannerSwiper-{{id}}-Pagenation' class='RR _BannerSwiper-Pagenation'></div>
+  </div>
+  {{!--prettier-ignore--}}
+  <script>
+    window.addEventListener('DOMContentLoaded', (evt) => {
+      const navigation = {
+        disabledClass: 'Disabled',
+        hiddenClass: 'Hidden',
+        prevEl: '#_BannerSwiper-{{id}}-Navigation > .PrevBtn',
+        nextEl: '#_BannerSwiper-{{id}}-Navigation > .NextBtn',
+      };
+      
+      const pagination_bullet = {
+        el: '#_BannerSwiper-{{id}}-Pagenation',
+        type: 'bullets',
+        clickable: true,
+        modifierClass: 'Pagenation-',
+        bulletClass: 'Dot',
+        bulletActiveClass: 'On',
+        renderBullet: function (index, className) {
+          const num = (index + 1).toString().padStart(2, '0');
+          return `<div class="${className}"> <div class="Circle"></div> </div>`;
+        },
+      };
+      
+      const swiper_option = {
+        slidesPerView: 1, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+        slidesPerGroup: 1,
+        spaceBetween: 10,
+        loop: true,
+        navigation: navigation,
+        pagination: pagination_bullet,
+        // pagination: pagination_progress,
+        // autoplay: {
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // },
+        init: false,
+        // grabCursor: true,
+      };
+      
+      const update_current_num = () => {
+        const el_total = document.querySelector('#_BannerSwiper-{{id}}-PagenationFraction > .total');
+        if (!el_total) return;
+        
+        const slides = document.querySelectorAll('#_BannerSwiper-{{id}} .swiper-slide');
+        const real_length = slides.length;
+        el_total.textContent = real_length;
+        
+        const el_current = document.querySelector('#_BannerSwiper-{{id}}-PagenationFraction > .current');
+        el_current.textContent = swiper.realIndex + 1;
+      };
+      
+      let swiper = new Swiper('#_BannerSwiper-{{id}}', swiper_option);
+      
+      swiper.on('init', function () {
+        // console.log('init');
+        update_current_num();
+      });
+      
+      swiper.on('slideChange', function () {
+        // console.log('slideChange');
+        update_current_num();
+      });
+      
+      swiper.on('slideChangeTransitionEnd', function () {
+        // console.log('slideChangeTransitionEnd');
+      });
+      
+      swiper.init();
+      
+    });
+  </script>
+</div>

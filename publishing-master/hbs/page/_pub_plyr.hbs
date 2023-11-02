@@ -1,0 +1,37 @@
+{{DF 'id' 'TEMP-ID'}}
+<link href='/assets/lib/plyr.3.7.8.css' rel='stylesheet' />
+<script src='/assets/lib/plyr.polyfilled.3.7.8.js'></script>
+<div id='page'>
+  <main>
+    <div class='Video_1' style='width: 100%; max-width: 768px; background-color: transparent'>
+      <div style='position: relative'>
+        <video id='video-{{id}}' playsinline controls data-poster='https://picsum.photos/560/315.jpg?random='>
+          <source src='/assets/video/01.mp4' type='video/mp4' />
+          <track kind='captions' label='English captions' src='/assets/video/01.vtt' srclang='ko' default />
+        </video>
+        {{!--prettier-ignore--}}
+        <script>
+          const player = new Plyr('#video-{{id}}', {
+            controls: [
+              'play-large',
+              'play',
+              'progress',
+              'current-time',
+              'mute',
+              'volume',
+              'captions',
+              'settings',
+              'pip',
+              'airplay',
+              'fullscreen',
+            ],
+            hideControls: false,
+            muted: false,
+            autoplay: false,
+            storage: {enabled: false},
+          });
+        </script>
+      </div>
+    </div>
+  </main>
+</div>

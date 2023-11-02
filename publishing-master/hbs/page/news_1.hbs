@@ -1,0 +1,70 @@
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <script>Include('/hbs/module/2309252023.hbs');</script>
+  <main>
+    <section class='Sticky_1'>
+      <script>Include('/hbs/component/TabBar_1-a.hbs', {btns:'PR|특허 / 인증현황|수상내역', active:0});</script>
+    </section>
+    <script>Include('/hbs/component/SubPageTitle_1-a.hbs', {txt1:'PR'});</script>
+    <section class='mt-[40px] pc:mt-[100px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='space-y-[50px] pc:space-y-[80px]'>
+            {{#LOOP 3}}
+              <div class='pb-[20px] pc:pb-[50px] border-b-[1px] border-solid border-[#EBEBEB]'>
+                <article class='pc:flex pc:items-start pc:gap-0'>
+                  <div>
+                    <img class='pc:hidden aspect-[320/200] w-full' src='https://gifpng.com/320x200' alt='' />
+                    <img class='max-pc:hidden aspect-[450/280] w-full' src='https://gifpng.com/450x280' alt='' />
+                  </div>
+                  <div class='mt-[20px] pc:mt-[5px] flex-1 pc:ml-[3.47%]'>
+                    <div class='text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[400]'>
+                      2023-08-30
+                    </div>
+                    <div class='mt-[10px] pc:mt-[27px]'>
+                      <div class='text-[#161616] text-[16px] pc:text-[22px] font-[600] leading-[24px] pc:leading-[28px] break-keep line-clamp-2'>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                      </div>
+                    </div>
+                    <div class='mt-[16px] pc:mt-[54px]'>
+                      <div class='text-[#161616] text-[14px] pc:text-[16px] font-[400] leading-[20px] pc:leading-[24px] break-keep line-clamp-3 pc:line-clamp-4'>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                      </div>
+                    </div>
+                    <div class='mt-[16px]'>
+                      <a class='inline-block' href='https://www.google.com' target='_blank'>
+                        <article class='CenterLeft'>
+                          <div>
+                            <div class='text-[#279FB9] text-[14px] pc:text-[16px] font-[600]'>
+                              View More
+                            </div>
+                          </div>
+                          <div class='ml-[2px]'>
+                            <img src='/assets/icon/2309252058.svg' alt='' />
+                          </div>
+                        </article>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            {{/LOOP}}
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='mt-[50px] pc:mt-[100px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

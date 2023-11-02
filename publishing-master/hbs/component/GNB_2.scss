@@ -1,0 +1,16 @@
+.GNB_2 {
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 74px;
+
+    > li {
+      > a {
+        color: #161616;
+        font-size: 14px;
+        font-weight: 900;
+      }
+    }
+  }
+}

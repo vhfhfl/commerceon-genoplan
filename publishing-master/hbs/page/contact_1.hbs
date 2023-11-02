@@ -1,0 +1,29 @@
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <script>Include('/hbs/module/2309131200.hbs');</script>
+  <main>
+    <section class='Sticky_1'>
+      <script>Include('/hbs/component/TabBar_1-a.hbs', {btns:'공지사항|인재채용|오시는길', active:0});</script>
+    </section>
+    <script>Include('/hbs/component/SubPageTitle_1-a.hbs', {txt1:'공지사항'});</script>
+    <section class='mt-[60px] pc:mt-[100px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/BoardListWrap_1-a.hbs');</script>
+        </div>
+      </div>
+    </section>
+    <section class='mt-[80px] pc:mt-[120px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

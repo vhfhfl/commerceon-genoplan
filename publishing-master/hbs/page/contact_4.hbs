@@ -1,0 +1,73 @@
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <script>Include('/hbs/module/2309131200.hbs');</script>
+  <main>
+    <section class='Sticky_1'>
+      <script>Include('/hbs/component/TabBar_1-a.hbs', {btns:'공지사항|인재채용|오시는길', active:2});</script>
+    </section>
+    <section class='mt-[60px] pc:mt-[80px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='text-[#161616] text-[30px] pc:text-[60px] font-[700] leading-[38px] pc:leading-[78px]' data-aos='fade-up' data-aos-duration='200'>
+            엠허브제노플랜은
+            <br />
+            더 나은세상, 더 건강한 미래를 위해
+            <br />
+            “함께”를 추구합니다.
+          </div>
+          <div class='mt-[40px] pc:mt-[40px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px]' data-aos='fade-up' data-aos-duration='200' data-aos-delay='200'>
+            유전자 검사 서비스를 통해 개인의 건강한 라이프스타일 실현과 파트너사의 사업에 시너지를 낼 수 있는 든든한 동반자가 되겠습니다.
+            <br />
+            언제나 사람과 건강을 우선으로 생각하는 기업으로서 책임을 다할 것을 약속합니다.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='mt-[80px]' data-aos='fade-up' data-aos-duration='200' data-aos-delay=400'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='KakaoMapBox w-full h-[360px] pc:h-[700px]'>
+            <div id='KakaoMap' style='width:100%; height:100%;'></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='mt-[80px] pc:mt-[40px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <article class='pc:flex pc:justify-between pc:gap-[395px]'>
+            <div>
+              <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]'>
+                (주)제노플랜 코리아
+              </div>
+              <div class="mt-[20px] pc:mt-[26px] text-[#161616] text-[12px] pc:text-[16px] font-[400] pc:leading-[26px]">
+                서울특별시 서초구 강남대로465 교보타워 B동 21층
+              </div>
+            </div>
+            <div class='max-pc:mt-[40px] pc:text-right flex-auto'>
+              <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]'>
+                (주)엠허브제노플랜
+              </div>
+              <div class='mt-[20px] pc:mt-[26px] text-[#161616] text-[12px] pc:text-[16px] font-[400] leading-[18px] pc:leading-[26px]'>
+                엠허브제노플랜은 제노플랜코리아에 담당자 파견 근무중으로
+                업무 제휴 및 미팅은 제노플랜코리아 사무실로 방문 바랍니다.
+                <br />
+                <br />
+                Tell : 00-000-0000
+                <br />
+                Mail : help@mhubgenoplan.com
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>
+<script src='/assets/js/kakaomap.js'></script>
+<script src='//dapi.kakao.com/v2/maps/sdk.js?appkey=ddfce4b5a6c589f7cbf109cf57486914&libraries=services'></script>

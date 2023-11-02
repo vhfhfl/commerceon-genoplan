@@ -1,0 +1,24 @@
+<div id="MoGnb_1" class='MoGnb_1'>
+  <div class='Inner'>
+    <div class='Content'>
+      <div class='Head'>
+        <article class='CenterCenter'>
+          <button onclick="moGnbOff(this);">
+            <img src='/assets/icon/2308171015.svg' alt='' />
+          </button>
+        </article>
+      </div>
+      <div class='Body'>
+        <ul>
+          {{#EACH (ARR 'MhubGenoplan|Service|Partner|News|ESG|Contact us')}}
+            <li>
+              <a href='https://www.google.com' target='_blank'>
+                {{obj}}
+              </a>
+            </li>
+          {{/EACH}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

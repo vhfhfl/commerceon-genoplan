@@ -1,0 +1,8 @@
+/* https://github.com/orioncactus/pretendard */
+@font-face {
+  font-family: 'Pretendard Variable';
+  src: local('Pretendard Variable'), url('PretendardVariable.woff2') format('woff2-variations');
+}
+.Pretendard {
+  font-family: 'Pretendard Variable', sans-serif;
+}

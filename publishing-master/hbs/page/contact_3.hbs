@@ -1,0 +1,221 @@
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <main>
+    <section class='Sticky_1'>
+      <script>Include('/hbs/component/TabBar_1-a.hbs', {btns:'공지사항|인재채용|오시는길', active:1});</script>
+    </section>
+    <section class='mt-[60px] pc:mt-[80px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div>
+            <article class='CenterCenter max-pc:flex-col' data-aos='fade-up' data-aos-duration='500'>
+              <div>
+                <div class='text-[#161616] text-[16px] pc:text-[22px] font-[400]'>
+                  더 나은 세상, 더 건강한 미래.
+                </div>
+              </div>
+              <div class='max-pc:my-[10px] pc:mx-[50px]'>
+                <div class='w-[1px] pc:w-[80px] h-[20px] pc:h-[1px] bg-[#000] text-[0]'></div>
+              </div>
+              <div>
+                <div class='text-[#161616] text-[16px] pc:text-[22px] font-[400]'>
+                  더 나은 기술, 더 건강한 사람.
+                </div>
+              </div>
+            </article>
+            <div class='mt-[50px] pc:mt-[60px]' data-aos='fade-up' data-aos-duration='500' data-aos-delay='200'>
+              <div class='text-[#161616] text-[30px] pc:text-[60px] font-[700] leading-[38px] pc:leading-[78px] break-keep text-center'>
+                <span class='pc:block'>본질에 충실하고</span>
+                <span class='pc:block'>처음 걷는 길을 두려워하지 않는</span>
+                엠허브제노플랜 스러움에 도전하세요.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='mt-[50px] pc:mt-[100px]' data-aos='fade-up' data-aos-duration='500' data-aos-delay='400'>
+      <div>
+        <img class='pc:hidden aspect-[360/400] w-full' src='/assets/image/2309211028.jpg' alt='' />
+        <img class='max-pc:hidden aspect-[1920/480] w-full' src='/assets/image/2309211028_pc.jpg' alt='' />
+      </div>
+    </section>
+    <section class='WheelDownHScrollWrap'>
+      <article class='Inner'>
+        {{JSON 'array' '/assets/json/2309211538.json'}}
+        {{#EACH array}}
+          <div class='ScrollItem'>
+            <article class='CenterCenter h-full'>
+              <div>
+                <div class='text-[#161616] text-[36px] pc:text-[60px] font-[700] relative opacity-0 [.On_&]:opacity-100 [.ScrollItem:first-child_&]:opacity-100 top-[100px] [.On_&]:top-[0] [.ScrollItem:first-child_&]:top-[0] delay-100'>
+                  {{{obj.title}}}
+                </div>
+                <div class='mt-[20px] pc:mt-[40px]'>
+                  <article class='pc:flex pc:items-start pc:justify-between pc:gap-0'>
+                    <div class='flex-auto'>
+                      <div class='relative top-[100px] [.On_&]:top-[0] [.ScrollItem:first-child_&]:top-[0] opacity-0 [.On_&]:opacity-100 [.ScrollItem:first-child_&]:opacity-100'>
+                        <img class='pc:hidden aspect-[320/360] w-full' src='{{obj.img}}' alt='' />
+                        <img class='max-pc:hidden aspect-[800/440]' src='{{obj.img_pc}}' alt='' />
+                      </div>
+                    </div>
+                    <div class='pc:min-w-[436px] relative flex-auto mt-[40px] pc:mt-[20px] pc:ml-[5.83%] pc:pb-[54px] max-pc:h-[196px]'>
+                      <div class="relative top-[100px] [.On_&]:top-[0] [.ScrollItem:first-child_&]:top-[0] opacity-0 [.On_&]:opacity-100 [.ScrollItem:first-child_&]:opacity-100 delay-300">
+                        <div class='text-[#161616] text-[16px] pc:text-[22px] font-[400]'>
+                          {{obj.desc}}
+                        </div>
+                        <div class='mt-[30px] pc:mt-[54px]'>
+                          <div class='text-[#161616] text-[22px] pc:text-[36px] font-[600] leading-[28px] pc:leading-[44px] break-keep'>
+                            {{{obj.text}}}
+                          </div>
+                        </div>
+                      </div>
+                      <div class='z-10 absolute bottom-[0] left-[0] h-[4px] bg-black w-[0] [.On_&]:w-full [.ScrollItem:first-child_&]:w-full delay-400'></div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </article>
+          </div>
+        {{/EACH}}
+
+      </article>
+      <img onerror='initWheelDownHScrollWrap(this)' src='' />
+    </section>
+    {{!    <section class='mt-[100px] pc:mt-[160px]'>}}
+    {{!      <div class='HBox'>}}
+    {{!        <div class='Inner'>}}
+    {{!          <script>Include('/hbs/module/2309211538.hbs');</script>}}
+    {{!        </div>}}
+    {{!      </div>}}
+    {{!    </section>}}
+    <section>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div>
+            <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]' data-aos='fade-up' data-aos-duration='500'>
+              엠허브제노플랜만의 혜택
+            </div>
+            <div class='mt-[30px] pc:mt-[50px]' data-aos='fade-up' data-aos-duration='500' data-aos-delay='200'>
+              <script>Include('/hbs/swiper/ContactSwiper_1.hbs', {id:`6794c6bc`});</script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='mt-[94px] pc:mt-[180px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div>
+            <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]'>
+              엠허브제노플랜과 함께 하는 길
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='mt-[30px] pc:mt-[50px]'>
+        <div class='px-[var(--contents-side-padding)] py-[80px] pc:py-[90px] bg-[#F6F6F6]'>
+          <div class='pc:px-[8.85%] w-full'>
+            <article class='pc:flex pc:items-center pc:justify-center'>
+              <div>
+                <article class='CenterCenter'>
+                  <article class='CenterCenter' data-aos='fade-up' data-aos-duration='500'>
+                    <div>
+                      <div class='w-[150px] pc:w-[250px] aspect-square bg-white border-[2px] border-solid border-[#E1E1E1] rounded-full overflow-hidden'>
+                        <div class='py-[42px] pc:py-[72px] h-full text-center'>
+                          <div>
+                            <div class='text-[#279FB9] text-[20px] pc:text-[28px] font-[900]'>
+                              01
+                            </div>
+                          </div>
+                          <div class='mt-[10px] pc:mt-[26px]'>
+                            <div class='text-[#161616] text-[12px] pc:text-[18px] font-[600] leading-[18px] pc:leading-[26px] text-center'>
+                              서류전형
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class='w-[20px] pc:w-[34px] h-[2px] bg-[#E1E1E1] text-[0]'></div>
+                    </div>
+                  </article>
+                  <div data-aos='fade-up' data-aos-duration='500' data-aos-delay='200'>
+                    <div class='w-[150px] pc:w-[250px] aspect-square bg-white border-[2px] border-solid border-[#E1E1E1] rounded-full overflow-hidden'>
+                      <div class='py-[42px] pc:py-[72px] h-full text-center'>
+                        <div>
+                          <div class='text-[#279FB9] text-[20px] pc:text-[28px] font-[900]'>
+                            02
+                          </div>
+                        </div>
+                        <div class='mt-[10px] pc:mt-[26px]'>
+                          <div class='text-[#161616] text-[12px] pc:text-[18px] font-[600] leading-[18px] pc:leading-[26px] text-center'>
+                            실무진과 직무역량
+                            <br />
+                            심층 인터뷰
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class='max-pc:hidden' data-aos='fade-up' data-aos-duration='500' data-aos-delay='200'>
+                <div class='w-[20px] pc:w-[34px] h-[2px] bg-[#E1E1E1] text-[0]'></div>
+              </div>
+              <div class='max-pc:mt-[40px]'>
+                <article class='CenterCenter'>
+                  <article class='CenterCenter' data-aos='fade-up' data-aos-duration='500' data-aos-delay='400'>
+                    <div>
+                      <div class='w-[150px] pc:w-[250px] aspect-square bg-white border-[2px] border-solid border-[#279FB9] rounded-full overflow-hidden'>
+                        <div class='py-[42px] pc:py-[72px] h-full text-center'>
+                          <div>
+                            <div class='text-[#279FB9] text-[20px] pc:text-[28px] font-[900]'>
+                              03
+                            </div>
+                          </div>
+                          <div class='mt-[10px] pc:mt-[26px]'>
+                            <div class='text-[#161616] text-[12px] pc:text-[18px] font-[600] leading-[18px] pc:leading-[26px] text-center'>
+                              경영진과 성장 잠재력
+                              <br />
+                              심층 인터뷰
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class='w-[20px] pc:w-[34px] h-[2px] bg-[#279FB9] text-[0]'></div>
+                    </div>
+                  </article>
+                  <div data-aos='fade-up' data-aos-duration='500' data-aos-delay='600'>
+                    <div class='w-[150px] pc:w-[250px] aspect-square bg-[#279FB9] border-[2px] border-solid border-[#05819C] rounded-full overflow-hidden'>
+                      <div class='py-[42px] pc:py-[72px] h-full text-center'>
+                        <div>
+                          <div class='text-white text-[20px] font-[900]'>
+                            04
+                          </div>
+                        </div>
+                        <div class='mt-[10px] pc:mt-[26px]'>
+                          <div class='text-white text-[12px] pc:text-[18px] font-[600] leading-[18px] pc:leading-[26px] text-center'>
+                            엠허브제노플랜
+                            <br />
+                            입사 확정
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

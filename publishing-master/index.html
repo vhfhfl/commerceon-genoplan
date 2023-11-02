@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko" data-env="development">
+  <head>
+    <!-- START :: 퍼블리싱에서만 필요함. 개발소스에는 넣지마세요. -->
+    <script src="/pub_tool/xlsx.full.min.js"></script>
+    <script src="/pub_tool/CHECK_LOCAL.js"></script>
+    <script src="/pub_tool/PORT_NUMBER.js"></script>
+    <script src="/pub_tool/MENU_DATA.js"></script>
+    <script src="/pub_tool/HBS_DATA.js"></script>
+    <script src="/pub_tool/DUMMY_DATA.js"></script>
+    <script src="/pub_tool/handlebars.js"></script>
+    <script src="/pub_tool/handlebars_helper.js"></script>
+    <!-- // END :: 퍼블리싱에서만 필요함. 개발소스에는 넣지마세요. -->
+    <script>
+      Include('/head.html');
+    </script>
+  </head>
+  <body>
+    <div id="Modal"></div>
+    <script>Include('/hbs/layout/MoGnb_1-a.hbs');</script>
+    <script>
+      LoadPage();
+    </script>
+    <script>
+      WritePageToFile();
+    </script>
+  </body>
+</html>

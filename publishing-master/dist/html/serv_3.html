@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="/assets/js/viewport.js"></script>
+  <!--Icon-->
+  <link rel="icon" href="data:," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/favicon-512x512.png" />
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <!--Data-->
+  <script src="/assets/js/report.js"></script>
+  <!--Library-->
+  <script src="/assets/lib/jquery-3.7.0.min.js"></script>
+  <link href="/assets/lib/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="/assets/lib/swiper-bundle.min.js"></script>
+  <!--Core-->
+  <script src="/assets/lib/tailwindcss_3.3.3.min.js"></script>
+  <script src="/assets/lib/tailwindcss.config.js"></script>
+  <script src="/assets/js/custom_method.js"></script>
+  <script src="/assets/lib/ua-parser.min.js"></script>
+  <script src="/assets/js/app_info.js"></script>
+  <link href="/assets/css/global.css" rel="stylesheet" />
+  <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/ui_setter.js"></script>
+  <script src="/assets/js/enterframe.js"></script>
+  <link href="/assets/lib/aos_3.0.0.css" rel="stylesheet">
+  <script src="/assets/lib/aos_3.0.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="Modal"></div>
+  <div id="MoGnb_1" class="MoGnb_1">
+    <div class="Inner">
+      <div class="Content">
+        <div class="Head">
+          <article class="CenterCenter">
+            <button onclick="moGnbOff(this);">
+              <img src="/assets/icon/2308171015.svg" alt="">
+            </button>
+          </article>
+        </div>
+        <div class="Body">
+          <ul>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                MhubGenoplan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Service
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Partner
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                News
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                ESG
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page">
+    <header class="Header_2 FixedHeader">
+      <div data-only-view="MO">
+        <div class="MoTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a class="pointer-events-auto" href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <button class="pointer-events-auto" onclick="moGnbOn(this)">
+                    <img src="/assets/icon/2308170651.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-only-view="PC">
+        <div class="PcTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <div class="GNB_2">
+                    <ul>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          MHUBGENOPLAN
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          SERVICE
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          PARTNER
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          NEWS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          ESG
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          CONTACT US
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+
+
+      <div class="SubVisual_1 relative h-[var(--suv-visual-height)]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full" style="clip-path:inset(0);">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="/assets/image/2309141149_pc.jpg">
+            <img class="fixed z-0 top-[var(--header-hei)] left-0 w-full h-[var(--suv-visual-height)] object-cover" src="/assets/image/2309141149.jpg" alt="">
+          </picture>
+        </div>
+        <div class="HBox relative z-10 h-full">
+          <div class="Inner pt-[130px]">
+            <div class="text-white">
+              <div class="text-[30px] xl:text-[50px] leading-[38px] xl:leading-[62px] font-[600]">
+                유전자 검사<br>서비스
+              </div>
+              <div class="mt-[20px] text-[16px] xl:text-[18px] leading-[26px] xl:leading-[26px] font-[400]">
+                나의 질병 위험을 알려주는 건강 알리미 입니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="Sticky_1">
+        <article class="CenterCenter gap-[10px] pc:gap-[20px] py-[10px] px-[var(--contents-side-padding)] bg-white">
+          <button class=" CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            병의원 검사 PRS
+          </button>
+          <button class=" CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            병의원 검사 ECS
+          </button>
+          <button class="On CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            DTC 검사
+          </button>
+        </article>
+      </section>
+
+      <div class="SubPageTitle_1 mt-[30px] pc:mt-[80px]">
+        <div class="HBox">
+          <div class="Inner">
+            <article class="CenterBetween">
+              <div>
+                <div class="text-[#303030] text-[28px] pc:text-[50px] font-[800]">
+                  DTC 검사
+                </div>
+              </div>
+              <div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <section class="mt-[60px] pc:mt-[100px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div class="max-pc:pb-[80px] border-[1px] border-solid border-[#EBEBEB]">
+              <article class="pc:flex pc:items-center pc:justify-center pc:gap-0">
+                <div class="flex-1">
+                  <img class="pc:hidden aspect-[320/300] w-full" src="/assets/image/2309191442.jpg" alt="">
+                  <img class="max-pc:hidden aspect-[720/500]" src="/assets/image/2309191442_pc.jpg" alt="">
+                </div>
+                <div class="flex-1 max-pc:mt-[50px] pc:ml-[4.16%] pc:mr-[6.94%] pc:w-[31.25%]">
+                  <div class="max-pc:px-[20px] text-[#161616]">
+                    <div class="text-[24px] pc:text-[40px] font-[600] pc:font-[700] leading-[34px] pc:leading-[50px]">
+                      제노플랜 DTC
+                      <br>
+                      유전자 검사 서비스란?
+                    </div>
+                    <div class="mt-[34px] pc:mt-[60px]">
+                      <div class="text-[14px] pc:text-[20px] font-[400] leading-[20px] pc:leading-[30px] break-keep">
+                        제노플랜 DTC 유전자 검사 서비스는 의료기관을
+                        방문하지 않고, 소비자가 직접 유전자 검사를
+                        받을 수 있는 검사 서비스 입니다.
+                        고객들은 자신의 유전자 검사 결과와 현재 상태를
+                        바탕으로 본인의 판단하에 각종 연관 서비스를
+                        선택할 수 있습니다.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[80px] pc:mt-[160px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div>
+              <article class="pc:flex pc:items-start pc:gap-0">
+                <div class="flex-1">
+                  <div class="text-[#161616] text-[18px] pc:text-[30px] font-[500] leading-[24px] pc:leading-[40px]">
+                    유전자에 대하여
+                  </div>
+                </div>
+                <div class="flex-1 max-pc:mt-[40px]">
+                  <div class="text-[#161616] text-[16px] pc:text-[20px] font-[400] leading-[24px] pc:leading-[30px] break-keep">
+                    유전자는 생물체의 생리적 기능, 외모적 특징, 질병 발생 가능성 등을 조절하며
+                    유전자의 변이는 개인의 질환과 특성에 영향을 줄 수 있습니다.
+                  </div>
+                </div>
+              </article>
+              <div class="mt-[40px] pc:mt-[80px]">
+                <article class="pc:flex pc:items-start pc:justify-center pc:gap-[2.77%]">
+                  <div class="flex-1">
+                    <div>
+                      <img class="pc:hidden aspect-[320/300] w-full" src="/assets/image/2309191456.jpg" alt="">
+                      <img class="max-pc:hidden aspect-[700/500] w-full" src="/assets/image/2309191456_pc.jpg" alt="">
+                    </div>
+                    <div class="mt-[30px] pc:mt-[36px]">
+                      <div class="text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[400] leading-[18px] pc:leading-[24px] break-keep">
+                        *출처 : How to read the genome and build a human being | Riccardo Sabatini.
+                        <br>
+                        YouTube TED 채널
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 max-pc:mt-[70px]">
+                    <div>
+                      <img class="pc:hidden aspect-[320/300] w-full" src="/assets/image/2309191457.jpg" alt="">
+                      <img class="max-pc:hidden aspect-[700/500] w-full" src="/assets/image/2309191457_pc.jpg" alt="">
+                    </div>
+                    <div class="mt-[30px] pc:mt-[36px]">
+                      <div class="text-[#161616] text-[14px] pc:text-[16px] font-[400] leading-[20px] pc:leading-[24px] break-keep">
+                        개인의 유전체 전체를 페이지마다 알파벳으로 채워서 인쇄하면, 그 양은 262,000장이며,
+                        약 450kg의 무게를 차지합니다.
+                        <br>
+                        이는 개인의 유전체가 매우 긴 DNA 체인으로
+                        이루어져 있음을 보여줍니다.
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="BoardDivdeLine mt-[110px] mb-[80px] pc:my-[160px] mx-[var(--contents-side-padding)]">
+      <section>
+        <div class="HBox">
+          <div class="Inner">
+            <div>
+              <article class="pc:flex pc:items-start pc:gap-0">
+                <div class="flex-1">
+                  <div class="text-[#161616] text-[18px] pc:text-[30px] font-[500] leading-[24px] pc:leading-[40px]">
+                    유전적 다양성 :
+                    <br>
+                    개인 간의 유전 차이
+                  </div>
+                </div>
+                <div class="flex-1 max-pc:mt-[40px]">
+                  <div class="text-[#161616] text-[16px] pc:text-[20px] font-[400] leading-[24px] pc:leading-[30px] break-keep">
+                    개인의 차이는 전체 서열중 500만 글자의 차이에 의해 발생하며,
+                    나머지 부분은 정확히 같습니다.
+                    이는 개인들 간의 유전적 다양성이 주로 일부 특정 유전자의 서열 차이로
+                    나타나는 것을 의미합니다.
+                  </div>
+                </div>
+              </article>
+              <div class="mt-[40px] pc:mt-[80px]">
+                <img class="pc:hidden aspect-[640/800] w-full" src="/assets/image/2309191509.jpg" alt="">
+                <img class="max-pc:hidden aspect-[1440/500] w-full" src="/assets/image/2309191509_pc.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="BoardDivdeLine my-[80px] pc:my-[160px] mx-[var(--contents-side-padding)]">
+      <section>
+        <div class="HBox">
+          <div class="Inner">
+            <div>
+              <article class="pc:flex pc:items-start pc:gap-0">
+                <div class="flex-1">
+                  <div class="text-[#161616] text-[18px] pc:text-[30px] font-[500] leading-[24px] pc:leading-[40px]">
+                    유전자 검사 서비스
+                  </div>
+                </div>
+                <div class="flex-1 max-pc:mt-[40px]">
+                  <div class="text-[#161616] text-[16px] pc:text-[20px] font-[400] leading-[24px] pc:leading-[30px] break-keep">
+                    고객들은 자신의 유전적 취약성을 파악하고, 관리가 필요한 항목이 무엇인지 알 수 있습니다.
+                  </div>
+                </div>
+              </article>
+              <div class="mt-[40px] pc:mt-[80px]">
+                <article class="pc:flex pc:items-start pc:justify-center pc:gap-[2.77%]">
+                  <div class="flex-1">
+                    <img class="pc:hidden aspect-[320/374] w-full" src="/assets/image/2309191527_1.jpg" alt="">
+                    <img class="max-pc:hidden aspect-[700/750] w-full" src="/assets/image/2309191527_1_pc.jpg" alt="">
+                  </div>
+                  <div class="flex-1 max-pc:mt-[40px]">
+                    <div>
+                      <img class="pc:hidden aspect-[320/260] w-full" src="/assets/image/2309191527_2.jpg" alt="">
+                      <img class="max-pc:hidden aspect-[700/569] w-full" src="/assets/image/2309191527_2_pc.jpg" alt="">
+                    </div>
+                    <div class="mt-[30px] pc:mt-[40px] text-center">
+                      <div class="text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep">
+                        동일한 양의 자외선에 노출되더라도 PPARGC1B의
+                        CC유전자형을 가진 사람은 TT유전자형을 가진 사람보다 기미/주근깨가 쉽게 생길 수 있습니다.
+                      </div>
+                      <div class="mt-[16px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[400]">
+                        출처: Sci Rep. 2018 Jun 12;8(1):8974.
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="BoardDivdeLine my-[80px] pc:my-[160px] mx-[var(--contents-side-padding)]">
+      <section>
+        <div class="HBox">
+          <div class="Inner">
+            <div class="text-[#161616] text-[20px] pc:text-[40px] font-[700] leading-[24px] pc:leading-[50px]">
+              주요 검사 항목
+            </div>
+            <div class="mt-[30px]">
+              <div class="text-[#279FB9] text-[14px] pc:text-[22px] font-[600] leading-[20px] pc:leading-[28px] break-keep">
+                혈압, 비만 등 개인의 특성과 관련된 65개 이상 항목을
+                제공합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-[60px] pc:mt-[58px]">
+          <div class="bg-[#F6F6F6] py-[80px] pc:py-[85px]">
+            <div class="HBox">
+              <div class="Inner">
+                <div>
+                  <div class="text-[#161616] text-[16px] pc:text-[22px] font-[600]">
+                    체질항목
+                  </div>
+                  <div class="mt-[30px] pc:mt-[40px]">
+                    <article class="grid grid-cols-2 pc:grid-cols-6 gap-[30px_10px] pc:gap-[0_1.25%]">
+                      <!--1-->
+                      <div class="border-[1px] border-solid border-[#ebebeb]">
+                        <article class="CenterCenter h-[164px] pc:h-[240px]">
+                          <div>
+                            <img src="/assets/icon/2309191611_1.svg" alt="">
+                          </div>
+                        </article>
+                        <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                          <div>
+                            <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                              피부노화
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <!--2-->
+                      <div class="border-[1px] border-solid border-[#ebebeb]">
+                        <article class="CenterCenter h-[164px] pc:h-[240px]">
+                          <div>
+                            <img src="/assets/icon/2309191611_2.svg" alt="">
+                          </div>
+                        </article>
+                        <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                          <div>
+                            <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                              탈모
+                            </div>
+                          </div>
+                          <div class="mt-[2px]">
+                            <div class="text-[12px] font-[400]">(원형 탈모, 남성형 탈모)</div>
+                          </div>
+                        </article>
+                      </div>
+                      <!--3-->
+                      <div class="border-[1px] border-solid border-[#ebebeb]">
+                        <article class="CenterCenter h-[164px] pc:h-[240px]">
+                          <div>
+                            <img src="/assets/icon/2309191611_3.svg" alt="">
+                          </div>
+                        </article>
+                        <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                          <div>
+                            <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                              체질량지수
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <!--4-->
+                      <div class="border-[1px] border-solid border-[#ebebeb]">
+                        <article class="CenterCenter h-[164px] pc:h-[240px]">
+                          <div>
+                            <img src="/assets/icon/2309191611_4.svg" alt="">
+                          </div>
+                        </article>
+                        <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                          <div>
+                            <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                              체지방률
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <!--5-->
+                      <div class="border-[1px] border-solid border-[#ebebeb]">
+                        <article class="CenterCenter h-[164px] pc:h-[240px]">
+                          <div>
+                            <img src="/assets/icon/2309191611_5.svg" alt="">
+                          </div>
+                        </article>
+                        <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                          <div>
+                            <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                              운동에 의한
+                              <br>
+                              체중감량 효과
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <!--6-->
+                      <div class="border-[1px] border-solid border-[#ebebeb]">
+                        <article class="CenterCenter h-[164px] pc:h-[240px]">
+                          <div>
+                            <img src="/assets/icon/2309191611_6.svg" alt="">
+                          </div>
+                        </article>
+                        <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                          <div>
+                            <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                              체중감량 후
+                              <br>
+                              체중회복가능성
+                            </div>
+                          </div>
+                          <div class="mt-[2px]">
+                            <div class="text-[12px] font-[400]">(요요 가능성)</div>
+                          </div>
+                        </article>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="mt-[40px]">
+                  <div class="text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[400] leading-[18px] pc:leading-[24px] break-keep">
+                    *제노플랜의 유전자 분석 서비스는 현재의 질병 상태를 진단하기 위한 검사가 아니며,
+                    <span class="pc:block">의학적 목적으로 사용할 수 없습니다. 분석한 유전자에 대한 유전적 특성을 나타내므로 현재 상태와 다를 수 있습니다.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[80px] pc:mt-[160px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div class="text-[#161616] text-[20px] pc:text-[40px] font-[700] leading-[24px] pc:leading-[50px]">
+              서비스 프로세스
+            </div>
+            <div class="mt-[30px]">
+              <div class="text-[#279FB9] text-[14px] pc:text-[22px] font-[600] leading-[20px] pc:leading-[28px] break-keep">
+                누구나 타액 한번으로 쉽고 간편하게 검사를 진행합니다.
+              </div>
+            </div>
+            <div class="mt-[60px] pc:mt-[58px]">
+              <div class="bg-[#F6F6F6] py-[80px] sm:py-[76px] pc:py-[106px] px-[var(--contents-side-padding)] sm:max-pc:px-[135px]">
+                <article class="grid grid-cols-2 pc:grid-cols-4 max-pc:gap-y-[60px] sm:gap-x-[7.81%] pc:gap-x-0" data-aos="fade-up" data-aos-duration="500">
+                  <!--1-->
+                  <div>
+                    <div class="w-full aspect-square border-[2px] border-solid border-[#E1E1E1] bg-white rounded-full">
+                      <article class="h-full CenterCenter flex-col text-center">
+                        <div class="text-[#161616] text-[18px] pc:text-[28px] font-[900]">
+                          01
+                        </div>
+                        <div class="mt-[10px] text-[#161616] text-[12px] pc:text-[18px] font-[600]">
+                          Registration
+                        </div>
+                        <div class="mt-[10px] text-[#279FB9] text-[14px] pc:text-[18px] font-[600] leading-[18px]">
+                          제품 등록
+                        </div>
+                      </article>
+                    </div>
+                    <div class="w-[2px] h-[20px] pc:h-[40px] bg-[#E1E1E1] mx-auto text-[0]"></div>
+                    <div class="mt-[8px] pc:mt-[6px]">
+                      <div class="text-[#161616] text-[12px] sm:text-[14px] pc:text-[16px] font-[400] leading-[18px] sm:leading-[20px] pc:leading-[24px] text-center">
+                        홈페이지에서
+                        <br>
+                        제품 등록을 진행합니다.
+                      </div>
+                    </div>
+                  </div>
+                  <!--2-->
+                  <div>
+                    <div class="w-full aspect-square border-[2px] border-solid border-[#E1E1E1] bg-white rounded-full">
+                      <article class="h-full CenterCenter flex-col text-center">
+                        <div class="text-[#161616] text-[18px] pc:text-[28px] font-[900]">
+                          02
+                        </div>
+                        <div class="mt-[10px] text-[#161616] text-[12px] pc:text-[18px] font-[600]">
+                          Specimen collection
+                        </div>
+                        <div class="mt-[10px] text-[#279FB9] text-[14px] pc:text-[18px] font-[600] leading-[18px]">
+                          검체 채취
+                        </div>
+                      </article>
+                    </div>
+                    <div class="w-[2px] h-[20px] pc:h-[40px] bg-[#E1E1E1] mx-auto text-[0]"></div>
+                    <div class="mt-[8px] pc:mt-[6px]">
+                      <div class="text-[#161616] text-[12px] sm:text-[14px] pc:text-[16px] font-[400] leading-[18px] sm:leading-[20px] pc:leading-[24px] text-center">
+                        타액을 채취해 검체를
+                        <br>
+                        연구소로 발송합니다.
+                      </div>
+                    </div>
+                  </div>
+                  <!--3-->
+                  <div>
+                    <div class="w-full aspect-square border-[2px] border-solid border-[#E1E1E1] bg-white rounded-full">
+                      <article class="h-full CenterCenter flex-col text-center">
+                        <div class="text-[#161616] text-[18px] pc:text-[28px] font-[900]">
+                          03
+                        </div>
+                        <div class="mt-[10px] text-[#161616] text-[12px] pc:text-[18px] font-[600]">
+                          Genetic analysis
+                        </div>
+                        <div class="mt-[10px] text-[#279FB9] text-[14px] pc:text-[18px] font-[600] leading-[18px]">
+                          유전자 분석
+                        </div>
+                      </article>
+                    </div>
+                    <div class="w-[2px] h-[20px] pc:h-[40px] bg-[#E1E1E1] mx-auto text-[0]"></div>
+                    <div class="mt-[8px] pc:mt-[6px]">
+                      <div class="text-[#161616] text-[12px] sm:text-[14px] pc:text-[16px] font-[400] leading-[18px] sm:leading-[20px] pc:leading-[24px] text-center">
+                        제노플랜 연구소에서
+                        <br>
+                        검체의 유전자를 분석합니다.
+                      </div>
+                    </div>
+                  </div>
+                  <!--4-->
+                  <div>
+                    <div class="w-full aspect-square border-[2px] border-solid border-[#E1E1E1] bg-white rounded-full">
+                      <article class="h-full CenterCenter flex-col text-center">
+                        <div class="text-[#161616] text-[18px] pc:text-[28px] font-[900]">
+                          04
+                        </div>
+                        <div class="mt-[10px] text-[#161616] text-[12px] pc:text-[18px] font-[600] text-center">
+                          Consultation on results
+                        </div>
+                        <div class="mt-[10px] text-[#279FB9] text-[14px] pc:text-[18px] font-[600] leading-[18px]">
+                          유전자 검사
+                          <span class="max-pc:block">결과 상담</span>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="w-[2px] h-[20px] pc:h-[40px] bg-[#E1E1E1] mx-auto text-[0]"></div>
+                    <div class="mt-[8px] pc:mt-[6px]">
+                      <div class="text-[#161616] text-[12px] sm:text-[14px] pc:text-[16px] font-[400] leading-[18px] sm:leading-[20px] pc:leading-[24px] text-center">
+                        담당 의료진과
+                        <br>
+                        검사결과를 확인합니다.
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[80px] pc:mt-[160px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div class="text-[#161616] text-[18px] pc:text-[40px] font-[700] leading-[24px] pc:leading-[50px]">
+              지속적인 업데이트
+            </div>
+            <div class="mt-[30px]">
+              <div class="text-[#279FB9] text-[14px] pc:text-[22px] font-[600] leading-[20px] pc:leading-[28px] break-keep">
+                단 한번의 검체 채취로 받을 수 있는 지속적인 업데이트
+              </div>
+            </div>
+            <div class="mt-[30px] space-y-[2px] pc:space-y-[10px]">
+              <article class="CenterLeft">
+                <div>
+                  <img src="/assets/icon/2309131349.svg" alt="">
+                </div>
+                <div class="ml-[2px]">
+                  업데이트 되는 건강 관리 TIP
+                </div>
+              </article>
+              <article class="CenterLeft">
+                <div>
+                  <img src="/assets/icon/2309131349.svg" alt="">
+                </div>
+                <div class="ml-[2px]">
+                  최신 연구 결과를 반영한 리포트 업데이트
+                </div>
+              </article>
+            </div>
+            <div class="mt-[60px] pc:mt-[40px]" data-aos="fade-up" data-aos-duration="500">
+              <div>
+                <img class="pc:hidden aspect-[360/345] w-full" src="/assets/image/2309191703.png" alt="">
+                <img class="max-pc:hidden aspect-[1440/778] w-full" src="/assets/image/2309191703_pc.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[40px] pc:mt-[83px]">
+        <div class="HBox">
+          <div class="Inner">
+            <article class="CenterCenter">
+              <div>
+                <a class="ButtonUi Style1 w-[279px] pc:w-[324px]" data-form-hei="Lg">
+                  DTC 유전자검사 자세히보기
+                  <picture>
+                    <source media="(min-width: 1280px)" srcset="/assets/icon/2309151618_pc.svg">
+                    <img src="/assets/icon/2309151618.svg" alt="">
+                  </picture>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="Footer_1">
+      <div>
+        <section data-seq="20230816165525946" class="pt-[50px] pc:pt-[80px]">
+          <div class="HBox">
+            <div class="Inner">
+              <article class="pc:mr-[0.69%] pc:flex pc:items-start pc:justify-between pc:gap-0">
+                <div class="pc:pb-[104px]">
+                  <div>
+                    <img class="max-pc:w-[150px]" src="/assets/logo/logo_2.svg" alt="">
+                  </div>
+                  <div class="mt-[30px] pc:mt-[60px]">
+                    <div class="AddressBox_1">
+                      <div>상호명 : 엠허브제노플랜㈜</div>
+                      <div>대표이사 : 전병주 <span class="max-pc:hidden"> | 소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</span></div>
+                      <div class="pc:hidden">소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</div>
+                      <div>대표전화 : 1577-6370</div>
+                      <div>사업자 등록번호 : 120-88-12093</div>
+                      <div>통신판매업신고번호 : 2018-서울서초-2119</div>
+                    </div>
+                    <!--<article class='CopyrightBox_1 CenterLeft' style='margin-top:30px;'>
+                  <div>엠허브제노플랜㈜</div>
+                </article>-->
+                  </div>
+                </div>
+                <div class="max-pc:mt-[50px] max-pc:pb-[48px]">
+                  <a class="ButtonUi Style4 gap-[2px] min-w-[162px] pc:min-w-[190px] h-[40px] pc:h-[48px] text-[12px] pc:text-[16px] font-[600]" href="https://www.google.com" target="_blank">
+                    체질 30종 코드입력
+                    <img src="/assets/icon/2309261058.svg" alt="">
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

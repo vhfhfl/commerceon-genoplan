@@ -1,0 +1,35 @@
+<div class='space-y-[60px] pc:space-y-[100px]'>
+  {{JSON 'array' '/assets/json/2309181200.json'}}
+  {{#EACH array}}
+    <div>
+      <div class='text-[#161616] text-[16px] pc:text-[30px] font-[600] pc:font-[700] leading-[24px] pc:leading-[30px]'>
+        {{obj.title}}
+      </div>
+      <div class='mt-[30px] pc:mt-[40px]'>
+        <article class='grid grid-cols-2 pc:grid-cols-6 gap-[30px_10px] pc:gap-[0_1.25%]'>
+          {{#EACH obj.childs}}
+            <div class='border-[1px] border-solid border-[#ebebeb]'>
+              <article class='CenterCenter h-[164px] pc:h-[240px]'>
+                <div>
+                  <img src='{{obj.img}}' alt='' />
+                </div>
+              </article>
+              <article class='CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]'>
+                <div>
+                  <div class='text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]'>
+                    {{{obj.title}}}
+                  </div>
+                </div>
+                {{#if obj.desc}}
+                  <div class='mt-[2px]'>
+                    <div class='text-[12px] font-[400]'>{{obj.desc}}</div>
+                  </div>
+                {{/if}}
+              </article>
+            </div>
+          {{/EACH}}
+        </article>
+      </div>
+    </div>
+  {{/EACH}}
+</div>

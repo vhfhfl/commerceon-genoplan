@@ -1,0 +1,137 @@
+<title>사이트맵</title>
+<div id='page'>
+  <main>
+    <link href='/assets/css/sitemap.css' rel='stylesheet' />
+    <div id='Sitemap'>
+      <article class='CenterBetween'>
+        <div>
+          <div class='H1'>SiteMap</div>
+        </div>
+        <div>
+          <button class='ButtonUi Style1' data-form-hei='Sm' style='width: 100px' onclick='onBundleAllFile(this)'>
+            전체 번들링
+          </button>
+        </div>
+      </article>
+      <article id='ProgressBarBox' style='margin-top:10px;'>
+        <progress id='ProgressBar' value='0' max='1'></progress>
+        <article class='CenterCenter' style='width:100%; height:100%; z-index:10; position:absolute; top:0px; left:0px; font-size:12px; font-weight:700; color:white;'>
+          <div id='Count'></div>/<div id='Max'></div>
+        </article>
+      </article>
+      <br />
+      <ul>
+        {{#each window.MENU_DATA}}
+          <li data-key='{{@key}}'>
+            {{{SITEMAP_ITEM 'for_pub'}}}
+            <ul>
+              {{#each child}}
+                <li data-key='{{@key}}'>
+                  {{{SITEMAP_ITEM 'for_pub'}}}
+                  <ul>
+                    {{#each child}}
+                      <li>
+                        {{{SITEMAP_ITEM 'for_pub'}}}
+                      </li>
+                    {{/each}}
+                  </ul>
+                </li>
+              {{/each}}
+            </ul>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </main>
+  {{!--prettier-ignore--}}
+  <script>
+    /**
+     * short uid 반환
+     * @returns {string}
+     */
+    const uid = () => {
+      var firstPart = (Math.random() * 46656) | 0;
+      var secondPart = (Math.random() * 46656) | 0;
+      firstPart = ('000' + firstPart.toString(36)).slice(-3);
+      secondPart = ('000' + secondPart.toString(36)).slice(-3);
+      return firstPart + secondPart;
+    };
+
+    /**
+     * 모든 페이지 번들링
+     * @param target
+     */
+    const onBundleAllFile = (target) => {
+      const el_cnt = document.querySelector(`#Count`);
+      const el_max = document.querySelector(`#Max`);
+
+      const el_link_list = document.querySelectorAll(`#Sitemap > ul a.label`);
+      const el_pb = document.querySelector('#ProgressBar');
+
+
+      const url_list = [];
+      let i = 0;
+
+      el_link_list.forEach((a, idx) => {
+        const href = a.getAttribute(`href`);
+
+        // _pub 페이지
+        // 외부 URL
+        // 빌드 하지 않음
+        if (href && href.indexOf('_pub_') == -1 && href.indexOf('http') == -1) {
+          url_list.push(href);
+        }
+      });
+
+
+      const max = url_list.length;
+      el_pb.setAttribute(`max`, max);
+      el_max.innerHTML = max;
+
+
+      function callback() {
+        i++;
+
+        el_pb.setAttribute(`value`, i);
+        el_cnt.innerHTML = i;
+
+        if (i < max) {
+          bundle(url_list[i], callback);
+        } else {
+          console.log(`${max} 개 파일 번들링 완료`);
+        }
+      }
+
+      bundle(url_list[i], callback);
+
+      function bundle(href, callback) {
+        console.log(i, href);
+
+        const win = window.open(
+          href,
+          `win_${uid()}`,
+          'width=500,height=400,top=100,left=200,toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=0,copyhistory=0',
+          true,
+        );
+        win.onload = function () {
+          win.close();
+          if (callback) callback();
+        };
+
+      }
+
+    };
+  </script>
+  {{!--prettier-ignore--}}
+  <script>
+    window.addEventListener('DOMContentLoaded', (evt) => {
+      const el_a_list = document.querySelectorAll(`#Sitemap > ul > li a[href]`);
+      el_a_list.forEach((el_a, idx) => {
+        el_a.addEventListener('click', (evt) => {
+          const ct = evt.target;
+          $(ct).addClass('On');
+        });
+      });
+    });
+  </script>
+</div>

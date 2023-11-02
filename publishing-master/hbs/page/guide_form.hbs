@@ -1,0 +1,418 @@
+<div id='page'>
+  <main>
+    <style>
+      main section{
+        margin-top:50px;
+        margin-bottom:50px;
+      }
+    </style>
+    <div class="HBox">
+      <div class="Inner">
+        <div class="H1">Form Design Guide</div>
+        <br/>
+        <section data-seq="20230626195802526" class="">
+          <ul class="Ul_1">
+            <li>Style의 종류에는 제한이 없음.</li>
+            <li>단, 높이(Height)는 최소 3 가지 ~ 최대 5 가지 까지 제한 하는것을 권장.</li>
+          </ul>
+        </section>
+        <section data-seq="20230626195117757" class="">
+          <div class="H2">ButtonUi</div>
+          <br/>
+          <table class="TableUi1 CenterMode">
+            <script>Include('/hbs/component/TableHead_1.hbs', {window});</script>
+            <tbody>
+            {{#EACH (ARR 'Style1|Style2|Style3|Style4|Style5|Style6|Style7|Style8')}}
+              <tr>
+                <td>{{obj}}</td>
+                {{#EACH @root.window.FORM_HEI_LIST}}
+                  <td>
+                    <button class='ButtonUi {{../obj}} w-full' data-form-hei='{{obj}}'>ButtonUi</button>
+                  </td>
+                {{/EACH}}
+              </tr>
+            {{/EACH}}
+            <tr>
+              <td>[disabled]</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <button class='ButtonUi w-full' data-form-hei='{{obj}}' disabled>ButtonUi</button>
+                </td>
+              {{/EACH}}
+            </tr>
+            </tbody>
+          </table>
+        </section>
+        <section data-seq="20230626195117757" class="">
+          <div class="H2">InputUi</div>
+          <br/>
+          <div class="H3">Style1</div>
+          <br/>
+          <table class="TableUi1 CenterMode">
+            <script>Include('/hbs/component/TableHead_1.hbs', {window});</script>
+            <tbody>
+            <tr>
+              <td>Empty Value</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <div class='InputUi Style1 w-full' data-form-hei='{{obj}}'>
+                    <input placeholder='placeholder'/>
+                    <img onerror="initInputUi(this)" src=""/>
+                  </div>
+                </td>
+              {{/EACH}}
+            </tr>
+            <tr>
+              <td>.HasValue</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <div class='InputUi Style1 w-full' data-form-hei='{{obj}}'>
+                    <input type='text' value='TestValue' placeholder='placeholder'/>
+                    <img onerror="initInputUi(this)" src=""/>
+                  </div>
+                </td>
+              {{/EACH}}
+            </tr>
+            <tr>
+              <td>Error</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <div class='InputUi Style1 Error w-full' data-form-hei='{{obj}}'>
+                    <input placeholder='placeholder'/>
+                    <img onerror="initInputUi(this)" src=""/>
+                  </div>
+                </td>
+              {{/EACH}}
+            </tr>
+            <tr>
+              <td>Success</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <div class='InputUi Style1 Success w-full' data-form-hei='{{obj}}'>
+                    <input placeholder='placeholder'/>
+                    <img onerror="initInputUi(this)" src=""/>
+                  </div>
+                </td>
+              {{/EACH}}
+            </tr>
+            <tr>
+              <td>.ReadOnly</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <div class='InputUi Style1 ReadOnly w-full' data-form-hei='{{obj}}'>
+                    <input value='TestValue' readonly/>
+                    <img onerror="initInputUi(this)" src=""/>
+                  </div>
+                </td>
+              {{/EACH}}
+            </tr>
+            <tr>
+              <td>button</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <div class='InputUi Style1 w-full' data-form-hei='{{obj}}'>
+                    <input placeholder='placeholder'/>
+                    <button class='CenterCenter'>
+                      <img src="/assets/icon/star.svg" alt=""/>
+                    </button>
+                    <img onerror="initInputUi(this)" src=""/>
+                  </div>
+                </td>
+              {{/EACH}}
+            </tr>
+            </tbody>
+          </table>
+        </section>
+        <section data-seq="20230705120539916" class="">
+          <div class="H2">TextAreaUi</div>
+          <br/>
+          <textarea class="TextAreaUi" placeholder="placeholder">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+        </section>
+        <section data-seq="20230626195117757" class="">
+          <div class="H2">SelectUi</div>
+          <br/>
+          <div class="H3">Style1</div>
+          <br/>
+          <table class="TableUi1 CenterMode">
+            <script>Include('/hbs/component/TableHead_1.hbs', {window});</script>
+            <tbody>
+            <tr>
+              <td>default</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <select class='SelectUi Style1 w-full' data-form-hei='{{obj}}'>
+                    <option selected disabled hidden>선택</option>
+                    <option value='aaa'>AAA</option>
+                    <option value='bbb'>BBB</option>
+                    <option value='ccc'>CCC</option>
+                  </select>
+                </td>
+              {{/EACH}}
+            </tr>
+            <tr>
+              <td>.error</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <select class='SelectUi Style1 error w-full' data-form-hei='{{obj}}'>
+                    <option selected disabled hidden>선택</option>
+                    <option value='aaa'>AAA</option>
+                    <option value='bbb'>BBB</option>
+                    <option value='ccc'>CCC</option>
+                  </select>
+                </td>
+              {{/EACH}}
+            </tr>
+            <tr>
+              <td>[disabled]</td>
+              {{#EACH @root.window.FORM_HEI_LIST}}
+                <td>
+                  <select class="SelectUi Style1 w-full" data-form-hei="{{obj}}" disabled>
+                    <option selected disabled hidden>선택</option>
+                    <option value="aaa">AAA</option>
+                    <option value="bbb">BBB</option>
+                    <option value="ccc">CCC</option>
+                  </select>
+                </td>
+              {{/EACH}}
+            </tr>
+            </tbody>
+          </table>
+        </section>
+        <section data-seq="20230705120539916" class="">
+          <div class="H2">CheckBox</div>
+          <br/>
+          <div class="H3">Style1</div>
+          <br/>
+          <table class="TableUi1 CenterMode">
+            <script>Include('/hbs/component/TableHead_1.hbs', {window});</script>
+            <tbody>
+            <tr>
+              <td>defalut</td>
+              <td></td>
+              <td>
+                <input class="CheckBoxUi Style1" type="checkbox" data-size="Lg"/>
+              </td>
+              <td>
+                <input class="CheckBoxUi Style1" type="checkbox"/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>+ label</td>
+              <td></td>
+              <td>
+                <label class="CenterCenter">
+                  <input class="CheckBoxUi Style1" type="checkbox" data-size="Lg"/>
+                  <div class="LabalUi">로그인 상태 유지</div>
+                </label>
+              </td>
+              <td>
+                <label class="CenterCenter">
+                  <input class="CheckBoxUi Style1" type="checkbox"/>
+                  <div class="LabalUi">로그인 상태 유지</div>
+                </label>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>:checked</td>
+              <td></td>
+              <td>
+                <input class="CheckBoxUi Style1" type="checkbox" data-size="Lg" checked/>
+              </td>
+              <td>
+                <input class="CheckBoxUi Style1" type="checkbox" checked/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[disabled]</td>
+              <td></td>
+              <td>
+                <input class="CheckBoxUi Style1" type="checkbox" data-size="Lg" disabled/>
+              </td>
+              <td>
+                <input class="CheckBoxUi Style1" type="checkbox" disabled/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+        </section>
+        <section data-seq="20230705120539916" class="">
+          <div class="H3">Style2</div>
+          <br/>
+          <table class="TableUi1 CenterMode">
+            <script>Include('/hbs/component/TableHead_1.hbs', {window});</script>
+            <tbody>
+            <tr>
+              <td>defalut</td>
+              <td></td>
+              <td>
+                <input class="CheckBoxUi Style2" type="checkbox" data-size="Lg"/>
+              </td>
+              <td>
+                <input class="CheckBoxUi Style2" type="checkbox"/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>+ label</td>
+              <td></td>
+              <td>
+                <label class="CenterCenter">
+                  <input class="CheckBoxUi Style2" type="checkbox" data-size="Lg"/>
+                  <div class="LabalUi">로그인 상태 유지</div>
+                </label>
+              </td>
+              <td>
+                <label class="CenterCenter">
+                  <input class="CheckBoxUi Style2" type="checkbox"/>
+                  <div class="LabalUi">로그인 상태 유지</div>
+                </label>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>:checked</td>
+              <td></td>
+              <td>
+                <input class="CheckBoxUi Style2" type="checkbox" data-size="Lg" checked/>
+              </td>
+              <td>
+                <input class="CheckBoxUi Style2" type="checkbox" checked/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[disabled]</td>
+              <td></td>
+              <td>
+                <input class="CheckBoxUi Style2" type="checkbox" data-size="Lg" disabled/>
+              </td>
+              <td>
+                <input class="CheckBoxUi Style2" type="checkbox" disabled/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+        </section>
+        <section data-seq="20230705120539916">
+          <div class="H2">RadioUi</div>
+          <br/>
+          <div class="H3">Style1</div>
+          <br/>
+          <table class="TableUi1 CenterMode">
+            <script>Include('/hbs/component/TableHead_1.hbs', {window});</script>
+            <tbody>
+            <tr>
+              <td>defalut</td>
+              <td></td>
+              <td>
+                <input class="RadioUi Style1" type="radio" data-size="Lg"/>
+              </td>
+              <td>
+                <input class="RadioUi Style1" type="radio"/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>+ label</td>
+              <td></td>
+              <td>
+                <label class="CenterCenter">
+                  <input class="RadioUi Style1" type="radio" data-size="Lg"/>
+                  <div class="LabalUi">로그인 상태 유지</div>
+                </label>
+              </td>
+              <td>
+                <label class="CenterCenter">
+                  <input class="RadioUi Style1" type="radio"/>
+                  <div class="LabalUi">로그인 상태 유지</div>
+                </label>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>:checked</td>
+              <td></td>
+              <td>
+                <input class="RadioUi Style1" type="radio" data-size="Lg" checked/>
+              </td>
+              <td>
+                <input class="RadioUi Style1" type="radio" checked/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[disabled]</td>
+              <td></td>
+              <td>
+                <input class="RadioUi Style1" type="radio" data-size="Lg" disabled/>
+              </td>
+              <td>
+                <input class="RadioUi Style1" type="radio" disabled/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+        </section>
+        <section data-seq="20230705120539916" class="">
+          <div class="H2">ToggleUi</div>
+          <br/>
+          <div class="H3">Style1</div>
+          <br/>
+          <table class="TableUi1 CenterMode">
+            <script>Include('/hbs/component/TableHead_1.hbs', {window});</script>
+            <tbody>
+            <tr>
+              <td>defalut</td>
+              <td></td>
+              <td></td>
+              <td>
+                <input class="ToggleUi Style1" type="checkbox"/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>:checked</td>
+              <td></td>
+              <td></td>
+              <td>
+                <input class="ToggleUi Style1" type="checkbox" checked/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[disabled]</td>
+              <td></td>
+              <td></td>
+              <td>
+                <input class="ToggleUi Style1" type="checkbox" disabled/>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>

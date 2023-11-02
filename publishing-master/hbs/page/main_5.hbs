@@ -1,0 +1,136 @@
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <main class='py-0'>
+    <section class='bg-[url(/assets/image/2310131800.jpg)] pc:bg-[url(/assets/image/2310131800_pc.jpg)] bg-center bg-cover bg-no-repeat'>
+      <div class='pt-[50px] pc:pt-[80px] pb-[108px] pc:pb-[180px]'>
+        <div>
+          <div class='text-white text-[22px] pc:text-[30px] font-[600] leading-[30px] pc:leading-[40px] text-center'>
+            제노플랜 체질 검사 <span class='max-pc:block'>30종 리스트</span>
+          </div>
+          <div class='pc:hidden mt-[26px] mr-[20px] text-right'>
+            <article class='CenterRight'>
+              <div class='text-[#E1E1E1] text-[12px] font-[600]'>
+                밀어서 표 전체보기
+              </div>
+              <div class='ml-[8px]'>
+                <img src='/assets/icon/2309151618.svg' alt='' />
+              </div>
+            </article>
+          </div>
+          <div class='mt-[10px] pc:mt-[40px] max-pc:px-[var(--contents-side-padding)] pc:mx-[var(--contents-side-padding)] max-pc:overflow-x-auto'>
+            <div class='min-w-[500px] pc:h-[424px] overflow-y-auto'>
+              <script>Include('/hbs/module/2310161157.hbs');</script>
+            </div>
+          </div>
+        </div>
+        <div class='mt-[20px] mx-[var(--contents-side-padding)]'>
+          <article class='flex flex-col justify-center pc:items-center gap-0 py-[36px] px-[13px] bg-white'>
+            <div class='text-[#161616] text-[16px] font-[600] text-center'>
+              제노플랜 체질검사 30종 이용 안내
+            </div>
+            <div class='mt-[30px] space-y-[4px] pc:space-y-[0] text-[14px] leading-[24px]'>
+              <article class='flex items-start gap-0'>
+                <div>
+                  <img src='/assets/icon/2309131349.svg' alt='' />
+                </div>
+                <div class='ml-[2px] flex-1 break-keep'>체질 30종 검사 정보를 무료로 제공받으실 수 있습니다.</div>
+              </article>
+              <article class='flex items-start gap-0'>
+                <div>
+                  <img src='/assets/icon/2309131349.svg' alt='' />
+                </div>
+                <div class='ml-[2px] flex-1 break-keep text-[#E42F2F]'>오프라인(Mybook 책자)에서는 요약 결과를, 온라인(link 개별발송)에서는 상세 결과를 확인하실 수 있습니다.</div>
+              </article>
+              <article class='flex items-start gap-0'>
+                <div>
+                  <img src='/assets/icon/2309131349.svg' alt='' />
+                </div>
+                <div class='ml-[2px] flex-1 break-keep'>본 체질검사는 의료 검사가 아니므로 질병 진단 및 치료 목적으로 사용할 수 없습니다.</div>
+              </article>
+              <article class='flex items-start gap-0'>
+                <div>
+                  <img src='/assets/icon/2309131349.svg' alt='' />
+                </div>
+                <div class='ml-[2px] flex-1 break-keep'>입력하신 코드는 교환, 환불 및 최초 등록 후 재 사용이 불가합니다.</div>
+              </article>
+            </div>
+          </article>
+        </div>
+        <div class='mt-[60px] mx-[var(--contents-side-padding)]'>
+          <div class='text-white text-[22px] pc:text-[30px] font-[600] leading-[30px] text-center'>
+            제노플랜 체질 검사
+            <span class='max-pc:block'>30종 리포트</span>
+          </div>
+          <div class='mt-[40px]'>
+            <div class='bg-white px-[10px] pc:px-[20px] py-[30px]'>
+              <div class='text-[#161616] text-[16px] pc:text-[18px] font-[600] text-center'>
+                전체 항목
+              </div>
+              <div class='mt-[20px] pc:mt-[30px] space-y-[30px] pc:space-y-[40px]'>
+                {{#EACH window.REPORT_DATA}}
+                  <div>
+                    <article class='CenterLeft'>
+                      <div class='text-[#A6A6A6] text-[14px] pc:text-[16px] font-[600]'>{{obj.title_1}}</div>
+                      <div>
+                        <img src='/assets/icon/2310241753.svg'/>
+                      </div>
+                      <div class='text-[#303030] text-[14px] pc:text-[16px] font-[600]'>{{obj.title_2}}</div>
+                    </article>
+                    <div class='mt-[10px]'>
+                      <article class='pc:grid pc:grid-cols-2 pc:gap-[1.38%] max-pc:space-y-[20px]'>
+                        {{#EACH obj.table}}
+                          <div>
+                            <table class='Table_2'>
+                              <colgroup>
+                                <col class='w-[53.33%]' />
+                                <col class='w-[16.66%]' />
+                                <col />
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  {{#EACH obj.cols}}
+                                    <th>{{{obj}}}</th>
+                                  {{/EACH}}
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {{#EACH obj.rows}}
+                                  <tr>
+                                    <td>{{obj.[0]}}</td>
+                                    <td class='text-[#FF3838]'>{{{obj.[1]}}}</td>
+                                    <td>
+                                      <article class='CenterCenter'>
+                                        <div>{{obj.[2]}}</div>
+                                        <img src='{{obj.[3]}}' alt=''/>
+                                      </article>
+                                    </td>
+                                  </tr>
+                                {{/EACH}}
+                              </tbody>
+                            </table>
+                          </div>
+                        {{/EACH}}
+                      </article>
+                    </div>
+                  </div>
+                {{/EACH}}
+              </div>
+            </div>
+          </div>
+          <div class='mt-[40px] pc:mt-[60px]'>
+            <article class='CenterCenter'>
+              <button class='ButtonUi Style1 max-pc:w-full min-w-[194px]' data-form-hei='Lg'>
+                확인
+              </button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

@@ -1,0 +1,60 @@
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <script>Include('/hbs/module/2309201608.hbs');</script>
+  <main>
+    <script>Include('/hbs/component/SubPageTitle_1-a.hbs', {txt1:'PARTNER'});</script>
+    <div class='mt-[40px] pc:mt-[80px]'>
+      <div class='pt-[40px] pc:pt-[80px] pc:pb-[209px] max-pc:h-[638px] bg-[#F6F6F6]'>
+        <section>
+          <div class='HBox'>
+            <div class='Inner'>
+              <div class='text-[#161616] text-[22px] pc:text-[40px] font-[600] text-center'>
+                병/의원 파트너
+              </div>
+              <div class='mt-[40px]'>
+                <div class='text-[#303030] text-[16px] font-[600]'>
+                  병/의원 검색
+                </div>
+                <div class='mt-[12px]'>
+                  <div class='InputUi Style1 w-full' data-form-hei='Lg'>
+                    <input placeholder='병/의원을 검색하세요.'/>
+                  </div>
+                </div>
+              </div>
+              <div class='mt-[40px]'>
+                <div class='text-[#303030] text-[16px] font-[600]'>
+                  병/의원 리스트
+                </div>
+                <div class='mt-[16px]'>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class='pc:hidden mt-[80px]'>
+            <script>Include('/hbs/swiper/PartnerSwiper_1.hbs', {id:`1c9252d4e`});</script>
+          </div>
+          <div class='max-pc:hidden mt-[80px]'>
+            <div class='px-[var(--contents-side-padding)]'>
+              <article class='grid grid-cols-4 gap-[60px_5.55%]'>
+                {{#LOOP 26}}
+                  <div class='bg-white p-[10px_13.33%]'>
+                    <article class='CenterCenter'>
+                      <img class='aspect-[220/160]' src='/assets/image/2309261615_{{number}}.png' alt='' />
+                    </article>
+                  </div>
+                {{/LOOP}}
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

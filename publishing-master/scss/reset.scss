@@ -1,0 +1,84 @@
+/* 2023-04-28 :: START :: 디버깅시 사용 */
+.RR {
+  outline: 1px dashed red !important;
+}
+.RRR > * {
+  outline: 1px dashed blue !important;
+}
+/* // 2023-04-28 :: END :: 디버깅시 사용 */
+:root {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  cursor: default;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  tab-size: 4;
+}
+::selection {
+  color: #303030;
+  background: #a8d1ff;
+}
+
+::-moz-selection {
+  color: #303030;
+  background: #a8d1ff;
+}
+
+/* 모바일 터치시 영역 색상  */
+/*:root{-webkit-tap-highlight-color:transparent;}*/
+/**/
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+html,
+body {
+  //height: 100%;
+}
+img,
+picture,
+video,
+canvas,
+button,
+svg {
+  display: block;
+  max-width: 100%;
+}
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* iOS safari 클릭 딜레이 방지 */
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+ul {
+  list-style: none;
+}
+html,
+body {
+  line-height: 1 !important;
+}
+[disabled] {
+  pointer-events: none;
+}
+strong {
+  font-weight: 700;
+}

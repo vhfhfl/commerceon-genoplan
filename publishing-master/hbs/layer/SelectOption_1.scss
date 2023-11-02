@@ -1,0 +1,24 @@
+.SelectOption_1 {
+  background-color: white;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  .Body {
+    text-align: center;
+    > .Title {
+      padding: 19px 0;
+      color: #000000;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    > .Button {
+      width: 100%;
+      padding: 14px 0;
+      color: #0a7feb;
+      font-size: 16px;
+      font-weight: 400;
+      border-top: 1px solid #938e8e;
+    }
+  }
+}

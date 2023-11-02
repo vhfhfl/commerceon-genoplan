@@ -1,0 +1,26 @@
+<div id='page'>
+  <main>
+    <main>
+      {{!--prettier-ignore--}}
+      <style>
+        html{ background-color:#ffffd4; }
+        main section{ margin-top:50px; margin-bottom:50px; }
+      </style>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='H1'>ECT Button Guide</div>
+          {{#EACH window.HBS_DATA.btn}}
+            <section>
+              <div class='H3'>
+                <input style='display:inline-block; width:100%; outline:none; border:none;' readonly type='text' value='{{obj.path}}' onclick='this.select();' />
+              </div>
+              <br />
+              <script>Include('{{obj.path}}');</script>
+            </section>
+          {{/EACH}}
+          {{!array: BUTTON_DATA,}}
+        </div>
+      </div>
+    </main>
+  </main>
+</div>

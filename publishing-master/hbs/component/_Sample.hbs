@@ -1,0 +1,12 @@
+{{!--기본값 지정--}}
+{{#DV}}
+  {{SAFE 'txt1'}}
+  {{DF 'btns' '🍎|🍍|🥝|🍇|🍈'}}
+{{/DV}}
+{{NULL_CHECK 'id' 'hbs/component/_Sample.hbs'}}
+<div class="_Sample CenterCenter">
+  <div>{{txt1}}</div>
+  {{#EACH (ARR btns)}}
+    <button class="border-solid p-[10px] border-[1px] border-[red]"> {{obj}} </button>
+  {{/EACH}}
+</div>

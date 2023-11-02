@@ -1,0 +1,95 @@
+<div id='page'>
+  <main>
+    {{!--prettier-ignore--}}
+    <style>
+      html{
+        background-color:#ffffd4;
+      }
+      main section{
+        margin-top:50px;
+        margin-bottom:50px;
+      }
+      /**/
+      /*Scroll snap 속성*/
+      /*
+      1. scroll-snap-type : 동작 방식 : none | [ x | y | block | inline | both ] | [ mandatory | proximity ]
+      x: 수평(가로) 축으로 snap position 지정
+      y: 수직(세로) 축으로 snap position 지정
+      block: snap area의 block 축으로 지정
+      inline: inline 축으로 지정
+      both: 두 축의 위치를 개별적으로 스냅.
+      */
+      /**/
+      /* 
+      2. scroll-snap-align: 정렬 방식 : [ none | start | end | center ]
+      none: 스냅하지 않음.
+      proximity: 스크롤 위치가 스냅 위치에 가까워지면 자연스럽게 스냅
+      mandatory: 스크롤 위치가 스냅 위치와 정확히 일치해야만 스냅
+      */
+      /*3. scroll-padding*/
+      /*4. scroll-margin*/
+
+      /* 부모 스크롤 스냅 컨테이너 */
+      .scroll-container{
+        outline:1px dashed red;
+        overflow:auto;
+      }
+    </style>
+    <div class='H1'>Scroll Snap</div>
+    <br />
+    <div class='H2'>
+      <div>scroll-snap-type:y mandatory;</div>
+      <div>scroll-snap-align:center;</div>
+    </div>
+    <section data-seq='20230807081721632'>
+      <div class='scroll-container' style='height:300px; scroll-snap-type:y mandatory;'>
+        {{#LOOP 10}}
+          <div class='scroll-area' style='scroll-snap-align:center;'>
+            <img src='https://gifpng.com/360x360/ffd4d4/ff4444?text={{number}}' alt='' />
+          </div>
+        {{/LOOP}}
+      </div>
+    </section>
+    <div class='H2'>
+      <div>scroll-snap-type:y proximity;</div>
+      <div>scroll-snap-align:center;</div>
+    </div>
+    <section data-seq='20230807081721632'>
+      <div class='scroll-container' style='height:300px; scroll-snap-type:y proximity;'>
+        {{#LOOP 10}}
+          <div class='scroll-area' style='scroll-snap-align:center;'>
+            <img src='https://gifpng.com/360x360/ffd4d4/ff4444?text={{number}}' alt='' />
+          </div>
+        {{/LOOP}}
+      </div>
+    </section>
+    <div class='H2'>
+      <div>scroll-snap-type:y mandatory;</div>
+      <div>scroll-snap-align:center;</div>
+      <div>scroll-padding-top:100px;</div>
+    </div>
+    <section data-seq='20230807081721632'>
+      <div class='scroll-container' style='height:400px; scroll-snap-type:y mandatory; scroll-padding-top:100px;'>
+        {{#LOOP 10}}
+          <div class='scroll-area' style='scroll-snap-align:start;'>
+            <img src='https://gifpng.com/360x360/ffd4d4/ff4444?text={{number}}' alt='' />
+          </div>
+        {{/LOOP}}
+      </div>
+    </section>
+    <div class='H2'>
+      <div>scroll-snap-type:y mandatory;</div>
+      <div>scroll-snap-align:center;</div>
+      <div>scroll-margin-top:100px;</div>
+    </div>
+    <section data-seq='20230807081721632'>
+      <div class='scroll-container' style='height:400px; scroll-snap-type:y mandatory;'>
+        {{#LOOP 10}}
+          <div class='scroll-area' style='scroll-snap-align:start; scroll-margin-top:100px;'>
+            <img src='https://gifpng.com/360x360/ffd4d4/ff4444?text={{number}}' alt='' />
+          </div>
+        {{/LOOP}}
+      </div>
+    </section>
+  </main>
+</div>

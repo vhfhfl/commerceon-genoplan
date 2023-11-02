@@ -1,0 +1,30 @@
+<div id='page'>
+  <main>
+    <link href='/assets/css/sitemap.css' rel='stylesheet'/>
+    <div id='Sitemap'>
+      <div class='H1'>SiteMap</div>
+      <br/>
+      <ul>
+        {{#each window.MENU_DATA_FOR_GUEST}}
+          <li data-key='{{@key}}'>
+            {{{SITEMAP_ITEM}}}
+            <ul>
+              {{#each child}}
+                <li data-key='{{@key}}'>
+                  {{{SITEMAP_ITEM}}}
+                  <ul>
+                    {{#each child}}
+                      <li>
+                        {{{SITEMAP_ITEM}}}
+                      </li>
+                    {{/each}}
+                  </ul>
+                </li>
+              {{/each}}
+            </ul>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </main>
+</div>

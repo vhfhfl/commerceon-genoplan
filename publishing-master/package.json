@@ -1,0 +1,40 @@
+{
+  "name": "base-include",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run chd\" \"npm run csd\" \"npm run wh\" \"npm run scss:sitemap\" \"npm run scss:global\" \"npm run sync\" \"npm run builder\" \"npm run fs\"",
+    "chd": "node create_hbs_data.js",
+    "csd": "node create_scss_data.js",
+    "wh": "node watch_hbs.js",
+    "scss:sitemap": "sass -w scss/sitemap.scss assets/css/sitemap.css",
+    "scss:global": "sass -w global.scss assets/css/global.css",
+    "fs": "node five-server.js",
+    "builder": "node builder.js",
+    "sync": "syncdir assets ./dist/assets --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksm-friends/base-include.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksm-friends/base-include/issues"
+  },
+  "homepage": "https://github.com/ksm-friends/base-include#readme",
+  "devDependencies": {
+    "address": "^1.2.2",
+    "chokidar": "^3.5.3",
+    "concurrently": "^8.2.0",
+    "five-server": "^0.3.1",
+    "js-beautify": "^1.14.9",
+    "lodash": "^4.17.21",
+    "prettier": "^3.0.1",
+    "sass": "^1.64.0",
+    "sync-directory": "^6.0.4",
+    "tailwindcss": "^3.3.3"
+  }
+}

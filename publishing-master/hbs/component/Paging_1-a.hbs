@@ -1,0 +1,23 @@
+<div class='Paging_1'>
+  <article class='CenterCenter'>
+    <a href='https://www.google.com' target='_blank'>
+      <img src='/assets/icon/2309121208_1.svg' alt='' />
+    </a>
+    <a class='ml-[10px]' href='https://www.google.com' target='_blank'>
+      <img src='/assets/icon/2309121208_2.svg' alt='' />
+    </a>
+    <div class='mx-[14px] pc:mx-[30px] CenterCenter gap-[4px] pc:gap-[22px]'>
+      {{#LOOP 5}}
+        <a class='CenterCenter w-[24px] aspect-square text-[var(--text-color3)] text-[14px] font-[400] [&.On]:text-[#161616] {{ON 0}}' href='https://www.google.com' target='_blank'>
+          {{number}}
+        </a>
+      {{/LOOP}}
+    </div>
+    <a href='https://www.google.com' target='_blank'>
+      <img class='rotate-180' src='/assets/icon/2309121208_1.svg' alt='' />
+    </a>
+    <a class='ml-[10px]' href='https://www.google.com' target='_blank'>
+      <img class='rotate-180' src='/assets/icon/2309121208_2.svg' alt='' />
+    </a>
+  </article>
+</div>

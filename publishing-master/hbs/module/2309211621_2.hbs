@@ -1,0 +1,21 @@
+<div>
+  {{JSON 'array' '/assets/json/2309211621_2.json'}}
+  <article class='grid grid-cols-2 gap-[40px_10px] pc:gap-[50px_4%]'>
+    {{#EACH array}}
+      <div class='border-[1px] border-solid border-[#ebebeb]'>
+        <article class='CenterCenter h-[134px] pc:h-[240px]'>
+          <div>
+            <img src='{{obj.img}}' alt='' />
+          </div>
+        </article>
+        <article class='CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]'>
+          <div>
+            <div class='text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center'>
+              {{obj.title}}
+            </div>
+          </div>
+        </article>
+      </div>
+    {{/EACH}}
+  </article>
+</div>

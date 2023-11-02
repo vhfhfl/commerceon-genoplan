@@ -1,0 +1,120 @@
+{{NULL_CHECK 'id' 'hbs/swiper/ContactSwiper_1.hbs'}}
+<div class='relative'>
+  <div id='_BaseSwiper-{{id}}' class='swiper _BaseSwiper'>
+    <div id='_BaseSwiper-{{id}}-Navigation' class='_BaseSwiper-Navigation top-1/2 -translate-y-1/2 bg-transparent'>
+      <div class='NavBtn PrevBtn'>
+        <img src='/assets/icon/swiper/2309211632_1.svg' alt='' />
+      </div>
+      <div class='NavBtn NextBtn'>
+        <img src='/assets/icon/swiper/2309211632_2.svg' alt='' />
+      </div>
+    </div>
+    <div class='swiper-wrapper'>
+      <div class='swiper-slide' data-key='{{index}}'>
+        <script>Include('/hbs/module/2309211621_1.hbs');</script>
+      </div>
+      <div class='swiper-slide' data-key='{{index}}'>
+        <script>Include('/hbs/module/2309211621_2.hbs');</script>
+      </div>
+      <div class='swiper-slide' data-key='{{index}}'>
+        <script>Include('/hbs/module/2309211621_3.hbs');</script>
+      </div>
+    </div>
+  </div>
+
+  {{!--prettier-ignore--}}
+  <script>
+    window.addEventListener('DOMContentLoaded', (evt) => {
+      const navigation = {
+        disabledClass: 'Disabled',
+        hiddenClass: 'Hidden',
+        prevEl: '#_BaseSwiper-{{id}}-Navigation > .PrevBtn',
+        nextEl: '#_BaseSwiper-{{id}}-Navigation > .NextBtn',
+      };
+
+      const pagination_bullet = {
+        el: '#_BaseSwiper-{{id}}-Pagenation',
+        type: 'bullets',
+        clickable: true,
+        modifierClass: 'Pagenation-',
+        bulletClass: 'Dot',
+        bulletActiveClass: 'On',
+        renderBullet: function (index, className) {
+          const num = (index + 1).toString().padStart(2, '0');
+          return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
+        },
+      };
+      
+      const pagination_progress = {
+        el: '#_BaseSwiper-{{id}}-PagenationProgressbar',
+        type: 'progressbar',
+        modifierClass: 'Pagenation-',
+        progressbarFillClass: 'FillBar',
+        renderProgressbar: function (className) {
+          return `<div class="${className}"></div>`;
+        },
+      };
+      
+      const swiper_option = {
+        slidesPerView: 1.2, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+        slidesPerGroup: 1,
+        spaceBetween: 10,
+        loop: false,
+        navigation: navigation,
+        pagination: pagination_bullet,
+        pagination: pagination_progress,
+        // autoplay: {
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // },
+        init: false,
+        // grabCursor: true,
+        breakpoints: {
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: '1.25%',
+            allowTouchMove: false,
+          },
+        }
+      };
+      
+      const update_current_num = () => {
+        const el_total = document.querySelector('#_BaseSwiper-{{id}}-PagenationFraction > .total');
+        if (!el_total) return;
+        
+        const slides = document.querySelectorAll('#_BaseSwiper-{{id}} .swiper-slide');
+        const real_length = slides.length;
+        el_total.textContent = real_length;
+        
+        const el_current = document.querySelector('#_BaseSwiper-{{id}}-PagenationFraction > .current');
+        el_current.textContent = swiper.realIndex + 1;
+      };
+      
+      let swiper = new Swiper('#_BaseSwiper-{{id}}', swiper_option);
+      
+      swiper.on('init', function () {
+        // console.log('init');
+        update_current_num();
+      });
+      
+      swiper.on('slideChange', function () {
+        // console.log('slideChange');
+        update_current_num();
+      });
+      
+      swiper.on('slideChangeTransitionEnd', function () {
+        // console.log('slideChangeTransitionEnd');
+      });
+      
+      swiper.on('reachBeginning', function () {
+        // console.log('reachBeginning');
+      });
+      
+      swiper.on('reachEnd', function () {
+        // console.log('reachEnd');
+      });
+      
+      swiper.init();
+    });
+  </script>
+</div>

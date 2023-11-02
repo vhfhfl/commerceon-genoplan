@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="/assets/js/viewport.js"></script>
+  <!--Icon-->
+  <link rel="icon" href="data:," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/favicon-512x512.png" />
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <!--Data-->
+  <script src="/assets/js/report.js"></script>
+  <!--Library-->
+  <script src="/assets/lib/jquery-3.7.0.min.js"></script>
+  <link href="/assets/lib/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="/assets/lib/swiper-bundle.min.js"></script>
+  <!--Core-->
+  <script src="/assets/lib/tailwindcss_3.3.3.min.js"></script>
+  <script src="/assets/lib/tailwindcss.config.js"></script>
+  <script src="/assets/js/custom_method.js"></script>
+  <script src="/assets/lib/ua-parser.min.js"></script>
+  <script src="/assets/js/app_info.js"></script>
+  <link href="/assets/css/global.css" rel="stylesheet" />
+  <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/ui_setter.js"></script>
+  <script src="/assets/js/enterframe.js"></script>
+  <link href="/assets/lib/aos_3.0.0.css" rel="stylesheet">
+  <script src="/assets/lib/aos_3.0.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="Modal"></div>
+  <div id="MoGnb_1" class="MoGnb_1">
+    <div class="Inner">
+      <div class="Content">
+        <div class="Head">
+          <article class="CenterCenter">
+            <button onclick="moGnbOff(this);">
+              <img src="/assets/icon/2308171015.svg" alt="">
+            </button>
+          </article>
+        </div>
+        <div class="Body">
+          <ul>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                MhubGenoplan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Service
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Partner
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                News
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                ESG
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page">
+    <header class="Header_2 FixedHeader">
+      <div data-only-view="MO">
+        <div class="MoTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a class="pointer-events-auto" href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <button class="pointer-events-auto" onclick="moGnbOn(this)">
+                    <img src="/assets/icon/2308170651.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-only-view="PC">
+        <div class="PcTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <div class="GNB_2">
+                    <ul>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          MHUBGENOPLAN
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          SERVICE
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          PARTNER
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          NEWS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          ESG
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          CONTACT US
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+
+
+      <div class="SubVisual_1 relative h-[var(--suv-visual-height)]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full" style="clip-path:inset(0);">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="/assets/image/2309201606_pc.jpg">
+            <img class="fixed z-0 top-[var(--header-hei)] left-0 w-full h-[var(--suv-visual-height)] object-cover" src="/assets/image/2309201606.jpg" alt="">
+          </picture>
+        </div>
+        <div class="HBox relative z-10 h-full">
+          <div class="Inner pt-[130px]">
+            <div class="text-white">
+              <div class="text-[30px] xl:text-[50px] leading-[38px] xl:leading-[62px] font-[600]">
+                견고한 파트너십
+              </div>
+              <div class="mt-[20px] text-[16px] xl:text-[18px] leading-[26px] xl:leading-[26px] font-[400]">
+                국내외 다수 선도기업으로부터<br>유전자 분석 기술력을 인정받았습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+
+      <div class="SubPageTitle_1 mt-[30px] pc:mt-[80px]">
+        <div class="HBox">
+          <div class="Inner">
+            <article class="CenterBetween">
+              <div>
+                <div class="text-[#303030] text-[28px] pc:text-[50px] font-[800]">
+                  PARTNER
+                </div>
+              </div>
+              <div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[40px] pc:mt-[80px]">
+        <div class="pt-[40px] pc:pt-[80px] pb-[112px] pc:pb-[209px] bg-[#F6F6F6]">
+          <section>
+            <div class="HBox">
+              <div class="Inner">
+                <div class="text-[#161616] text-[22px] pc:text-[40px] font-[600] text-center">
+                  병/의원 파트너
+                </div>
+                <div class="mt-[40px] pc:mt-[100px]">
+                  <article class="CenterBetween max-pc:flex-col" style="align-items:stretch;">
+                    <div class="max-pc:order-2 max-pc:mt-[40px] pc:flex-1">
+                      <div class="KakaoMapBox border-[1px] border-solid border-[#E1E1E1] max-pc:h-[320px]">
+                        <div id="KakaoMap" style="width:100%; height:100%;"></div>
+                      </div>
+                    </div>
+                    <div class="pc:w-[394px] pc:ml-[26px] pc:border-[1px] pc:border-solid pc:border-[#E1E1E1]">
+                      <article class="pc:h-[600px] pc:px-[24px] pc:pt-[37px] pc:pb-[37px] pc:bg-white">
+                        <div>
+                          <div class="text-[#303030] text-[16px] font-[600]">
+                            병/의원 검색
+                          </div>
+                          <div class="mt-[12px]">
+                            <div class="InputUi Style1 w-full h-[48px] text-[14px] font-[500]">
+                              <input id="PlaceSearchInp" type="text" class="TargetInp w-full" placeholder="병/의원을 검색하세요.">
+                              <img onerror="initInputUi(this);" src="">
+                              <button class="DelBtn invisible [&amp;.On]:visible !w-[30px]">
+                                <img src="/assets/icon/2310131541.svg" alt="">
+                              </button>
+                              <img onerror="initSearchInp(this);" src="" alt="">
+                              <button id="PlaceSearchButton" class="!w-[30px] cursor-pointer">
+                                <img src="/assets/icon/2310131054.svg" alt="">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mt-[28px]">
+                          <div class="text-[#303030] text-[16px] font-[600] mb-[16px]">
+                            병/의원 리스트
+                          </div>
+                          <div id="PlaceListEmptyMsgBox" class="hidden [&amp;.On]:block">
+                            <article class="pc:mt-[76px] max-pc:py-[48px] CenterCenter flex-col">
+                              <div>
+                                <img src="/assets/icon/2310131141.svg" alt="">
+                              </div>
+                              <div class="mt-[28px] text-[#A6A6A6] text-[14px] font-[500]">
+                                검색된 병/의원 파트너가 없습니다.
+                              </div>
+                            </article>
+                          </div>
+                          <div id="PlaceListWrap" class="On hidden [&amp;.On]:block max-h-[390px] overflow-y-scroll">
+                            <article class="flex flex-col gap-[10px]">
+
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="세계로병원" onclick="KakaoMapUtil.moveToMap('세계로병원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">1.</div>
+                                  <div class="flex-1 text-left">세계로병원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  광주 광산구 장신로 77 9층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="나해란 정신건강의학과" onclick="KakaoMapUtil.moveToMap('나해란 정신건강의학과')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">2.</div>
+                                  <div class="flex-1 text-left">나해란 정신건강의학과</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울 마포구 신촌로 262 2층, 나해란 정신건강의학과
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="멋진남성의원" onclick="KakaoMapUtil.moveToMap('멋진남성의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">3.</div>
+                                  <div class="flex-1 text-left">멋진남성의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울 강북구 도봉로 52 7층(미아동,와이스퀘어)
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="하이맨유로연합의원" onclick="KakaoMapUtil.moveToMap('하이맨유로연합의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">4.</div>
+                                  <div class="flex-1 text-left">하이맨유로연합의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울 동대문구 왕산로 191-1 2층(청량리동)
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="우리허브병원" onclick="KakaoMapUtil.moveToMap('우리허브병원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">5.</div>
+                                  <div class="flex-1 text-left">우리허브병원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  대구 달성군 현풍읍 테크노상업로 30 4층 401호(테크노타워 3)
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="온리아이성형외과의원" onclick="KakaoMapUtil.moveToMap('온리아이성형외과의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">6.</div>
+                                  <div class="flex-1 text-left">온리아이성형외과의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울 강남구 도산대로 121 YK타워 9층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="맨스톤 비뇨의학과 목포점" onclick="KakaoMapUtil.moveToMap('맨스톤 비뇨의학과 목포점')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">7.</div>
+                                  <div class="flex-1 text-left">맨스톤 비뇨의학과 목포점</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  전남 목포시 영산로 519, 금포빌딩 2층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="차움의원" onclick="KakaoMapUtil.moveToMap('차움의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">8.</div>
+                                  <div class="flex-1 text-left">차움의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  강남구 도산대로 442, 2층 채혈실
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="하이맨비뇨기과의원 원주점" onclick="KakaoMapUtil.moveToMap('하이맨비뇨기과의원 원주점')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">9.</div>
+                                  <div class="flex-1 text-left">하이맨비뇨기과의원 원주점</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  강원특별자치도 원주시 봉화로 12 두손빌딩 6층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="채움남성의원 순천점" onclick="KakaoMapUtil.moveToMap('채움남성의원 순천점')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">10.</div>
+                                  <div class="flex-1 text-left">채움남성의원 순천점</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  전라남도 순천시 장선배기1길 4 2층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="유로진비뇨기과의원 천안점" onclick="KakaoMapUtil.moveToMap('유로진비뇨기과의원 천안점')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">11.</div>
+                                  <div class="flex-1 text-left">유로진비뇨기과의원 천안점</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  충청남도 천안시 동남구 만남로 64 나은메디컬빌딩 2층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="강북제일내과의원" onclick="KakaoMapUtil.moveToMap('강북제일내과의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">12.</div>
+                                  <div class="flex-1 text-left">강북제일내과의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울 중랑구 동일로 952 로프트원 2층, 진단검사실
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="엠허브의원 대전점" onclick="KakaoMapUtil.moveToMap('엠허브의원 대전점')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">13.</div>
+                                  <div class="flex-1 text-left">엠허브의원 대전점</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  대전광역시 동구 동서대로 1641 엠허브메디컬센터 3~4층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="미래의료재단 삼성점" onclick="KakaoMapUtil.moveToMap('미래의료재단 삼성점')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">14.</div>
+                                  <div class="flex-1 text-left">미래의료재단 삼성점</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울시 강남구 테헤란로 87길 13 서영빌딩 12층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="아이엠씨강남의원" onclick="KakaoMapUtil.moveToMap('아이엠씨강남의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">15.</div>
+                                  <div class="flex-1 text-left">아이엠씨강남의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울 강남구 도산대로 107 SYH타워 지하1층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="닥터스영상의학과의원" onclick="KakaoMapUtil.moveToMap('닥터스영상의학과의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">16.</div>
+                                  <div class="flex-1 text-left">닥터스영상의학과의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  대구 중구 동덕로 115 진석타워 2층 닥터스영상의학과의원
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="천지인한방병원" onclick="KakaoMapUtil.moveToMap('천지인한방병원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">17.</div>
+                                  <div class="flex-1 text-left">천지인한방병원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  광주광역시 동구 학동 867-3
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="연세우의원" onclick="KakaoMapUtil.moveToMap('연세우의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">18.</div>
+                                  <div class="flex-1 text-left">연세우의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  경기도 성남시 중원구 광명로 114 보미리전빌 2층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="소중한메디케어" onclick="KakaoMapUtil.moveToMap('소중한메디케어')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">19.</div>
+                                  <div class="flex-1 text-left">소중한메디케어</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울시 금천구 디지털로9길 68 (가산동) 대륭포스트타워5차 3층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="킴스연합의원 대구점" onclick="KakaoMapUtil.moveToMap('킴스연합의원 대구점')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">20.</div>
+                                  <div class="flex-1 text-left">킴스연합의원 대구점</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  대구 달서구 송현로7길 26 2층 킴스연합의원
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="문래한마음내과의원" onclick="KakaoMapUtil.moveToMap('문래한마음내과의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">21.</div>
+                                  <div class="flex-1 text-left">문래한마음내과의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울시 영등포구 선유로 49, 미주프라자 201호
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="연세조은내과" onclick="KakaoMapUtil.moveToMap('연세조은내과')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">22.</div>
+                                  <div class="flex-1 text-left">연세조은내과</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  경기 안양시 동안구 경수대로 557 2층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="행복치과" onclick="KakaoMapUtil.moveToMap('행복치과')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">23.</div>
+                                  <div class="flex-1 text-left">행복치과</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  경기도 김포시 태장로765 금광테크노밸리 307호 오브코스컴퍼니
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="하이맨비뇨의학과의원 대전점" onclick="KakaoMapUtil.moveToMap('하이맨비뇨의학과의원 대전점')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">24.</div>
+                                  <div class="flex-1 text-left">하이맨비뇨의학과의원 대전점</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  대전 동구 동서대로 1641(용전동) 12층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="메트로안과" onclick="KakaoMapUtil.moveToMap('메트로안과')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">25.</div>
+                                  <div class="flex-1 text-left">메트로안과</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  대구광역시 중구 국채보상로 611 대구시티센터 6층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="조은탑내과의원" onclick="KakaoMapUtil.moveToMap('조은탑내과의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">26.</div>
+                                  <div class="flex-1 text-left">조은탑내과의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울 영등포구 당산로 118 5층 502호
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="홍승지소아과의원" onclick="KakaoMapUtil.moveToMap('홍승지소아과의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">27.</div>
+                                  <div class="flex-1 text-left">홍승지소아과의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  경북 경주시 용황로 69 3층 홍승지소아과의원
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="사랑의병원" onclick="KakaoMapUtil.moveToMap('사랑의병원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">28.</div>
+                                  <div class="flex-1 text-left">사랑의병원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  경기도 성남시 분당구 분당내곡로 151
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="남천병원" onclick="KakaoMapUtil.moveToMap('남천병원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">29.</div>
+                                  <div class="flex-1 text-left">남천병원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  경기 군포시 고산로 575 남천병원
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="서울메디탑내과의원" onclick="KakaoMapUtil.moveToMap('서울메디탑내과의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">30.</div>
+                                  <div class="flex-1 text-left">서울메디탑내과의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  서울 양천구 오목로 147 제이클래스 목동 3층
+                                </div>
+                              </button>
+                              <button class="hidden [&amp;.On]:block PlaceItem w-full cursor-pointer On" data-place-name="서울정형외과의원" onclick="KakaoMapUtil.moveToMap('서울정형외과의원')">
+                                <article class="CenterLeft bg-[#279FB9] text-white py-[7px]">
+                                  <div class="w-[32px]">31.</div>
+                                  <div class="flex-1 text-left">서울정형외과의원</div>
+                                </article>
+                                <div class="py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0">
+                                  인천시 서구 염곡로468 드림타워 7층
+                                </div>
+                              </button>
+                            </article>
+                          </div>
+                        </div>
+                      </article>
+                      <script>
+                        (() => {
+                          const el_sinp = document.querySelector('#PlaceSearchInp');
+                          const el_sbutton = document.querySelector('#PlaceSearchButton');
+
+                          /**
+                           * 검색 버튼 클릭
+                           */
+                          el_sbutton.addEventListener('click', (evt) => {
+                            updatePlaceList();
+                          });
+
+                          /**
+                           * 인풋에서 엔터
+                           */
+                          el_sinp.addEventListener('keyup', (evt) => {
+                            if (evt.keyCode == 13) updatePlaceList();
+                          });
+
+                          updatePlaceList();
+
+                          function updatePlaceList() {
+                            const search_value = el_sinp.value.trim();
+
+                            const el_plw = document.querySelector(`#PlaceListWrap`);
+
+                            const el_list_place_item = document.querySelectorAll(`#PlaceListWrap .PlaceItem`);
+                            el_list_place_item.forEach((el_pi, idx) => {
+                              const place_name = el_pi.attr('data-place-name');
+                              if (place_name.indexOf(search_value) > -1) {
+                                console.log(`place_name == `, place_name);
+                                el_pi.addClass('On');
+                              } else {
+                                el_pi.removeClass('On');
+                              }
+                            });
+
+                            const el_list_place_item_on = document.querySelectorAll(`#PlaceListWrap .PlaceItem.On`);
+                            const el_pleb = document.querySelector(`#PlaceListEmptyMsgBox`);
+                            if (el_list_place_item_on.length == 0) {
+                              // 검색 결과 없을때
+                              el_plw.removeClass('On');
+                              el_pleb.addClass('On');
+                            } else {
+                              // 검색 결과 있을때
+                              el_pleb.removeClass('On');
+                              el_plw.addClass('On');
+                            }
+
+                          }
+                        })()
+                      </script>
+                    </div>
+                  </article>
+                  <script src="/assets/js/kakaomap_partner.js"></script>
+                  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ddfce4b5a6c589f7cbf109cf57486914&amp;libraries=services"></script>
+                  <script charset="UTF-8" src="http://t1.daumcdn.net/mapjsapi/js/main/4.4.14/kakao.js"></script>
+                  <script charset="UTF-8" src="http://t1.daumcdn.net/mapjsapi/js/libs/services/1.0.2/services.js"></script>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="pc:hidden mt-[80px]">
+
+              <div class="relative">
+                <div id="_BaseSwiper-1c9252d4e" class="swiper _BaseSwiper">
+                  <div id="_BaseSwiper-1c9252d4e-Navigation" class="_BaseSwiper-Navigation top-1/2 -translate-y-1/2 bg-transparent">
+                    <div class="NavBtn PrevBtn ml-[20px]">
+                      <img src="/assets/icon/swiper/2309211632_1.svg" alt="">
+                    </div>
+                    <div class="NavBtn NextBtn mr-[20px]">
+                      <img src="/assets/icon/swiper/2309211632_2.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="swiper-slide" data-key="">
+                      <article class="grid grid-cols-2 gap-[10px]">
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_1.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_2.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_3.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_4.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_5.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_6.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_7.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_8.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                      </article>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide" data-key="">
+                      <article class="grid grid-cols-2 gap-[10px]">
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_9.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_10.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_11.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_12.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_13.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_14.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_15.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_16.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                      </article>
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide" data-key="">
+                      <article class="grid grid-cols-2 gap-[10px]">
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_17.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_18.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_19.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_20.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_21.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_22.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_23.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_24.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                      </article>
+                    </div>
+                    <!-- 4 -->
+                    <div class="swiper-slide" data-key="">
+                      <article class="grid grid-cols-2 gap-[10px]">
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_25.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_26.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_27.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_28.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_29.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_30.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+
+                <script>
+                  window.addEventListener('DOMContentLoaded', (evt) => {
+                    const navigation = {
+                      disabledClass: 'Disabled',
+                      hiddenClass: 'Hidden',
+                      prevEl: '#_BaseSwiper-1c9252d4e-Navigation > .PrevBtn',
+                      nextEl: '#_BaseSwiper-1c9252d4e-Navigation > .NextBtn',
+                    };
+
+                    const pagination_bullet = {
+                      el: '#_BaseSwiper-1c9252d4e-Pagenation',
+                      type: 'bullets',
+                      clickable: true,
+                      modifierClass: 'Pagenation-',
+                      bulletClass: 'Dot',
+                      bulletActiveClass: 'On',
+                      renderBullet: function(index, className) {
+                        const num = (index + 1).toString().padStart(2, '0');
+                        return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
+                      },
+                    };
+
+                    const pagination_progress = {
+                      el: '#_BaseSwiper-1c9252d4e-PagenationProgressbar',
+                      type: 'progressbar',
+                      modifierClass: 'Pagenation-',
+                      progressbarFillClass: 'FillBar',
+                      renderProgressbar: function(className) {
+                        return `<div class="${className}"></div>`;
+                      },
+                    };
+
+                    const swiper_option = {
+                      slidesPerView: 1.2, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+                      slidesPerGroup: 1,
+                      spaceBetween: 10,
+                      loop: false,
+                      navigation: navigation,
+                      pagination: pagination_bullet,
+                      pagination: pagination_progress,
+                      slidesOffsetBefore: 20,
+                      slidesOffsetAfter: 20,
+                      // autoplay: {
+                      //   delay: 1000,
+                      //   disableOnInteraction: false,
+                      // },
+                      init: false,
+                      // grabCursor: true,
+                      breakpoints: {
+                        1280: {
+                          slidesPerView: 3,
+                          spaceBetween: '1.25%',
+                          allowTouchMove: false,
+                        },
+                      }
+                    };
+
+                    const update_current_num = () => {
+                      const el_total = document.querySelector('#_BaseSwiper-1c9252d4e-PagenationFraction > .total');
+                      if (!el_total) return;
+
+                      const slides = document.querySelectorAll('#_BaseSwiper-1c9252d4e .swiper-slide');
+                      const real_length = slides.length;
+                      el_total.textContent = real_length;
+
+                      const el_current = document.querySelector('#_BaseSwiper-1c9252d4e-PagenationFraction > .current');
+                      el_current.textContent = swiper.realIndex + 1;
+                    };
+
+                    let swiper = new Swiper('#_BaseSwiper-1c9252d4e', swiper_option);
+
+                    swiper.on('init', function() {
+                      // console.log('init');
+                      update_current_num();
+                    });
+
+                    swiper.on('slideChange', function() {
+                      // console.log('slideChange');
+                      update_current_num();
+                    });
+
+                    swiper.on('slideChangeTransitionEnd', function() {
+                      // console.log('slideChangeTransitionEnd');
+                    });
+
+                    swiper.on('reachBeginning', function() {
+                      // console.log('reachBeginning');
+                    });
+
+                    swiper.on('reachEnd', function() {
+                      // console.log('reachEnd');
+                    });
+
+                    swiper.init();
+                  });
+                </script>
+              </div>
+            </div>
+            <div class="max-pc:hidden mt-[100px]">
+              <div class="px-[var(--contents-side-padding)]">
+                <article class="grid grid-cols-4 gap-[60px_5.55%]">
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_1.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_2.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_3.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_4.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_5.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_6.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_7.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_8.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_9.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_10.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_11.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_12.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_13.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_14.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_15.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_16.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_17.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_18.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_19.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_20.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_21.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_22.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_23.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_24.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_25.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_26.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_27.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_28.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_29.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_30.png" alt="">
+                    </article>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="Footer_1">
+      <div>
+        <section data-seq="20230816165525946" class="pt-[50px] pc:pt-[80px]">
+          <div class="HBox">
+            <div class="Inner">
+              <article class="pc:mr-[0.69%] pc:flex pc:items-start pc:justify-between pc:gap-0">
+                <div class="pc:pb-[104px]">
+                  <div>
+                    <img class="max-pc:w-[150px]" src="/assets/logo/logo_2.svg" alt="">
+                  </div>
+                  <div class="mt-[30px] pc:mt-[60px]">
+                    <div class="AddressBox_1">
+                      <div>상호명 : 엠허브제노플랜㈜</div>
+                      <div>대표이사 : 전병주 <span class="max-pc:hidden"> | 소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</span></div>
+                      <div class="pc:hidden">소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</div>
+                      <div>대표전화 : 1577-6370</div>
+                      <div>사업자 등록번호 : 120-88-12093</div>
+                      <div>통신판매업신고번호 : 2018-서울서초-2119</div>
+                    </div>
+                    <!--<article class='CopyrightBox_1 CenterLeft' style='margin-top:30px;'>
+                  <div>엠허브제노플랜㈜</div>
+                </article>-->
+                  </div>
+                </div>
+                <div class="max-pc:mt-[50px] max-pc:pb-[48px]">
+                  <a class="ButtonUi Style4 gap-[2px] min-w-[162px] pc:min-w-[190px] h-[40px] pc:h-[48px] text-[12px] pc:text-[16px] font-[600]" href="https://www.google.com" target="_blank">
+                    체질 30종 코드입력
+                    <img src="/assets/icon/2309261058.svg" alt="">
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

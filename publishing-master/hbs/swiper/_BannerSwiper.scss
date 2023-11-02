@@ -1,0 +1,85 @@
+._BannerSwiper {
+  position: relative;
+  width: 360px;
+}
+._BannerSwiper-Navigation {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  aspect-ratio: 360/200;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 255, 0, 0.3);
+  .NavBtn {
+    cursor: pointer;
+    pointer-events: auto;
+    &:hover {
+      //background-color: rgba(255, 0, 0, 0.3);
+    }
+    &.Disabled {
+      pointer-events: none;
+      opacity: 0.2;
+      cursor: default;
+    }
+  }
+}
+._BannerSwiper-Pagenation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .Dot {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    cursor: pointer;
+    width: 22px;
+    aspect-ratio: 1/1;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: hidden;
+    .Circle {
+      width: 10px;
+      aspect-ratio: 1/1;
+      background-color: black;
+      border-radius: 100%;
+    }
+  }
+  .Dot.On .Circle {
+    background-color: red;
+  }
+}
+._BannerSwiper-PagenationFraction {
+  font-family: Montserrat;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 600;
+  z-index: 10;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  .current {
+    color: white;
+  }
+  .bar {
+    color: red;
+  }
+  .total {
+    color: yellow;
+  }
+}

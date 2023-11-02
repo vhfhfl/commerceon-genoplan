@@ -1,0 +1,10 @@
+{{#DV}}
+  {{DF 'btns' '🍎|🍍|🥝'}}
+{{/DV}}
+<article class='CenterCenter gap-[10px] pc:gap-[20px] py-[10px] px-[var(--contents-side-padding)] bg-white'>
+  {{#EACH (ARR btns)}}
+    <button class='{{ON ../this.active}} CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&.On]:text-[#279fb9] [&.On]:border-[#279fb9]'>
+      {{obj}}
+    </button>
+  {{/EACH}}
+</article>

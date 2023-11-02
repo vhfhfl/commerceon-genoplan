@@ -1,0 +1,32 @@
+  <div class='pc:my-[180px] pc:mx-[4.16%] overflow-x-auto'>
+    <article class='flex items-start gap-[50px] pc:gap-[8.33%]'>
+      {{JSON 'array' '/assets/json/2309211538.json'}}
+      {{#EACH array}}
+        <div class='w-full'>
+          <div class='text-[#161616] text-[36px] pc:text-[60px] font-[700]'>
+            {{{obj.title}}}
+          </div>
+          <div class='mt-[20px] pc:mt-[40px]'>
+            <article class='pc:flex pc:items-start pc:justify-between pc:gap-0'>
+              <div class='flex-auto'>
+                <div>
+                  <img class='pc:hidden aspect-[320/360] w-full' src='{{obj.img}}' alt='' />
+                  <img class='max-pc:hidden aspect-[800/440]' src='{{obj.img_pc}}' alt='' />
+                </div>
+              </div>
+              <div class='flex-auto mt-[40px] pc:mt-[20px] pc:ml-[5.83%] pc:pb-[54px] h-[196px] pc:h-auto border-b-[4px] border-solid border-[#161616]'>
+                <div class='text-[#161616] text-[16px] pc:text-[22px] font-[400]'>
+                  {{obj.desc}}
+                </div>
+                <div class='mt-[30px] pc:mt-[54px]'>
+                  <div class='text-[#161616] text-[22px] pc:text-[36px] font-[600] leading-[28px] pc:leading-[44px] break-keep'>
+                    {{{obj.text}}}
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      {{/EACH}}
+    </article>
+  </div>

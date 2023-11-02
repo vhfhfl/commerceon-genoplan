@@ -1,0 +1,12 @@
+{
+  "GEO_DATA": [
+    {
+      "PLACE_NAME":"엠허브제노플랜",
+      "OVERLAY_LINK": "https://www.google.com",
+      "OVERLAY_IMG":"/assets/image/2310040936.png",
+      "ADDRESS_NAME":"서울특별시 서초구 강남대로465 교보타워 B동 21층",
+      "위도":37.503824,
+      "경도":127.024068
+    }
+  ]
+}

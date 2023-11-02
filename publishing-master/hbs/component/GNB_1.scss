@@ -1,0 +1,26 @@
+.GNB_1 {
+  pointer-events:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+
+  > ul {
+    > li {
+      > a {
+        display: block;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 14px;
+        &:hover {
+          color: #28d5e0;
+        }
+      }
+    }
+
+    > li + li {
+      margin-top: 26px;
+    }
+  }
+}

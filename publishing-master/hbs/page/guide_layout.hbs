@@ -1,0 +1,32 @@
+<div id='page'>
+  <main>
+    {{!--prettier-ignore--}}
+    <style>
+      html{
+        background-color:#ffffd4;
+      }
+      main > section{
+        position:relative;
+        margin-top:50px;
+        margin-bottom:50px;
+      }
+      main > section > *{
+        position:relative;
+      }
+      main section .FixedShell{
+        position:relative !important;
+      }
+    </style>
+    <div class='H1'>Header Guide</div>
+    <br/>
+    {{#EACH window.HBS_DATA.layout}}
+      <section>
+        <div class='H3'>
+          <input style='display:inline-block; width:100%; outline:none; border:none;' readonly type='text' value='{{obj.path}}' onclick='this.select();'/>
+        </div>
+        <br/>
+        <script>Include('/{{obj.path}}');</script>
+      </section>
+    {{/EACH}}
+  </main>
+</div>

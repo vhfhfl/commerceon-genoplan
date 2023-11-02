@@ -1,0 +1,48 @@
+<div id='page'>
+  <main>
+    {{!--prettier-ignore--}}
+    <style>
+      .Table_2{ table-layout:fixed; border-collapse:collapse; width:100%; }
+      .Table_2 th{ text-align:center; background-color:#279fb9; color:white; padding:10px; }
+      .Table_2 td{ text-align:center; border:1px solid #ddd; padding:10px; }
+    </style>
+    <section>
+      {{#EACH window.REPORT_DATA}}
+        <div class='mb-[100px]'>
+          <article class='CenterLeft'>
+            <span class='text-[red]'>{{obj.title_1}}</span><img src='https://gifpng.com/24x24/ffd4d4/ff4444'/><span>{{obj.title_2}}</span>
+          </article>
+          <article class='CenterBetween gap-[20px] items-start'>
+            {{#EACH obj.table}}
+              <div class='flex-1'>
+                <table class='Table_2'>
+                  <thead>
+                  <tr>
+                    {{#EACH obj.cols}}
+                      <th>{{{obj}}}</th>
+                    {{/EACH}}
+                  </tr>
+                  </thead>
+                  <tbody>
+                  {{#EACH obj.rows}}
+                    <tr>
+                      <td>{{obj.[0]}}</td>
+                      <td>{{{obj.[1]}}}</td>
+                      <td>
+                        <article class='CenterCenter'>
+                          <div>{{obj.[2]}}</div>
+                          <img src='{{obj.[3]}}' alt=''/>
+                        </article>
+                      </td>
+                    </tr>
+                  {{/EACH}}
+                  </tbody>
+                </table>
+              </div>
+            {{/EACH}}
+          </article>
+        </div>
+      {{/EACH}}
+    </section>
+  </main>
+</div>

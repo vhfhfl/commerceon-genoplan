@@ -1,0 +1,37 @@
+.Btn_2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #303030;
+  background-color: white;
+  color: #303030;
+  font-weight: 600;
+  /**/
+  gap: 0px;
+  padding: 0 10px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 12px;
+  
+  &:hover {
+    border-color: #303030;
+    background-color: #ebebeb;
+  }
+  &:focus {
+    border-color: #303030;
+    background-color: #ebebeb;
+  }
+  &:active {
+    border-color: #303030;
+    background-color: #ebebeb;
+  }
+  
+  /* 1280px 이상 화면*/
+  @media screen and (min-width: 1280px) {
+    gap: 2px;
+    padding: 0 16px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

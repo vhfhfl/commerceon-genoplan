@@ -1,0 +1,221 @@
+{
+  "GEO_DATA":[
+    {
+      "PLACE_NAME":"세계로병원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"광주 광산구 장신로 77 9층",
+      "위도":35.191275,
+      "경도":126.818561
+    },
+    {
+      "PLACE_NAME":"나해란 정신건강의학과",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울 마포구 신촌로 262 2층, 나해란 정신건강의학과",
+      "위도":37.557125,
+      "경도":126.954769
+    },
+    {
+      "PLACE_NAME":"멋진남성의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울 강북구 도봉로 52 7층(미아동,와이스퀘어)",
+      "위도":37.613669,
+      "경도":127.030445
+    },
+    {
+      "PLACE_NAME":"하이맨유로연합의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울 동대문구 왕산로 191-1 2층(청량리동)",
+      "위도":37.580215,
+      "경도":127.044427
+    },
+    {
+      "PLACE_NAME":"우리허브병원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"대구 달성군 현풍읍 테크노상업로 30 4층 401호(테크노타워 3)",
+      "위도":35.691724,
+      "경도":128.452408
+    },
+    {
+      "PLACE_NAME":"온리아이성형외과의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울 강남구 도산대로 121 YK타워 9층",
+      "위도":37.517393,
+      "경도":127.021755
+    },
+    {
+      "PLACE_NAME":"맨스톤 비뇨의학과 목포점",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"전남 목포시 영산로 519, 금포빌딩 2층",
+      "위도":34.812037,
+      "경도":126.417864
+    },
+    {
+      "PLACE_NAME":"차움의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"강남구 도산대로 442, 2층 채혈실",
+      "위도":37.523258,
+      "경도":127.043981
+    },
+    {
+      "PLACE_NAME":"하이맨비뇨기과의원 원주점",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"강원특별자치도 원주시 봉화로 12 두손빌딩 6층",
+      "위도":37.346819,
+      "경도":127.926748
+    },
+    {
+      "PLACE_NAME":"채움남성의원 순천점",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"전라남도 순천시 장선배기1길 4 2층",
+      "위도":34.953049,
+      "경도":127.522683
+    },
+    {
+      "PLACE_NAME":"유로진비뇨기과의원 천안점",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"충청남도 천안시 동남구 만남로 64 나은메디컬빌딩 2층",
+      "위도":36.819067,
+      "경도":127.159442
+    },
+    {
+      "PLACE_NAME":"강북제일내과의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울 중랑구 동일로 952 로프트원 2층, 진단검사실",
+      "위도":37.615351,
+      "경도":127.076648
+    },
+    {
+      "PLACE_NAME":"엠허브의원 대전점",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"대전광역시 동구 동서대로 1641 엠허브메디컬센터 3~4층",
+      "위도":36.347994,
+      "경도":127.432573
+    },
+    {
+      "PLACE_NAME":"미래의료재단 삼성점",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울시 강남구 테헤란로 87길 13 서영빌딩 12층",
+      "위도":37.508628,
+      "경도":127.058624
+    },
+    {
+      "PLACE_NAME":"아이엠씨강남의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울 강남구 도산대로 107 SYH타워 지하1층",
+      "위도":37.516751,
+      "경도":127.020077
+    },
+    {
+      "PLACE_NAME":"닥터스영상의학과의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"대구 중구 동덕로 115 진석타워 2층 닥터스영상의학과의원",
+      "위도":35.865082,
+      "경도":128.602700
+    },
+    {
+      "PLACE_NAME":"천지인한방병원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"광주광역시 동구 학동 867-3",
+      "위도":35.131136,
+      "경도":126.928767
+    },
+    {
+      "PLACE_NAME":"연세우의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"경기도 성남시 중원구 광명로 114 보미리전빌 2층",
+      "위도":37.436021,
+      "경도":127.141341
+    },
+    {
+      "PLACE_NAME":"소중한메디케어",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울시 금천구 디지털로9길 68 (가산동) 대륭포스트타워5차 3층",
+      "위도":37.480987,
+      "경도":126.886367
+    },
+    {
+      "PLACE_NAME":"킴스연합의원 대구점",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"대구 달서구 송현로7길 26 2층 킴스연합의원",
+      "위도":35.820444,
+      "경도":128.546300
+    },
+    {
+      "PLACE_NAME":"문래한마음내과의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울시 영등포구 선유로 49, 미주프라자 201호",
+      "위도":37.518218,
+      "경도":126.888757
+    },
+    {
+      "PLACE_NAME":"연세조은내과",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"경기 안양시 동안구 경수대로 557 2층",
+      "위도":37.372437,
+      "경도":126.957330
+    },
+    {
+      "PLACE_NAME":"행복치과",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"경기도 김포시 태장로765 금광테크노밸리 307호 오브코스컴퍼니",
+      "위도":37.639670,
+      "경도":126.681918
+    },
+    {
+      "PLACE_NAME":"하이맨비뇨의학과의원 대전점",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"대전 동구 동서대로 1641(용전동) 12층",
+      "위도":36.348023,
+      "경도":127.432555
+    },
+    {
+      "PLACE_NAME":"메트로안과",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"대구광역시 중구 국채보상로 611 대구시티센터 6층",
+      "위도":35.87087,
+      "경도":128.59821
+    },
+    {
+      "PLACE_NAME":"조은탑내과의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울 영등포구 당산로 118 5층 502호",
+      "위도":37.525081,
+      "경도":126.897123
+    },
+    {
+      "PLACE_NAME":"홍승지소아과의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"경북 경주시 용황로 69 3층 홍승지소아과의원",
+      "위도":35.883321,
+      "경도":129.225518
+    },
+    {
+      "PLACE_NAME":"사랑의병원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"경기도 성남시 분당구 분당내곡로 151",
+      "위도":37.39736,
+      "경도":127.11252
+    },
+    {
+      "PLACE_NAME":"남천병원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"경기 군포시 고산로 575 남천병원",
+      "위도":37.364688,
+      "경도":126.926009
+    },
+    {
+      "PLACE_NAME":"서울메디탑내과의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"서울 양천구 오목로 147 제이클래스 목동 3층",
+      "위도":37.523897,
+      "경도":126.858426
+    },
+    {
+      "PLACE_NAME":"서울정형외과의원",
+      "OVERLAY_LINK":"https://www.google.com",
+      "ADDRESS_NAME":"인천시 서구 염곡로468 드림타워 7층",
+      "위도":37.526463,
+      "경도":126.669778
+    }
+  ]
+}

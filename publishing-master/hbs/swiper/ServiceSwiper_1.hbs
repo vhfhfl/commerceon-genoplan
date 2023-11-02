@@ -1,0 +1,144 @@
+{{NULL_CHECK 'id' 'hbs/swiper/ServiceSwiper_1.hbs'}}
+<div class='relative'>
+  <div id='ServiceSwiper-{{id}}' class='swiper ServiceSwiper'>
+    <div class='swiper-wrapper'>
+      <!-- 1 -->
+      <div class='swiper-slide' data-key='{{index}}' data-aos='fade-up' data-aos-duration='500'>
+        <div>
+          <img style='display:block; width:100%; aspect-ratio:450/400;' src='/assets/image/2309131337_1.jpg' alt=''/>
+        </div>
+        <div class="pt-[20px] pc:pt-[30px] pr-[11px] pc:pr-[22px] pb-[24px] pc:pb-[42px] min-h-[181px] pc:min-h-[272px] border-b-[1px] border-solid border-b-[#ebebeb]">
+          <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]'>목적</div>
+          <div class='mt-[16px] pc:mt-[20px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep'>
+            이 테스트는 여러 유전적 변이를 결합하여 개인의 질병 위험을 평가합니다.
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class='swiper-slide' data-key='{{index}}' data-aos='fade-up' data-aos-duration='500' data-aos-delay='200'>
+        <div>
+          <img style='display:block; width:100%; aspect-ratio:450/400;' src='/assets/image/2309131337_2.jpg' alt=''/>
+        </div>
+        <div class="pt-[20px] pc:pt-[30px] pr-[11px] pc:pr-[22px] pb-[24px] pc:pb-[42px] min-h-[181px] pc:min-h-[272px] border-b-[1px] border-solid border-b-[#ebebeb]">
+          <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]'>응용 프로그램</div>
+          <div class='mt-[16px] pc:mt-[20px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep'>
+            이는 개인의 유전적 소인성을 특정 질병에 대해
+            예측하고 특정 건강 상태에 대한 민감도를 이해하는 데
+            사용됩니다.
+            이를 통해 개인의 유전적 특성을 고려한 질병 예방,
+            치료 또는 관리에 맞춤형 접근 방식이 가능해집니다.
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class='swiper-slide' data-key='{{index}}' data-aos='fade-up' data-aos-duration='500' data-aos-delay='400'>
+        <div>
+          <img style='display:block; width:100%; aspect-ratio:450/400;' src='/assets/image/2309131337_3.jpg' alt=''/>
+        </div>
+        <div class="pt-[20px] pc:pt-[30px] pr-[11px] pc:pr-[22px] pb-[24px] pc:pb-[42px] min-h-[181px] pc:min-h-[272px] border-b-[1px] border-solid border-b-[#ebebeb]">
+          <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]'>어떤 조치를 취할 수 있을까요?</div>
+          <div class='mt-[16px] pc:mt-[20px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep'>
+            PRS 검사 결과를 받은 개인들은 자신의 개별 관리
+            목적에 기반한 다양한 맞춤형 건강관리 솔루션을
+            추구할 수 있습니다.
+          </div>
+          <div class='mt-[16px] space-y-[4px] pc:space-y-[6px] text-[14px] font-[400] leading-[24px]'>
+            <article class='flex items-start gap-0'>
+              <div>
+                <img src='/assets/icon/2309131349.svg' alt=''/>
+              </div>
+              <div class='ml-[2px] flex-1 break-keep'>개인 맞춤형 질병 예방</div>
+            </article>
+            <article class='flex items-start gap-0'>
+              <div>
+                <img src='/assets/icon/2309131349.svg' alt=''/>
+              </div>
+              <div class='ml-[2px] flex-1 break-keep'>질병 검출과 조기 개입</div>
+            </article>
+            <article class='flex items-start gap-0'>
+              <div>
+                <img src='/assets/icon/2309131349.svg' alt=''/>
+              </div>
+              <div class='ml-[2px] flex-1 break-keep'>개인 맞춤형 의료 서비스</div>
+            </article>
+            <article class='flex items-start gap-0'>
+              <div>
+                <img src='/assets/icon/2309131349.svg' alt=''/>
+              </div>
+              <div class='ml-[2px] flex-1 break-keep'>개인의 유전적 특성에 기반한 생활 관리</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!--prettier-ignore--}}
+  <script>
+    window.addEventListener('DOMContentLoaded', (evt) => {
+      const pagination_bullet = {
+        el: '#ServiceSwiper-{{id}}-Pagenation',
+        type: 'bullets',
+        clickable: true,
+        modifierClass: 'Pagenation-',
+        bulletClass: 'Dot',
+        bulletActiveClass: 'On',
+        renderBullet: function (index, className) {
+          const num = (index + 1).toString().padStart(2, '0');
+          return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
+        },
+      };
+
+      const swiper_option = {
+        slidesPerView: 1.2, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+        slidesPerGroup: 1,
+        spaceBetween: 10,
+        loop: false,
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 20,
+        // navigation: navigation,
+        // pagination: pagination_bullet,
+        // pagination: pagination_progress,
+        // autoplay: {
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // },
+        init: false,
+        // grabCursor: true,
+        breakpoints: {
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: '3.12%',
+            allowTouchMove: false,
+            slidesOffsetBefore: 0,
+            slidesOffsetAfter: 0,
+          },
+        }
+      };
+      
+      let swiper = new Swiper('#ServiceSwiper-{{id}}', swiper_option);
+
+      swiper.on('init', function () {
+        // console.log('init');
+      });
+
+      swiper.on('slideChange', function () {
+        // console.log('slideChange');
+      });
+
+      swiper.on('slideChangeTransitionEnd', function () {
+        // console.log('slideChangeTransitionEnd');
+      });
+
+      swiper.on('reachBeginning', function () {
+        // console.log('reachBeginning');
+      });
+
+      swiper.on('reachEnd', function () {
+        // console.log('reachEnd');
+      });
+      
+      swiper.init();
+    });
+  </script>
+</div>

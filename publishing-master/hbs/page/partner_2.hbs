@@ -1,0 +1,160 @@
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <script>Include('/hbs/module/2309201608.hbs');</script>
+  <main>
+    <script>Include('/hbs/component/SubPageTitle_1-a.hbs', {txt1: 'PARTNER'});</script>
+    <div class='mt-[40px] pc:mt-[80px]'>
+      <div class='pt-[40px] pc:pt-[80px] pb-[112px] pc:pb-[209px] bg-[#F6F6F6]'>
+        <section>
+          <div class='HBox'>
+            <div class='Inner'>
+              <div class='text-[#161616] text-[22px] pc:text-[40px] font-[600] text-center'>
+                병/의원 파트너
+              </div>
+              <div class='mt-[40px] pc:mt-[100px]'>
+                <article class='CenterBetween max-pc:flex-col' style='align-items:stretch;'>
+                  <div class='max-pc:order-2 max-pc:mt-[40px] pc:flex-1'>
+                    <div class='KakaoMapBox border-[1px] border-solid border-[#E1E1E1] max-pc:h-[320px]'>
+                      <div id='KakaoMap' style='width:100%; height:100%;'></div>
+                    </div>
+                  </div>
+                  <div class='pc:w-[394px] pc:ml-[26px] pc:border-[1px] pc:border-solid pc:border-[#E1E1E1]'>
+                    <article class='pc:h-[600px] pc:px-[24px] pc:pt-[37px] pc:pb-[37px] pc:bg-white'>
+                      <div>
+                        <div class='text-[#303030] text-[16px] font-[600]'>
+                          병/의원 검색
+                        </div>
+                        <div class='mt-[12px]'>
+                          <div class='InputUi Style1 w-full h-[48px] text-[14px] font-[500]'>
+                            <input id='PlaceSearchInp' type='text' class='TargetInp w-full' placeholder='병/의원을 검색하세요.' />
+                            <img onerror='initInputUi(this);' src='' />
+                            <button class='DelBtn invisible [&.On]:visible !w-[30px]'>
+                              <img src='/assets/icon/2310131541.svg' alt='' />
+                            </button>
+                            <img onerror='initSearchInp(this);' src='' alt='' />
+                            <button id='PlaceSearchButton' class='!w-[30px] cursor-pointer'>
+                              <img src='/assets/icon/2310131054.svg' alt='' />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='mt-[28px]'>
+                        <div class='text-[#303030] text-[16px] font-[600] mb-[16px]'>
+                          병/의원 리스트
+                        </div>
+                        <div id='PlaceListEmptyMsgBox' class="hidden [&.On]:block ">
+                          <article class='pc:mt-[76px] max-pc:py-[48px] CenterCenter flex-col'>
+                            <div>
+                              <img src='/assets/icon/2310131141.svg' alt='' />
+                            </div>
+                            <div class='mt-[28px] text-[#A6A6A6] text-[14px] font-[500]'>
+                              검색된 병/의원 파트너가 없습니다.
+                            </div>
+                          </article>
+                        </div>
+                        <div id='PlaceListWrap' class='On hidden [&.On]:block max-h-[390px] overflow-y-scroll'>
+                          <article class='flex flex-col gap-[10px]'>
+                            {{JSON 'LOCATION_DATA' '/assets/json/kakaomap_location_partner.json'}}
+                            {{#EACH LOCATION_DATA.GEO_DATA}}
+                              <button class='hidden [&.On]:block PlaceItem w-full cursor-pointer' data-place-name='{{obj.PLACE_NAME}}' onclick="KakaoMapUtil.moveToMap('{{obj.PLACE_NAME}}')">
+                                <article class='CenterLeft bg-[#279FB9] text-white py-[7px]'>
+                                  <div class='w-[32px]'>{{number}}.</div>
+                                  <div class='flex-1 text-left'>{{obj.PLACE_NAME}}</div>
+                                </article>
+                                <div class='py-[6px] pl-[32px] pr-[20px] text-[#303030] text-[12px] font-[400] leading-[18px] text-left bg-white border-[1px] border-solid border-[#E1E1E1] border-t-0'>
+                                  {{{obj.ADDRESS_NAME}}}
+                                </div>
+                              </button>
+                            {{/EACH}}
+                          </article>
+                        </div>
+                      </div>
+                    </article>
+                    {{!-- prettier-ignore --}}
+                    <script>
+                      (() => {
+                        const el_sinp = document.querySelector('#PlaceSearchInp');
+                        const el_sbutton = document.querySelector('#PlaceSearchButton');
+
+                        /**
+                         * 검색 버튼 클릭
+                         */
+                        el_sbutton.addEventListener('click', (evt) => {
+                          updatePlaceList();
+                        });
+
+                        /**
+                         * 인풋에서 엔터
+                         */
+                        el_sinp.addEventListener('keyup', (evt) => {
+                          if (evt.keyCode == 13) updatePlaceList();
+                        });
+
+                        updatePlaceList();
+
+                        function updatePlaceList() {
+                          const search_value = el_sinp.value.trim();
+
+                          const el_plw = document.querySelector(`#PlaceListWrap`);
+
+                          const el_list_place_item = document.querySelectorAll(`#PlaceListWrap .PlaceItem`);
+                          el_list_place_item.forEach((el_pi, idx) => {
+                            const place_name = el_pi.attr('data-place-name');
+                            if (place_name.indexOf(search_value) > -1) {
+                              console.log(`place_name == `, place_name);
+                              el_pi.addClass('On');
+                            } else {
+                              el_pi.removeClass('On');
+                            }
+                          });
+
+                          const el_list_place_item_on = document.querySelectorAll(`#PlaceListWrap .PlaceItem.On`);
+                          const el_pleb = document.querySelector(`#PlaceListEmptyMsgBox`);
+                          if (el_list_place_item_on.length == 0) {
+                            // 검색 결과 없을때
+                            el_plw.removeClass('On');
+                            el_pleb.addClass('On');
+                          } else {
+                            // 검색 결과 있을때
+                            el_pleb.removeClass('On');
+                            el_plw.addClass('On');
+                          }
+
+                        }
+                      })()
+                    </script>
+                  </div>
+                </article>
+                <script src='/assets/js/kakaomap_partner.js'></script>
+                <script src='//dapi.kakao.com/v2/maps/sdk.js?appkey=ddfce4b5a6c589f7cbf109cf57486914&libraries=services'></script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class='pc:hidden mt-[80px]'>
+            <script>Include('/hbs/swiper/PartnerSwiper_1.hbs', {id: `1c9252d4e`});</script>
+          </div>
+          <div class='max-pc:hidden mt-[100px]'>
+            <div class='px-[var(--contents-side-padding)]'>
+              <article class='grid grid-cols-4 gap-[60px_5.55%]'>
+                {{#LOOP 30}}
+                  <div class='bg-white p-[10px_13.33%]'>
+                    <article class='CenterCenter'>
+                      <img class='aspect-[220/160]' src='/assets/image/2309261615_{{number}}.png' alt='' />
+                    </article>
+                  </div>
+                {{/LOOP}}
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

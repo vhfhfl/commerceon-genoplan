@@ -1,0 +1,152 @@
+{{NULL_CHECK 'id' 'hbs/swiper/ServiceSwiper_2.hbs'}}
+<div class='relative'>
+  <div id='ServiceSwiper-{{id}}' class='swiper ServiceSwiper'>
+    <div class='swiper-wrapper'>
+      <!-- 1 -->
+      <div class='swiper-slide' data-key='{{index}}' data-aos='fade-up' data-aos-duration='500'>
+        <div>
+          <img style='display:block; width:100%; aspect-ratio:450/400;' src='/assets/image/2309181628_1.jpg' alt=''/>
+        </div>
+        <div class="pt-[20px] pc:pt-[30px] pr-[11px] pc:pr-[22px] pb-[24px] pc:pb-[42px] min-h-[181px] pc:min-h-[272px] border-b-[1px] border-solid border-b-[#ebebeb]">
+          <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]'>목적</div>
+          <div class='mt-[16px] pc:mt-[20px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep'>
+            임신 전에 부모가 자신의 자손에게 전달할 수 있는
+            열성 유전질환을 식별하기 위해 이 테스트가 실시됩니다.
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class='swiper-slide' data-key='{{index}}' data-aos='fade-up' data-aos-duration='500' data-aos-delay='200'>
+        <div>
+          <img style='display:block; width:100%; aspect-ratio:450/400;' src='/assets/image/2309181628_2.jpg' alt=''/>
+        </div>
+        <div class="pt-[20px] pc:pt-[30px] pr-[11px] pc:pr-[22px] pb-[24px] pc:pb-[42px] min-h-[181px] pc:min-h-[272px] border-b-[1px] border-solid border-b-[#ebebeb]">
+          <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]'>응용 프로그램</div>
+          <div class='mt-[16px] pc:mt-[20px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep'>
+            부모님이 임신 전에 자녀에게 특정 열성 유전질환을
+            전달할 가능성을 미리 알고 싶을 때 사용됩니다.
+            이 스크리닝을 통해 부모님은 자녀에게 특정 유전병을
+            전달할 가능성을 사전에 예측하고,
+            그들의 미래 치료와 관리에 적절한 계획을 세울 수
+            있습니다.
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class='swiper-slide' data-key='{{index}}' data-aos='fade-up' data-aos-duration='500' data-aos-delay='400'>
+        <div>
+          <img style='display:block; width:100%; aspect-ratio:450/400;' src='/assets/image/2309181628_3.jpg' alt=''/>
+        </div>
+        <div class="pt-[20px] pc:pt-[30px] pr-[11px] pc:pr-[22px] pb-[24px] pc:pb-[42px] min-h-[181px] pc:min-h-[272px] border-b-[1px] border-solid border-b-[#ebebeb]">
+          <div class='text-[#161616] text-[18px] pc:text-[22px] font-[600]'>어떤 조치를 취할 수 있을까요?</div>
+          <div class='mt-[16px] pc:mt-[20px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep'>
+            만약 검사 결과가 유전적 장애를 가진 아이를 낳을
+            위험을 나타낸다면, 부모가 되기 위한 여정의
+            단계에 따라 여전히 생식 선택지가 있습니다.
+          </div>
+          <div class='mt-[16px] space-y-[4px] pc:space-y-[6px] text-[14px] font-[400] leading-[24px]'>
+            <article class='flex items-start gap-0'>
+              <div>
+                <img src='/assets/icon/2309131349.svg' alt=''/>
+              </div>
+              <div class='ml-[2px] flex-1 break-keep'>가족 계획과 임신을 변경 없이 계속하기</div>
+            </article>
+            <article class='flex items-start gap-0'>
+              <div>
+                <img src='/assets/icon/2309131349.svg' alt=''/>
+              </div>
+              <div class='ml-[2px] flex-1 break-keep'>체외수정 (IVF) 및 배아 이식 전 유전자 검사(PGT)</div>
+            </article>
+            <article class='flex items-start gap-0'>
+              <div>
+                <img src='/assets/icon/2309131349.svg' alt=''/>
+              </div>
+              <div class='ml-[2px] flex-1 break-keep'>임신 중 비침습적 태아 검사</div>
+            </article>
+            <article class='flex items-start gap-0'>
+              <div>
+                <img src='/assets/icon/2309131349.svg' alt=''/>
+              </div>
+              <div class='ml-[2px] flex-1 break-keep'>난자,정자 또는 배아 기증을 통한 임신</div>
+            </article>
+            <article class='flex items-start gap-0'>
+              <div>
+                <img src='/assets/icon/2309131349.svg' alt=''/>
+              </div>
+              <div class='ml-[2px] flex-1 break-keep'>입양</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!--prettier-ignore--}}
+  <script>
+    window.addEventListener('DOMContentLoaded', (evt) => {
+      const pagination_bullet = {
+        el: '#ServiceSwiper-{{id}}-Pagenation',
+        type: 'bullets',
+        clickable: true,
+        modifierClass: 'Pagenation-',
+        bulletClass: 'Dot',
+        bulletActiveClass: 'On',
+        renderBullet: function (index, className) {
+          const num = (index + 1).toString().padStart(2, '0');
+          return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
+        },
+      };
+
+      const swiper_option = {
+        slidesPerView: 1.2, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+        slidesPerGroup: 1,
+        spaceBetween: 10,
+        loop: false,
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 20,
+        // navigation: navigation,
+        // pagination: pagination_bullet,
+        // pagination: pagination_progress,
+        // autoplay: {
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // },
+        init: false,
+        // grabCursor: true,
+        breakpoints: {
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: '3.12%',
+            allowTouchMove: false,
+            slidesOffsetBefore: 0,
+            slidesOffsetAfter: 0,
+          },
+        }
+      };
+
+      let swiper = new Swiper('#ServiceSwiper-{{id}}', swiper_option);
+
+      swiper.on('init', function () {
+        // console.log('init');
+      });
+
+      swiper.on('slideChange', function () {
+        // console.log('slideChange');
+      });
+
+      swiper.on('slideChangeTransitionEnd', function () {
+        // console.log('slideChangeTransitionEnd');
+      });
+
+      swiper.on('reachBeginning', function () {
+        // console.log('reachBeginning');
+      });
+
+      swiper.on('reachEnd', function () {
+        // console.log('reachEnd');
+      });
+
+      swiper.init();
+    });
+  </script>
+</div>

@@ -1,0 +1,16 @@
+.DungDung_1 {
+  @keyframes UpAndDown {
+    0%,
+    100% {
+      transform: translate(0%, 0%);
+      animation-timing-function: ease-out;
+    }
+    50% {
+      transform: translate(0%, 20px);
+      animation-timing-function: ease-in;
+    }
+  }
+  > * {
+    animation: UpAndDown 1000ms infinite;
+  }
+}

@@ -1,0 +1,41 @@
+<div id='page'>
+  <main>
+    {{!--prettier-ignore--}}
+    <style>
+      html{ background-color:#ffffd4; }
+      main section{
+        margin-top:50px;
+        margin-bottom:50px;
+        position:relative;
+      }
+      .MakerInfo{
+        padding:5px;
+        width:auto;
+      }
+    </style>
+    <section data-seq='20230811162949291'>
+      <div class='H1'>카카오맵</div>
+    </section>
+    <section data-seq='20230811170157698'>
+      <div class='H2'>API</div>
+      <br />
+      <article class='CenterBetween' style='align-items:stretch; border:1px solid #333; aspect-ratio:16/9;'>
+        <div style='width:200px; border-right:1px solid #333;'>
+          <div style='height:100%; background-color:white; padding:10px;'>
+            {{JSON 'LOCATION_DATA' '/assets/json/kakaomap_location.json'}}
+            {{#EACH LOCATION_DATA.GEO_DATA}}
+              <button style='margin-bottom:10px;' class='ButtonUi Style1 w-full' data-form-hei='Md' onclick="KakaoMapUtil.moveToMap('{{obj.PLACE_NAME}}')">{{obj.PLACE_NAME}}</button>
+            {{/EACH}}
+          </div>
+        </div>
+        <div style='flex:1;'>
+          <div class='KakaoMapBox'>
+            <div id='KakaoMap' style='width:100%; height:100%;'></div>
+          </div>
+        </div>
+      </article>
+      <script src='/assets/js/kakaomap.js'></script>
+      <script src='//dapi.kakao.com/v2/maps/sdk.js?appkey=ddfce4b5a6c589f7cbf109cf57486914&libraries=services'></script>
+    </section>
+  </main>
+</div>

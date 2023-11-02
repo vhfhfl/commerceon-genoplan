@@ -1,0 +1,66 @@
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <script>Include('/hbs/module/2309261159.hbs');</script>
+  <main >
+    <section class='Sticky_1'>
+      <script>Include('/hbs/component/TabBar_1-a.hbs', {btns:'PR|특허 / 인증현황|수상내역', active:2});</script>
+    </section>
+    <script>Include('/hbs/component/SubPageTitle_1-a.hbs', {txt1:'수상내역'});</script>
+    <section class='mt-[40px] pc:mt-[100px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <article class='max-pc:space-y-[40px] pc:grid pc:grid-cols-3 pc:gap-[120px_6.25%]'>
+            {{#LOOP 6}}
+              <div>
+                <div class='text-[#279FB9] text-[18px] pc:text-[22px] font-[600]'>
+                  2023 유전자분야 대상
+                </div>
+                <div class='mt-[14px] pc:mt-[20px] border-t-[1px] border-solid border-[#E1E1E1]'>
+                  <div class='mt-[14px] pc:mt-[20px]'>
+                    <div class='p-[44px] pc:p-[60px] bg-[#F6F6F6]' data-aos='fade-up' data-aos-duration='500'>
+                      <img class='pc:hidden aspect-[232/312] w-full' src='https://gifpng.com/232x312' alt='' />
+                      <img class='max-pc:hidden aspect-[300/420] w-full' src='https://gifpng.com/300x420' alt='' />
+                    </div>
+                    <div class='mt-[14px] pc:mt-[20px]'>
+                      <article class='CenterBetween'>
+                        <div class='flex-1'>
+                          <div class='text-[#161616] text-[16px] pc:text-[18px] font-[600] line-clamp-1'>
+                            000 기관
+                          </div>
+                        </div>
+                        <div class='ml-[10px] pc:ml-[20px]'>
+                          <a href='https://www.google.com' target='_blank'>
+                            <img src='/assets/icon/2309261206.svg' alt='' />
+                          </a>
+                        </div>
+                      </article>
+                      <div class='mt-[14px] pc:mt-[20px]'>
+                        <div class='text-[#161616] text-[14px] pc:text-[16px] font-[400] leading-[20px] pc:leading-[24px] break-keep'>
+                          유전자분야 글로벌 진출 분야를 인정받아,
+                          <br />
+                          100대 기업으로 인증받았습니다.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/LOOP}}
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class='mt-[80px] pc:mt-[100px]'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

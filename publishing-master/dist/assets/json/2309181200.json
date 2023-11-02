@@ -1,0 +1,83 @@
+[
+  {
+    "title": "한국인 5대 암",
+    "childs": [
+      {
+        "title": "위암",
+        "img": "/assets/icon/2309141903_1-1.svg"
+      },
+      {
+        "title": "폐암",
+        "img": "/assets/icon/2309141903_1-2.svg"
+      },
+      {
+        "title": "대장암",
+        "img": "/assets/icon/2309141903_1-3.svg"
+      },
+      {
+        "title": "간암",
+        "img": "/assets/icon/2309141903_1-4.svg"
+      },
+      {
+        "title": "유방암",
+        "img": "/assets/icon/2309141903_1-5.svg"
+      }
+    ]
+  },
+  {
+    "title": "한국인 대표 만성질환",
+    "childs": [
+      {
+        "title": "당뇨병",
+        "img": "/assets/icon/2309141903_2-1.svg"
+      },
+      {
+        "title": "고혈압",
+        "img": "/assets/icon/2309141903_2-2.svg"
+      },
+      {
+        "title": "천식",
+        "img": "/assets/icon/2309141903_2-3.svg"
+      },
+      {
+        "title": "만성폐쇄성 폐질환",
+        "img": "/assets/icon/2309141903_2-4.svg"
+      },
+      {
+        "title": "치매",
+        "img": "/assets/icon/2309141903_2-5.svg"
+      }
+    ]
+  },
+  {
+    "title": "그 외 체질항목",
+    "childs": [
+      {
+        "title": "피부노화",
+        "img": "/assets/icon/2309141903_3-1.svg"
+      },
+      {
+        "title": "탈모",
+        "desc": "(원형 탈모, 남성형 탈모)",
+        "img": "/assets/icon/2309141903_3-2.svg"
+      },
+      {
+        "title": "체질량지수",
+        "img": "/assets/icon/2309141903_3-3.svg"
+      },
+      {
+        "title": "체지방률",
+        "img": "/assets/icon/2309141903_3-4.svg"
+      },
+      {
+        "title": "운동에 의한<br/>체중감량 효과",
+        "img": "/assets/icon/2309141903_3-5.svg"
+      },
+      {
+        "title": "체중감량 후<br/>체중회복가능성",
+        "desc": "(요요 가능성)",
+        "img": "/assets/icon/2309141903_3-6.svg"
+      }
+    ]
+  }
+]

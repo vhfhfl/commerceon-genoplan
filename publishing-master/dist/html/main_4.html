@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="/assets/js/viewport.js"></script>
+  <!--Icon-->
+  <link rel="icon" href="data:," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/favicon-512x512.png" />
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <!--Data-->
+  <script src="/assets/js/report.js"></script>
+  <!--Library-->
+  <script src="/assets/lib/jquery-3.7.0.min.js"></script>
+  <link href="/assets/lib/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="/assets/lib/swiper-bundle.min.js"></script>
+  <!--Core-->
+  <script src="/assets/lib/tailwindcss_3.3.3.min.js"></script>
+  <script src="/assets/lib/tailwindcss.config.js"></script>
+  <script src="/assets/js/custom_method.js"></script>
+  <script src="/assets/lib/ua-parser.min.js"></script>
+  <script src="/assets/js/app_info.js"></script>
+  <link href="/assets/css/global.css" rel="stylesheet" />
+  <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/ui_setter.js"></script>
+  <script src="/assets/js/enterframe.js"></script>
+  <link href="/assets/lib/aos_3.0.0.css" rel="stylesheet">
+  <script src="/assets/lib/aos_3.0.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="Modal"></div>
+  <div id="MoGnb_1" class="MoGnb_1">
+    <div class="Inner">
+      <div class="Content">
+        <div class="Head">
+          <article class="CenterCenter">
+            <button onclick="moGnbOff(this);">
+              <img src="/assets/icon/2308171015.svg" alt="">
+            </button>
+          </article>
+        </div>
+        <div class="Body">
+          <ul>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                MhubGenoplan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Service
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Partner
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                News
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                ESG
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Modal" class="On"></div>
+  <div id="page">
+    <header class="Header_2 FixedHeader">
+      <div data-only-view="MO">
+        <div class="MoTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a class="pointer-events-auto" href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <button class="pointer-events-auto" onclick="moGnbOn(this)">
+                    <img src="/assets/icon/2308170651.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-only-view="PC">
+        <div class="PcTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <div class="GNB_2">
+                    <ul>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          MHUBGENOPLAN
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          SERVICE
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          PARTNER
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          NEWS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          ESG
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          CONTACT US
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="py-0">
+      <section class="relative">
+        <div>
+          <img class="pc:hidden w-full" src="/assets/image/2310131500.jpg" alt="">
+          <img class="max-pc:hidden w-full h-[1000px]" src="/assets/image/2310131500_pc.jpg" alt="">
+        </div>
+        <div class="w-full h-full px-[var(--contents-side-padding)] absolute top-0 left-0">
+          <div class="flex items-start justify-center gap-0">
+            <div class="mt-[50px] pc:mt-[80px] w-full pc:w-[380px]">
+              <div class="text-white text-[22px] pc:text-[30px] font-[600] leading-[30px] pc:leading-[40px] text-center">
+                제노플랜 체질 검사
+                <span class="max-pc:block">30종에 대한</span>
+                코드를 입력해 주세요.
+              </div>
+              <div class="mt-[30px] pc:mt-[40px] pc:px-[40px]">
+                <div class="space-y-[20px]">
+                  <div>
+                    <div class="text-[#EBEBEB] text-[14px] font-[600]">이름</div>
+                    <div class="mt-[8px]">
+                      <div class="InputUi Style1 w-full h-[48px] text-[14px] font-[500]">
+                        <input type="text" class="TargetInp w-full" placeholder="이름을 입력해주세요.">
+                        <img onerror="initInputUi(this);" src="">
+                        <button class="DelBtn invisible [&amp;.On]:visible !w-[30px]">
+                          <img src="/assets/icon/2310131541.svg" alt="">
+                        </button>
+                        <img onerror="initSearchInp(this);" src="" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-[#EBEBEB] text-[14px] font-[600]">연락처</div>
+                    <div class="mt-[8px]">
+                      <div class="InputUi Style1 w-full h-[48px] text-[14px] font-[500] Focus HasValue">
+                        <input type="text" class="TargetInp w-full" value="01012340000">
+                        <img onerror="initInputUi(this);" src="">
+                        <button class="DelBtn invisible [&amp;.On]:visible !w-[30px] On">
+                          <img src="/assets/icon/2310131541.svg" alt="">
+                        </button>
+                        <img onerror="initSearchInp(this);" src="" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-[#EBEBEB] text-[14px] font-[600]">관리자 코드</div>
+                    <div class="mt-[8px]">
+                      <div class="InputUi Style1 w-full h-[48px] text-[14px] font-[500]">
+                        <input type="text" class="TargetInp w-full" placeholder="관리자 코드를 입력해주세요.">
+                        <img onerror="initInputUi(this);" src="">
+                        <button class="DelBtn invisible [&amp;.On]:visible !w-[30px]">
+                          <img src="/assets/icon/2310131541.svg" alt="">
+                        </button>
+                        <img onerror="initSearchInp(this);" src="" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-[70px]">
+                  <article class="CenterCenter gap-[10px]">
+                    <button class="flex-1 ButtonUi Style2 h-[48px]">취소</button>
+                    <button class="flex-1 ButtonUi Style1 h-[48px]">확인</button>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="Footer_1">
+      <div>
+        <section data-seq="20230816165525946" class="pt-[50px] pc:pt-[80px]">
+          <div class="HBox">
+            <div class="Inner">
+              <article class="pc:mr-[0.69%] pc:flex pc:items-start pc:justify-between pc:gap-0">
+                <div class="pc:pb-[104px]">
+                  <div>
+                    <img class="max-pc:w-[150px]" src="/assets/logo/logo_2.svg" alt="">
+                  </div>
+                  <div class="mt-[30px] pc:mt-[60px]">
+                    <div class="AddressBox_1">
+                      <div>상호명 : 엠허브제노플랜㈜</div>
+                      <div>대표이사 : 전병주 <span class="max-pc:hidden"> | 소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</span></div>
+                      <div class="pc:hidden">소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</div>
+                      <div>대표전화 : 1577-6370</div>
+                      <div>사업자 등록번호 : 120-88-12093</div>
+                      <div>통신판매업신고번호 : 2018-서울서초-2119</div>
+                    </div>
+                    <!--<article class='CopyrightBox_1 CenterLeft' style='margin-top:30px;'>
+                  <div>엠허브제노플랜㈜</div>
+                </article>-->
+                  </div>
+                </div>
+                <div class="max-pc:mt-[50px] max-pc:pb-[48px]">
+                  <a class="ButtonUi Style4 gap-[2px] min-w-[162px] pc:min-w-[190px] h-[40px] pc:h-[48px] text-[12px] pc:text-[16px] font-[600]" href="https://www.google.com" target="_blank">
+                    체질 30종 코드입력
+                    <img src="/assets/icon/2309261058.svg" alt="">
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+  <div id="LayerPopup-21857efb6" class="LayerPopup On">
+    <div class="Alert_1 w-[300px] pc:w-[360px]">
+      <div class="Body">
+        <div class="text-e2a9f6a9">
+          입력되지 않은 항목이 있습니다.
+        </div>
+        <div class="mt-[8px] pc:mt-[20px] text-acf05ca">
+          모든 항목을 입력해주시기 바랍니다.
+        </div>
+      </div>
+      <div class="Foot">
+        <div>
+          <button class="ButtonUi Style1 w-full" data-form-hei="Lg" onclick="LayerPopup.close();">
+            다시입력하기
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

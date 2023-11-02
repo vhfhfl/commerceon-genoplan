@@ -1,0 +1,33 @@
+<div id='page'>
+  <main>
+    {{!--prettier-ignore--}}
+    <style>
+      main > section{
+        margin-top:50px;
+        margin-bottom:50px;
+      }
+      #particles-js{
+        background:#0D2C48;
+        aspect-ratio:16/9;
+        width:80vw;
+        margin-left:auto; margin-right:auto;
+      }
+    </style>
+    <div class='H1'>particles.js Guide</div>
+    <section>
+      <div id='particles-js'></div>
+    </section>
+  </main>
+</div>
+<!-- https://vincentgarreau.com/particles.js/ -->
+<script src='/assets/lib/particlesjs/particles.min.js'></script>
+{{!--prettier-ignore--}}
+<script>
+  window.addEventListener('DOMContentLoaded', (evt) => {
+    console.log(event);
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', '/assets/json/paricles.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+  });
+</script>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="/assets/js/viewport.js"></script>
+  <!--Icon-->
+  <link rel="icon" href="data:," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/favicon-512x512.png" />
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <!--Data-->
+  <script src="/assets/js/report.js"></script>
+  <!--Library-->
+  <script src="/assets/lib/jquery-3.7.0.min.js"></script>
+  <link href="/assets/lib/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="/assets/lib/swiper-bundle.min.js"></script>
+  <!--Core-->
+  <script src="/assets/lib/tailwindcss_3.3.3.min.js"></script>
+  <script src="/assets/lib/tailwindcss.config.js"></script>
+  <script src="/assets/js/custom_method.js"></script>
+  <script src="/assets/lib/ua-parser.min.js"></script>
+  <script src="/assets/js/app_info.js"></script>
+  <link href="/assets/css/global.css" rel="stylesheet" />
+  <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/ui_setter.js"></script>
+  <script src="/assets/js/enterframe.js"></script>
+  <link href="/assets/lib/aos_3.0.0.css" rel="stylesheet">
+  <script src="/assets/lib/aos_3.0.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="Modal"></div>
+  <div id="MoGnb_1" class="MoGnb_1">
+    <div class="Inner">
+      <div class="Content">
+        <div class="Head">
+          <article class="CenterCenter">
+            <button onclick="moGnbOff(this);">
+              <img src="/assets/icon/2308171015.svg" alt="">
+            </button>
+          </article>
+        </div>
+        <div class="Body">
+          <ul>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                MhubGenoplan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Service
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Partner
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                News
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                ESG
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page">
+    <header class="Header_2 FixedHeader">
+      <div data-only-view="MO">
+        <div class="MoTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a class="pointer-events-auto" href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <button class="pointer-events-auto" onclick="moGnbOn(this)">
+                    <img src="/assets/icon/2308170651.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-only-view="PC">
+        <div class="PcTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <div class="GNB_2">
+                    <ul>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          MHUBGENOPLAN
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          SERVICE
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          PARTNER
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          NEWS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          ESG
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          CONTACT US
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+
+
+      <div class="SubVisual_1 relative h-[var(--suv-visual-height)]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full" style="clip-path:inset(0);">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="/assets/image/2309141149_pc.jpg">
+            <img class="fixed z-0 top-[var(--header-hei)] left-0 w-full h-[var(--suv-visual-height)] object-cover" src="/assets/image/2309141149.jpg" alt="">
+          </picture>
+        </div>
+        <div class="HBox relative z-10 h-full">
+          <div class="Inner pt-[130px]">
+            <div class="text-white">
+              <div class="text-[30px] xl:text-[50px] leading-[38px] xl:leading-[62px] font-[600]">
+                유전자 검사<br>서비스
+              </div>
+              <div class="mt-[20px] text-[16px] xl:text-[18px] leading-[26px] xl:leading-[26px] font-[400]">
+                나의 질병 위험을 알려주는 건강 알리미 입니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="pb-0">
+      <section class="Sticky_1">
+        <article class="CenterCenter gap-[10px] pc:gap-[20px] py-[10px] px-[var(--contents-side-padding)] bg-white">
+          <button class="On CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            병의원 검사 PRS
+          </button>
+          <button class=" CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            병의원 검사 ECS
+          </button>
+          <button class=" CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            DTC 검사
+          </button>
+        </article>
+      </section>
+
+      <div class="SubPageTitle_1 mt-[30px] pc:mt-[80px]">
+        <div class="HBox">
+          <div class="Inner">
+            <article class="CenterBetween">
+              <div>
+                <div class="text-[#303030] text-[28px] pc:text-[50px] font-[800]">
+                  병의원 검사 PRS
+                </div>
+              </div>
+              <div>
+                <div data-only-view="PC" class="text-[#161616] text-[18px] font-[400]">
+                  공급사 | 제노플랜 코리아
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <section class="mt-[60px] pc:mt-[100px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div class="relative">
+              <div>
+                <img class="pc:hidden aspect-[320/440] w-full" src="/assets/image/2309141752.jpg" alt="">
+                <img class="max-pc:hidden aspect-[1440/500] w-full" src="/assets/image/2309141752_pc.jpg" alt="">
+              </div>
+              <article class="CenterCenter flex-col text-white text-center absolute top-0 left-0 z-10 w-full h-full">
+                <div>
+                  <div class="text-[20px] pc:text-[40px] font-[700]">
+                    PRS 기반 예측 서비스
+                  </div>
+                </div>
+                <div class="mt-[20px]">
+                  <div class="text-[14px] pc:text-[20px] font-[400] leading-[20px] pc:leading-[30px] break-keep">
+                    <div>
+                      다중 유전 변이를 결합하여 개인의 질병 위험을
+                      <span class="max-pc:block">평가하는 Polygenic Risk Score는</span>
+                    </div>
+                    <div>
+                      개인의 유전적 구성을 바탕으로 특정 질병에 대한
+                      <span class="max-pc:block">예측을 가능하게 합니다.</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[60px] pc:mt-[80px] Box_1440">
+        <div class="max-pc:mx-[var(--contents-side-padding)] text-[#161616] text-[20px] pc:text-[40px] font-[700]">
+          PRS(다유전자 위험점수)서비스
+        </div>
+        <div class="mt-[40px] pc:mt-[80px]">
+
+          <div class="relative">
+            <div id="ServiceSwiper-8cfaf8c6" class="swiper ServiceSwiper">
+              <div class="swiper-wrapper">
+                <!-- 1 -->
+                <div class="swiper-slide" data-key="" data-aos="fade-up" data-aos-duration="500">
+                  <div>
+                    <img style="display:block; width:100%; aspect-ratio:450/400;" src="/assets/image/2309131337_1.jpg" alt="">
+                  </div>
+                  <div class="pt-[20px] pc:pt-[30px] pr-[11px] pc:pr-[22px] pb-[24px] pc:pb-[42px] min-h-[181px] pc:min-h-[272px] border-b-[1px] border-solid border-b-[#ebebeb]">
+                    <div class="text-[#161616] text-[18px] pc:text-[22px] font-[600]">목적</div>
+                    <div class="mt-[16px] pc:mt-[20px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep">
+                      이 테스트는 여러 유전적 변이를 결합하여 개인의 질병 위험을 평가합니다.
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="swiper-slide" data-key="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                  <div>
+                    <img style="display:block; width:100%; aspect-ratio:450/400;" src="/assets/image/2309131337_2.jpg" alt="">
+                  </div>
+                  <div class="pt-[20px] pc:pt-[30px] pr-[11px] pc:pr-[22px] pb-[24px] pc:pb-[42px] min-h-[181px] pc:min-h-[272px] border-b-[1px] border-solid border-b-[#ebebeb]">
+                    <div class="text-[#161616] text-[18px] pc:text-[22px] font-[600]">응용 프로그램</div>
+                    <div class="mt-[16px] pc:mt-[20px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep">
+                      이는 개인의 유전적 소인성을 특정 질병에 대해
+                      예측하고 특정 건강 상태에 대한 민감도를 이해하는 데
+                      사용됩니다.
+                      이를 통해 개인의 유전적 특성을 고려한 질병 예방,
+                      치료 또는 관리에 맞춤형 접근 방식이 가능해집니다.
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="swiper-slide" data-key="" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+                  <div>
+                    <img style="display:block; width:100%; aspect-ratio:450/400;" src="/assets/image/2309131337_3.jpg" alt="">
+                  </div>
+                  <div class="pt-[20px] pc:pt-[30px] pr-[11px] pc:pr-[22px] pb-[24px] pc:pb-[42px] min-h-[181px] pc:min-h-[272px] border-b-[1px] border-solid border-b-[#ebebeb]">
+                    <div class="text-[#161616] text-[18px] pc:text-[22px] font-[600]">어떤 조치를 취할 수 있을까요?</div>
+                    <div class="mt-[16px] pc:mt-[20px] text-[#161616] text-[14px] pc:text-[18px] font-[400] leading-[20px] pc:leading-[26px] break-keep">
+                      PRS 검사 결과를 받은 개인들은 자신의 개별 관리
+                      목적에 기반한 다양한 맞춤형 건강관리 솔루션을
+                      추구할 수 있습니다.
+                    </div>
+                    <div class="mt-[16px] space-y-[4px] pc:space-y-[6px] text-[14px] font-[400] leading-[24px]">
+                      <article class="flex items-start gap-0">
+                        <div>
+                          <img src="/assets/icon/2309131349.svg" alt="">
+                        </div>
+                        <div class="ml-[2px] flex-1 break-keep">개인 맞춤형 질병 예방</div>
+                      </article>
+                      <article class="flex items-start gap-0">
+                        <div>
+                          <img src="/assets/icon/2309131349.svg" alt="">
+                        </div>
+                        <div class="ml-[2px] flex-1 break-keep">질병 검출과 조기 개입</div>
+                      </article>
+                      <article class="flex items-start gap-0">
+                        <div>
+                          <img src="/assets/icon/2309131349.svg" alt="">
+                        </div>
+                        <div class="ml-[2px] flex-1 break-keep">개인 맞춤형 의료 서비스</div>
+                      </article>
+                      <article class="flex items-start gap-0">
+                        <div>
+                          <img src="/assets/icon/2309131349.svg" alt="">
+                        </div>
+                        <div class="ml-[2px] flex-1 break-keep">개인의 유전적 특성에 기반한 생활 관리</div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              window.addEventListener('DOMContentLoaded', (evt) => {
+                const pagination_bullet = {
+                  el: '#ServiceSwiper-8cfaf8c6-Pagenation',
+                  type: 'bullets',
+                  clickable: true,
+                  modifierClass: 'Pagenation-',
+                  bulletClass: 'Dot',
+                  bulletActiveClass: 'On',
+                  renderBullet: function(index, className) {
+                    const num = (index + 1).toString().padStart(2, '0');
+                    return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
+                  },
+                };
+
+                const swiper_option = {
+                  slidesPerView: 1.2, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+                  slidesPerGroup: 1,
+                  spaceBetween: 10,
+                  loop: false,
+                  slidesOffsetBefore: 20,
+                  slidesOffsetAfter: 20,
+                  // navigation: navigation,
+                  // pagination: pagination_bullet,
+                  // pagination: pagination_progress,
+                  // autoplay: {
+                  //   delay: 1000,
+                  //   disableOnInteraction: false,
+                  // },
+                  init: false,
+                  // grabCursor: true,
+                  breakpoints: {
+                    1280: {
+                      slidesPerView: 3,
+                      spaceBetween: '3.12%',
+                      allowTouchMove: false,
+                      slidesOffsetBefore: 0,
+                      slidesOffsetAfter: 0,
+                    },
+                  }
+                };
+
+                let swiper = new Swiper('#ServiceSwiper-8cfaf8c6', swiper_option);
+
+                swiper.on('init', function() {
+                  // console.log('init');
+                });
+
+                swiper.on('slideChange', function() {
+                  // console.log('slideChange');
+                });
+
+                swiper.on('slideChangeTransitionEnd', function() {
+                  // console.log('slideChangeTransitionEnd');
+                });
+
+                swiper.on('reachBeginning', function() {
+                  // console.log('reachBeginning');
+                });
+
+                swiper.on('reachEnd', function() {
+                  // console.log('reachEnd');
+                });
+
+                swiper.init();
+              });
+            </script>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[68px] pc:mt-[160px]">
+        <article class="CenterLeft h-[750px] overflow-x-auto">
+          <div class="h-full flex-1">
+            <article class="CenterCenter flex-col max-pc:min-w-[320px] h-full px-[20px] pc:pr-[10.52%] pc:pl-[25.26%] bg-[#17344f]">
+              <div>
+                <div>
+                  <div class="text-white text-[20px] pc:text-[40px] font-[700]">
+                    유전자 검사 서비스
+                  </div>
+                </div>
+                <div class="mt-[20px]">
+                  <div class="text-white text-[18px] pc:text-[20px] font-[400] leading-[26px] pc:leading-[30px] break-all">
+                    의료 분야에서 유전정보는 점점 더 중요해지고 있습니다.
+                  </div>
+                </div>
+                <div class="mt-[60px] pc:mt-[80px]">
+                  <div class="text-white text-[18px] pc:text-[30px] font-[600] leading-[24px] pc:leading-[40px] break-keep">
+                    유전체 정보는 특별한 경우에만 시행하는 검사가 아닌 혈액 검사와 같이 모든 임상 환경에서 늘상 시행하는 일상적인 검사로, 전환될 것입니다.
+                  </div>
+                </div>
+                <div class="mt-[100px] pc:mt-[160px]">
+                  <div class="text-[var(--text-color3)] text-[12px] font-[400] leading-[18px] break-keep">
+                    * Eric D Green., et al. (2020). Strategic vision for
+                    improving human health at The Forefront of Genomics.
+                    Nature, 586(7831):683-692.
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="h-full flex-1">
+            <article class="CenterCenter flex-col max-pc:min-w-[320px] h-full max-pc:px-[20px] pc:px-[5.36%] bg-[#F6F6F6] border-y-[1px] border-solid border-[#EBEBEB]">
+              <div>
+                <img src="/assets/image/2309141023.jpg" alt="">
+              </div>
+            </article>
+          </div>
+        </article>
+      </section>
+      <section class="mt-[80px] pc:mt-[160px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div class="text-[#161616] text-[20px] pc:text-[40px] font-[700]">
+              주요 검사 항목
+            </div>
+            <div class="mt-[30px]">
+              <div class="text-[#279fb9] text-[14px] pc:text-[22px] font-[600] leading-[20px] pc:leading-[28px] break-keep">
+                한국인에게 가장 많이 발생하는 암과 일반질환에 대한 검사항목이 매년 업데이트 됩니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[60px] pc:mt-[100px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div class="space-y-[60px] pc:space-y-[100px]">
+
+              <div>
+                <div class="text-[#161616] text-[16px] pc:text-[30px] font-[600] pc:font-[700] leading-[24px] pc:leading-[30px]">
+                  한국인 5대 암
+                </div>
+                <div class="mt-[30px] pc:mt-[40px]">
+                  <article class="grid grid-cols-2 pc:grid-cols-6 gap-[30px_10px] pc:gap-[0_1.25%]">
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_1-1.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            위암
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_1-2.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            폐암
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_1-3.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            대장암
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_1-4.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            간암
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_1-5.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            유방암
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div>
+                <div class="text-[#161616] text-[16px] pc:text-[30px] font-[600] pc:font-[700] leading-[24px] pc:leading-[30px]">
+                  한국인 대표 만성질환
+                </div>
+                <div class="mt-[30px] pc:mt-[40px]">
+                  <article class="grid grid-cols-2 pc:grid-cols-6 gap-[30px_10px] pc:gap-[0_1.25%]">
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_2-1.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            당뇨병
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_2-2.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            고혈압
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_2-3.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            천식
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_2-4.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            만성폐쇄성 폐질환
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_2-5.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            치매
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div>
+                <div class="text-[#161616] text-[16px] pc:text-[30px] font-[600] pc:font-[700] leading-[24px] pc:leading-[30px]">
+                  그 외 체질항목
+                </div>
+                <div class="mt-[30px] pc:mt-[40px]">
+                  <article class="grid grid-cols-2 pc:grid-cols-6 gap-[30px_10px] pc:gap-[0_1.25%]">
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_3-1.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            피부노화
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_3-2.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            탈모
+                          </div>
+                        </div>
+                        <div class="mt-[2px]">
+                          <div class="text-[12px] font-[400]">(원형 탈모, 남성형 탈모)</div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_3-3.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            체질량지수
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_3-4.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            체지방률
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_3-5.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            운동에 의한<br>체중감량 효과
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="border-[1px] border-solid border-[#ebebeb]">
+                      <article class="CenterCenter h-[164px] pc:h-[240px]">
+                        <div>
+                          <img src="/assets/icon/2309141903_3-6.svg" alt="">
+                        </div>
+                      </article>
+                      <article class="CenterCenter flex-col min-h-[60px] py-[8px] text-[#161616] border-t-[1px] border-solid border-t-[#ebebeb]">
+                        <div>
+                          <div class="text-center text-[14px] pc:text-[18px] font-[600] leading-[20px] pc:leading-[24px]">
+                            체중감량 후<br>체중회복가능성
+                          </div>
+                        </div>
+                        <div class="mt-[2px]">
+                          <div class="text-[12px] font-[400]">(요요 가능성)</div>
+                        </div>
+                      </article>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[80px] pc:mt-[160px]">
+        <div class="HBox">
+          <div class="Inner">
+            <article class="CenterCenter">
+              <div>
+                <a class="ButtonUi Style1 w-[297px] pc:w-[344px]" data-form-hei="Lg">
+                  병의원 유전자 검사 자세히 보기
+                  <picture>
+                    <source media="(min-width: 1280px)" srcset="/assets/icon/2309151618_pc.svg">
+                    <img src="/assets/icon/2309151618.svg" alt="">
+                  </picture>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[80px] pc:mt-[160px]">
+        <div class="pt-[80px] pc:pt-[160px] pb-[100px] pc:pb-[173px] bg-[#17344F]">
+          <div class="Box_1440">
+            <div>
+              <div class="max-pc:mx-[var(--contents-side-padding)] text-white">
+                <div class="text-[20px] pc:text-[40px] font-[700]">
+                  과학적 배경
+                </div>
+                <div class="mt-[20px] pc:mt-[30px]">
+                  <div class="text-[14px] pc:text-[22px] font-[400] pc:font-[600] leading-[20px] pc:leading-[28px]">
+                    <div data-only-view="MO">
+                      인공지능 기술과 유전자 마이크로어레이 칩의
+                      <br>
+                      조합을 사용하여 개인당 700만개의 유전적 변이를
+                      <br>
+                      분석합니다.
+                    </div>
+                    <div data-only-view="PC">
+                      인공지능 기술과 유전자 마이크로어레이 칩의 조합을 사용하여
+                      <br>
+                      개인당 700만개의 유전적 변이를 분석합니다.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-[40px] pc:mt-[80px]">
+                <article class="pc:flex pc:items-center pc:justify-center pc:gap-0">
+                  <div class="max-pc:px-[var(--contents-side-padding)] max-pc:overflow-x-auto">
+                    <img class="max-pc:min-w-[890px]" src="/assets/image/2309181601.png" alt="">
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="mt-[80px] pc:mt-[160px] max-pc:mx-[var(--contents-side-padding)]">
+              <div class="text-white text-[20px] pc:text-[40px] font-[700]">
+                아시아 최초의 AWS 구현
+              </div>
+              <div class="mt-[20px] pc:mt-[30px]">
+                <div class="text-white text-[14px] pc:text-[22px] font-[400] pc:font-[600] leading-[20px] pc:leading-[28px] break-keep">
+                  우리는 아시아에서 최초로 클라우드 기반 분석 서비스를
+                  성공적으로 구축했습니다.
+                </div>
+              </div>
+              <div class="mt-[40px] pc:mt-[80px]">
+                <div class="CenterCenter pt-[76px] pb-[91px] px-[var(--contents-side-padding)] bg-[#0D2C48] rounded-[24px]">
+                  <img class="pc:w-[700px]" src="/assets/image/2309141953.png" alt="">
+                </div>
+              </div>
+              <div class="mt-[30px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[400]">
+                Amazon Official Website
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="Footer_1">
+      <div>
+        <section data-seq="20230816165525946" class="pt-[50px] pc:pt-[80px]">
+          <div class="HBox">
+            <div class="Inner">
+              <article class="pc:mr-[0.69%] pc:flex pc:items-start pc:justify-between pc:gap-0">
+                <div class="pc:pb-[104px]">
+                  <div>
+                    <img class="max-pc:w-[150px]" src="/assets/logo/logo_2.svg" alt="">
+                  </div>
+                  <div class="mt-[30px] pc:mt-[60px]">
+                    <div class="AddressBox_1">
+                      <div>상호명 : 엠허브제노플랜㈜</div>
+                      <div>대표이사 : 전병주 <span class="max-pc:hidden"> | 소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</span></div>
+                      <div class="pc:hidden">소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</div>
+                      <div>대표전화 : 1577-6370</div>
+                      <div>사업자 등록번호 : 120-88-12093</div>
+                      <div>통신판매업신고번호 : 2018-서울서초-2119</div>
+                    </div>
+                    <!--<article class='CopyrightBox_1 CenterLeft' style='margin-top:30px;'>
+                  <div>엠허브제노플랜㈜</div>
+                </article>-->
+                  </div>
+                </div>
+                <div class="max-pc:mt-[50px] max-pc:pb-[48px]">
+                  <a class="ButtonUi Style4 gap-[2px] min-w-[162px] pc:min-w-[190px] h-[40px] pc:h-[48px] text-[12px] pc:text-[16px] font-[600]" href="https://www.google.com" target="_blank">
+                    체질 30종 코드입력
+                    <img src="/assets/icon/2309261058.svg" alt="">
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

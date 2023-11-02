@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'SUIT Variable';
+  font-weight: 100 900;
+  src: local('SUIT Variable Regular'), url('./SUIT-Variable.woff2') format('woff2-variations');
+}
+.SUIT_Variable {
+  font-family: 'SUIT Variable', sans-serif;
+}

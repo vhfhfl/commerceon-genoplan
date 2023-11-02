@@ -1,0 +1,23 @@
+{{SAFE 'txt1'}}
+{{SAFE 'txt2'}}
+<div class='SubVisual_1 relative h-[var(--suv-visual-height)]'>
+  <div class='absolute z-0 top-0 left-0 w-full h-full' style='clip-path:inset(0);'>
+    <picture>
+      <source media='(min-width: 1280px)' srcset='{{pc}}' />
+      <img class='fixed z-0 top-[var(--header-hei)] left-0 w-full h-[var(--suv-visual-height)] object-cover' src='{{mo}}' alt='' />
+    </picture>
+  </div>
+  {{!--<div class='z-10 absolute top-[0] left-[0] w-full h-full bg-black opacity-[0.4]'></div>--}}
+  <div class='HBox relative z-10 h-full'>
+    <div class='Inner pt-[130px]'>
+      <div class='text-white'>
+        <div class='text-[30px] xl:text-[50px] leading-[38px] xl:leading-[62px] font-[600]'>
+          {{{txt1}}}
+        </div>
+        <div class='mt-[20px] text-[16px] xl:text-[18px] leading-[26px] xl:leading-[26px] font-[400]'>
+          {{{txt2}}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

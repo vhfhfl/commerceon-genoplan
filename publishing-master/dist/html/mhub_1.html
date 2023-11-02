@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="/assets/js/viewport.js"></script>
+  <!--Icon-->
+  <link rel="icon" href="data:," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/favicon-512x512.png" />
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <!--Data-->
+  <script src="/assets/js/report.js"></script>
+  <!--Library-->
+  <script src="/assets/lib/jquery-3.7.0.min.js"></script>
+  <link href="/assets/lib/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="/assets/lib/swiper-bundle.min.js"></script>
+  <!--Core-->
+  <script src="/assets/lib/tailwindcss_3.3.3.min.js"></script>
+  <script src="/assets/lib/tailwindcss.config.js"></script>
+  <script src="/assets/js/custom_method.js"></script>
+  <script src="/assets/lib/ua-parser.min.js"></script>
+  <script src="/assets/js/app_info.js"></script>
+  <link href="/assets/css/global.css" rel="stylesheet" />
+  <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/ui_setter.js"></script>
+  <script src="/assets/js/enterframe.js"></script>
+  <link href="/assets/lib/aos_3.0.0.css" rel="stylesheet">
+  <script src="/assets/lib/aos_3.0.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="Modal"></div>
+  <div id="MoGnb_1" class="MoGnb_1">
+    <div class="Inner">
+      <div class="Content">
+        <div class="Head">
+          <article class="CenterCenter">
+            <button onclick="moGnbOff(this);">
+              <img src="/assets/icon/2308171015.svg" alt="">
+            </button>
+          </article>
+        </div>
+        <div class="Body">
+          <ul>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                MhubGenoplan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Service
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Partner
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                News
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                ESG
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page">
+    <header class="Header_2 FixedHeader">
+      <div data-only-view="MO">
+        <div class="MoTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a class="pointer-events-auto" href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <button class="pointer-events-auto" onclick="moGnbOn(this)">
+                    <img src="/assets/icon/2308170651.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-only-view="PC">
+        <div class="PcTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <div class="GNB_2">
+                    <ul>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          MHUBGENOPLAN
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          SERVICE
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          PARTNER
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          NEWS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          ESG
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          CONTACT US
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+
+
+      <div class="SubVisual_1 relative h-[var(--suv-visual-height)]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full" style="clip-path:inset(0);">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="/assets/image/2309140703_pc.jpg">
+            <img class="fixed z-0 top-[var(--header-hei)] left-0 w-full h-[var(--suv-visual-height)] object-cover" src="/assets/image/2309140703.jpg" alt="">
+          </picture>
+        </div>
+        <div class="HBox relative z-10 h-full">
+          <div class="Inner pt-[130px]">
+            <div class="text-white">
+              <div class="text-[30px] xl:text-[50px] leading-[38px] xl:leading-[62px] font-[600]">
+                제노플랜의<br>한국 공식 총판
+              </div>
+              <div class="mt-[20px] text-[16px] xl:text-[18px] leading-[26px] xl:leading-[26px] font-[400]">
+                엠허브제노플랜은 제노플랜의 병의원 유전자검사, DTC유전자검사를<br class="max-pc:hidden">병의원과 온라인 제휴사를 통해 서비스를 제공합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="mt-[30px] pc:mt-[50px]">
+        <div class="pc:w-[1270px] mx-[20px] pc:mx-auto">
+          <div class="text-[#303030] text-[28px] pc:text-[50px] font-[800] leading-[34px] pc:leading-[60px]">
+            MHUB.
+            <br>
+            GENOPLAN
+          </div>
+          <div class="mt-[60px] pc:mt-[100px]">
+            <article class="pc:flex pc:items-center pc:justify-between pc:gap-0">
+              <div class="text-[#161616] font-[600]" data-aos="fade-up">
+                <div class="pc:hidden text-[18px] leading-[26px]">
+                  엠허브제노플랜은
+                  <br>
+                  미국 본사, 한국, 일본,
+                  <br>
+                  싱가포르 법인을 중심으로
+                  <br>
+                  유전자 분석 기반의 다양한 서비스를 전개하며
+                  <br>
+                  성장하는 제노플랜의 한국 공식 총판입니다.
+                </div>
+                <div class="max-pc:hidden text-[40px] leading-[50px]">
+                  엠허브제노플랜은
+                  <br>
+                  미국 본사, 한국, 일본, 싱가포르 법인을 중심으로
+                  <br>
+                  유전자 분석 기반의 다양한 서비스를 전개하며
+                  <br>
+                  성장하는 제노플랜의 한국 공식 총판입니다.
+                </div>
+              </div>
+              <div class="mt-[30px] pc:mt-0">
+                <div class="text-[#161616] text-[16px] pc:text-[20px] font-[400] leading-[24px] pc:leading-[30px]">
+                  더 나은 세상, 더 건강한 미래라는
+                  <br>
+                  캐치프레이즈 실현을 위해
+                  <br>
+                  사람과 환경이 건강해지는 세상을
+                  <br>
+                  제노플랜과 함께 만들어 가겠습니다.
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[60px] pc:mt-[120px]">
+        <article class="CenterCenter items-start gap-[1.6%] max-w-[1240px] mx-auto">
+          <div class="flex-1 mt-[10%]" data-aos="fade-up" data-aos-duration="500">
+            <img class="w-full" src="/assets/image/2309141107_pc.jpg" alt="">
+          </div>
+          <div class="relative flex-1 mt-[18.05%]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <div>
+              <img class="w-full" src="/assets/image/2309141108_pc.jpg" alt="">
+            </div>
+            <article class="CenterCenter absolute top-0 left-0 z-10 w-full h-full">
+              <img class="w-[100px] pc:w-[170px]" src="/assets/icon/2309121936.svg" alt="">
+            </article>
+          </div>
+          <div class="flex-1" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+            <img class="w-full" src="/assets/image/2309141109_pc.jpg" alt="">
+          </div>
+        </article>
+      </section>
+      <section class="mt-[120px] pc:mt-[220px]">
+        <article class="max-w-[1920px] mx-auto pc:flex pc:items-center pc:justify-center pc:gap-0">
+          <div class="relative pc:flex-1" data-aos="fade-up">
+            <div>
+              <img class="w-full" src="/assets/image/2309141127_pc.jpg" alt="">
+            </div>
+            <article class="CenterCenter absolute top-0 left-0 z-10 w-full h-full">
+              <img class="w-[60px] pc:w-[140px]" src="/assets/icon/2309121942.svg" alt="">
+            </article>
+          </div>
+          <div class="relative pc:flex-1 mt-[10px] pc:mt-0" data-aos="fade-up">
+            <div>
+              <img class="w-full" src="/assets/image/2309141128_pc.jpg" alt="">
+            </div>
+            <article class="CenterCenter absolute top-0 left-0 z-10 w-full h-full">
+              <img class="w-[170px] pc:w-[280px]" src="/assets/icon/2309121943.svg" alt="">
+            </article>
+          </div>
+        </article>
+      </section>
+      <section class="mt-[80px] pc:mt-[163px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div class="pc:w-[874px] pc:mx-auto">
+              <article class="CenterCenter">
+                <img class="w-[120px] pc:w-[140px]" src="/assets/icon/2309121944.svg" alt="">
+                <div class="ml-[6px] pc:ml-[10px] text-[#161616] text-[18px] pc:text-[22px] font-[600]">
+                  한국 공식 총판
+                </div>
+              </article>
+              <div class="mt-[46px] pc:mt-[51px] border-[3px] border-solid border-[#161616]"></div>
+              <div class="mt-[60px] text-center">
+                <div class="text-[#161616] text-[22px] pc:text-[28px] font-[600]">
+                  (주)엠허브제노플랜
+                </div>
+                <div class="mt-[40px] pc:mt-[42px]">
+                  <div class="text-[#161616] text-[16px] pc:text-[22px] font-[400] leading-[24px] pc:leading-[22px] space-y-[22px] lg:space-y-[16px]">
+                    <article class="max-pc:space-y-[22px] pc:flex pc:items-center pc:justify-center">
+                      <div class="pc:w-[164px] pc:text-right">
+                        대표 : 전병주
+                      </div>
+                      <div class="max-pc:hidden mx-[20px] w-[1px] h-[26px] bg-[#e1e1e1]"></div>
+                      <div class="pc:w-[352px] pc:text-left">
+                        사업자등록번호 : 747-88-02726
+                      </div>
+                    </article>
+                    <article class="max-pc:space-y-[22px] pc:flex pc:items-center pc:justify-center">
+                      <div class="pc:w-[164px]">
+                        TEL : 1566-1826
+                      </div>
+                      <div class="max-pc:hidden mx-[20px] w-[1px] h-[26px] bg-[#e1e1e1]"></div>
+                      <div class="pc:w-[352px]">
+                        E-Mail : help@mhubgenoplan.com
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="Footer_1">
+      <div>
+        <section data-seq="20230816165525946" class="pt-[50px] pc:pt-[80px]">
+          <div class="HBox">
+            <div class="Inner">
+              <article class="pc:mr-[0.69%] pc:flex pc:items-start pc:justify-between pc:gap-0">
+                <div class="pc:pb-[104px]">
+                  <div>
+                    <img class="max-pc:w-[150px]" src="/assets/logo/logo_2.svg" alt="">
+                  </div>
+                  <div class="mt-[30px] pc:mt-[60px]">
+                    <div class="AddressBox_1">
+                      <div>상호명 : 엠허브제노플랜㈜</div>
+                      <div>대표이사 : 전병주 <span class="max-pc:hidden"> | 소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</span></div>
+                      <div class="pc:hidden">소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</div>
+                      <div>대표전화 : 1577-6370</div>
+                      <div>사업자 등록번호 : 120-88-12093</div>
+                      <div>통신판매업신고번호 : 2018-서울서초-2119</div>
+                    </div>
+                    <!--<article class='CopyrightBox_1 CenterLeft' style='margin-top:30px;'>
+                  <div>엠허브제노플랜㈜</div>
+                </article>-->
+                  </div>
+                </div>
+                <div class="max-pc:mt-[50px] max-pc:pb-[48px]">
+                  <a class="ButtonUi Style4 gap-[2px] min-w-[162px] pc:min-w-[190px] h-[40px] pc:h-[48px] text-[12px] pc:text-[16px] font-[600]" href="https://www.google.com" target="_blank">
+                    체질 30종 코드입력
+                    <img src="/assets/icon/2309261058.svg" alt="">
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

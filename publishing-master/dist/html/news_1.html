@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="/assets/js/viewport.js"></script>
+  <!--Icon-->
+  <link rel="icon" href="data:," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/favicon-512x512.png" />
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <!--Data-->
+  <script src="/assets/js/report.js"></script>
+  <!--Library-->
+  <script src="/assets/lib/jquery-3.7.0.min.js"></script>
+  <link href="/assets/lib/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="/assets/lib/swiper-bundle.min.js"></script>
+  <!--Core-->
+  <script src="/assets/lib/tailwindcss_3.3.3.min.js"></script>
+  <script src="/assets/lib/tailwindcss.config.js"></script>
+  <script src="/assets/js/custom_method.js"></script>
+  <script src="/assets/lib/ua-parser.min.js"></script>
+  <script src="/assets/js/app_info.js"></script>
+  <link href="/assets/css/global.css" rel="stylesheet" />
+  <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/ui_setter.js"></script>
+  <script src="/assets/js/enterframe.js"></script>
+  <link href="/assets/lib/aos_3.0.0.css" rel="stylesheet">
+  <script src="/assets/lib/aos_3.0.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="Modal"></div>
+  <div id="MoGnb_1" class="MoGnb_1">
+    <div class="Inner">
+      <div class="Content">
+        <div class="Head">
+          <article class="CenterCenter">
+            <button onclick="moGnbOff(this);">
+              <img src="/assets/icon/2308171015.svg" alt="">
+            </button>
+          </article>
+        </div>
+        <div class="Body">
+          <ul>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                MhubGenoplan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Service
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Partner
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                News
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                ESG
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page">
+    <header class="Header_2 FixedHeader">
+      <div data-only-view="MO">
+        <div class="MoTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a class="pointer-events-auto" href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <button class="pointer-events-auto" onclick="moGnbOn(this)">
+                    <img src="/assets/icon/2308170651.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-only-view="PC">
+        <div class="PcTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <div class="GNB_2">
+                    <ul>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          MHUBGENOPLAN
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          SERVICE
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          PARTNER
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          NEWS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          ESG
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          CONTACT US
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+
+
+      <div class="SubVisual_1 relative h-[var(--suv-visual-height)]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full" style="clip-path:inset(0);">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="/assets/image/2309252025_pc.jpg">
+            <img class="fixed z-0 top-[var(--header-hei)] left-0 w-full h-[var(--suv-visual-height)] object-cover" src="/assets/image/2309252025.jpg" alt="">
+          </picture>
+        </div>
+        <div class="HBox relative z-10 h-full">
+          <div class="Inner pt-[130px]">
+            <div class="text-white">
+              <div class="text-[30px] xl:text-[50px] leading-[38px] xl:leading-[62px] font-[600]">
+                엠허브제노플랜의<br>세상
+              </div>
+              <div class="mt-[20px] text-[16px] xl:text-[18px] leading-[26px] xl:leading-[26px] font-[400]">
+                유전자 검사 서비스를 제공하며<br>건강관리의 새로운 솔루션이 되고 있습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="Sticky_1">
+        <article class="CenterCenter gap-[10px] pc:gap-[20px] py-[10px] px-[var(--contents-side-padding)] bg-white">
+          <button class="On CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            PR
+          </button>
+          <button class=" CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            특허 / 인증현황
+          </button>
+          <button class=" CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            수상내역
+          </button>
+        </article>
+      </section>
+
+      <div class="SubPageTitle_1 mt-[30px] pc:mt-[80px]">
+        <div class="HBox">
+          <div class="Inner">
+            <article class="CenterBetween">
+              <div>
+                <div class="text-[#303030] text-[28px] pc:text-[50px] font-[800]">
+                  PR
+                </div>
+              </div>
+              <div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <section class="mt-[40px] pc:mt-[100px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div class="space-y-[50px] pc:space-y-[80px]">
+              <div class="pb-[20px] pc:pb-[50px] border-b-[1px] border-solid border-[#EBEBEB]">
+                <article class="pc:flex pc:items-start pc:gap-0">
+                  <div>
+                    <img class="pc:hidden aspect-[320/200] w-full" src="https://gifpng.com/320x200" alt="">
+                    <img class="max-pc:hidden aspect-[450/280] w-full" src="https://gifpng.com/450x280" alt="">
+                  </div>
+                  <div class="mt-[20px] pc:mt-[5px] flex-1 pc:ml-[3.47%]">
+                    <div class="text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[400]">
+                      2023-08-30
+                    </div>
+                    <div class="mt-[10px] pc:mt-[27px]">
+                      <div class="text-[#161616] text-[16px] pc:text-[22px] font-[600] leading-[24px] pc:leading-[28px] break-keep line-clamp-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                      </div>
+                    </div>
+                    <div class="mt-[16px] pc:mt-[54px]">
+                      <div class="text-[#161616] text-[14px] pc:text-[16px] font-[400] leading-[20px] pc:leading-[24px] break-keep line-clamp-3 pc:line-clamp-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                      </div>
+                    </div>
+                    <div class="mt-[16px]">
+                      <a class="inline-block" href="https://www.google.com" target="_blank">
+                        <article class="CenterLeft">
+                          <div>
+                            <div class="text-[#279FB9] text-[14px] pc:text-[16px] font-[600]">
+                              View More
+                            </div>
+                          </div>
+                          <div class="ml-[2px]">
+                            <img src="/assets/icon/2309252058.svg" alt="">
+                          </div>
+                        </article>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="pb-[20px] pc:pb-[50px] border-b-[1px] border-solid border-[#EBEBEB]">
+                <article class="pc:flex pc:items-start pc:gap-0">
+                  <div>
+                    <img class="pc:hidden aspect-[320/200] w-full" src="https://gifpng.com/320x200" alt="">
+                    <img class="max-pc:hidden aspect-[450/280] w-full" src="https://gifpng.com/450x280" alt="">
+                  </div>
+                  <div class="mt-[20px] pc:mt-[5px] flex-1 pc:ml-[3.47%]">
+                    <div class="text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[400]">
+                      2023-08-30
+                    </div>
+                    <div class="mt-[10px] pc:mt-[27px]">
+                      <div class="text-[#161616] text-[16px] pc:text-[22px] font-[600] leading-[24px] pc:leading-[28px] break-keep line-clamp-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                      </div>
+                    </div>
+                    <div class="mt-[16px] pc:mt-[54px]">
+                      <div class="text-[#161616] text-[14px] pc:text-[16px] font-[400] leading-[20px] pc:leading-[24px] break-keep line-clamp-3 pc:line-clamp-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                      </div>
+                    </div>
+                    <div class="mt-[16px]">
+                      <a class="inline-block" href="https://www.google.com" target="_blank">
+                        <article class="CenterLeft">
+                          <div>
+                            <div class="text-[#279FB9] text-[14px] pc:text-[16px] font-[600]">
+                              View More
+                            </div>
+                          </div>
+                          <div class="ml-[2px]">
+                            <img src="/assets/icon/2309252058.svg" alt="">
+                          </div>
+                        </article>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="pb-[20px] pc:pb-[50px] border-b-[1px] border-solid border-[#EBEBEB]">
+                <article class="pc:flex pc:items-start pc:gap-0">
+                  <div>
+                    <img class="pc:hidden aspect-[320/200] w-full" src="https://gifpng.com/320x200" alt="">
+                    <img class="max-pc:hidden aspect-[450/280] w-full" src="https://gifpng.com/450x280" alt="">
+                  </div>
+                  <div class="mt-[20px] pc:mt-[5px] flex-1 pc:ml-[3.47%]">
+                    <div class="text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[400]">
+                      2023-08-30
+                    </div>
+                    <div class="mt-[10px] pc:mt-[27px]">
+                      <div class="text-[#161616] text-[16px] pc:text-[22px] font-[600] leading-[24px] pc:leading-[28px] break-keep line-clamp-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                      </div>
+                    </div>
+                    <div class="mt-[16px] pc:mt-[54px]">
+                      <div class="text-[#161616] text-[14px] pc:text-[16px] font-[400] leading-[20px] pc:leading-[24px] break-keep line-clamp-3 pc:line-clamp-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur aut autem deleniti esse exercitationem harum libero magni nesciunt nobis omnis quibusdam rem repellat, saepe sapiente sequi vel. Quod?
+                      </div>
+                    </div>
+                    <div class="mt-[16px]">
+                      <a class="inline-block" href="https://www.google.com" target="_blank">
+                        <article class="CenterLeft">
+                          <div>
+                            <div class="text-[#279FB9] text-[14px] pc:text-[16px] font-[600]">
+                              View More
+                            </div>
+                          </div>
+                          <div class="ml-[2px]">
+                            <img src="/assets/icon/2309252058.svg" alt="">
+                          </div>
+                        </article>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[50px] pc:mt-[100px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div class="Paging_1">
+              <article class="CenterCenter">
+                <a href="https://www.google.com" target="_blank">
+                  <img src="/assets/icon/2309121208_1.svg" alt="">
+                </a>
+                <a class="ml-[10px]" href="https://www.google.com" target="_blank">
+                  <img src="/assets/icon/2309121208_2.svg" alt="">
+                </a>
+                <div class="mx-[14px] pc:mx-[30px] CenterCenter gap-[4px] pc:gap-[22px]">
+                  <a class="CenterCenter w-[24px] aspect-square text-[var(--text-color3)] text-[14px] font-[400] [&amp;.On]:text-[#161616] On" href="https://www.google.com" target="_blank">
+                    1
+                  </a>
+                  <a class="CenterCenter w-[24px] aspect-square text-[var(--text-color3)] text-[14px] font-[400] [&amp;.On]:text-[#161616] " href="https://www.google.com" target="_blank">
+                    2
+                  </a>
+                  <a class="CenterCenter w-[24px] aspect-square text-[var(--text-color3)] text-[14px] font-[400] [&amp;.On]:text-[#161616] " href="https://www.google.com" target="_blank">
+                    3
+                  </a>
+                  <a class="CenterCenter w-[24px] aspect-square text-[var(--text-color3)] text-[14px] font-[400] [&amp;.On]:text-[#161616] " href="https://www.google.com" target="_blank">
+                    4
+                  </a>
+                  <a class="CenterCenter w-[24px] aspect-square text-[var(--text-color3)] text-[14px] font-[400] [&amp;.On]:text-[#161616] " href="https://www.google.com" target="_blank">
+                    5
+                  </a>
+                </div>
+                <a href="https://www.google.com" target="_blank">
+                  <img class="rotate-180" src="/assets/icon/2309121208_1.svg" alt="">
+                </a>
+                <a class="ml-[10px]" href="https://www.google.com" target="_blank">
+                  <img class="rotate-180" src="/assets/icon/2309121208_2.svg" alt="">
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="Footer_1">
+      <div>
+        <section data-seq="20230816165525946" class="pt-[50px] pc:pt-[80px]">
+          <div class="HBox">
+            <div class="Inner">
+              <article class="pc:mr-[0.69%] pc:flex pc:items-start pc:justify-between pc:gap-0">
+                <div class="pc:pb-[104px]">
+                  <div>
+                    <img class="max-pc:w-[150px]" src="/assets/logo/logo_2.svg" alt="">
+                  </div>
+                  <div class="mt-[30px] pc:mt-[60px]">
+                    <div class="AddressBox_1">
+                      <div>상호명 : 엠허브제노플랜㈜</div>
+                      <div>대표이사 : 전병주 <span class="max-pc:hidden"> | 소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</span></div>
+                      <div class="pc:hidden">소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</div>
+                      <div>대표전화 : 1577-6370</div>
+                      <div>사업자 등록번호 : 120-88-12093</div>
+                      <div>통신판매업신고번호 : 2018-서울서초-2119</div>
+                    </div>
+                    <!--<article class='CopyrightBox_1 CenterLeft' style='margin-top:30px;'>
+                  <div>엠허브제노플랜㈜</div>
+                </article>-->
+                  </div>
+                </div>
+                <div class="max-pc:mt-[50px] max-pc:pb-[48px]">
+                  <a class="ButtonUi Style4 gap-[2px] min-w-[162px] pc:min-w-[190px] h-[40px] pc:h-[48px] text-[12px] pc:text-[16px] font-[600]" href="https://www.google.com" target="_blank">
+                    체질 30종 코드입력
+                    <img src="/assets/icon/2309261058.svg" alt="">
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

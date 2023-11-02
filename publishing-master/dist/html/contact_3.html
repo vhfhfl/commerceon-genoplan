@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="/assets/js/viewport.js"></script>
+  <!--Icon-->
+  <link rel="icon" href="data:," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/favicon-512x512.png" />
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <!--Data-->
+  <script src="/assets/js/report.js"></script>
+  <!--Library-->
+  <script src="/assets/lib/jquery-3.7.0.min.js"></script>
+  <link href="/assets/lib/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="/assets/lib/swiper-bundle.min.js"></script>
+  <!--Core-->
+  <script src="/assets/lib/tailwindcss_3.3.3.min.js"></script>
+  <script src="/assets/lib/tailwindcss.config.js"></script>
+  <script src="/assets/js/custom_method.js"></script>
+  <script src="/assets/lib/ua-parser.min.js"></script>
+  <script src="/assets/js/app_info.js"></script>
+  <link href="/assets/css/global.css" rel="stylesheet" />
+  <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/ui_setter.js"></script>
+  <script src="/assets/js/enterframe.js"></script>
+  <link href="/assets/lib/aos_3.0.0.css" rel="stylesheet">
+  <script src="/assets/lib/aos_3.0.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="Modal"></div>
+  <div id="MoGnb_1" class="MoGnb_1">
+    <div class="Inner">
+      <div class="Content">
+        <div class="Head">
+          <article class="CenterCenter">
+            <button onclick="moGnbOff(this);">
+              <img src="/assets/icon/2308171015.svg" alt="">
+            </button>
+          </article>
+        </div>
+        <div class="Body">
+          <ul>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                MhubGenoplan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Service
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Partner
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                News
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                ESG
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page">
+    <header class="Header_2 FixedHeader">
+      <div data-only-view="MO">
+        <div class="MoTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a class="pointer-events-auto" href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <button class="pointer-events-auto" onclick="moGnbOn(this)">
+                    <img src="/assets/icon/2308170651.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-only-view="PC">
+        <div class="PcTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <div class="GNB_2">
+                    <ul>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          MHUBGENOPLAN
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          SERVICE
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          PARTNER
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          NEWS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          ESG
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          CONTACT US
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="Sticky_1">
+        <article class="CenterCenter gap-[10px] pc:gap-[20px] py-[10px] px-[var(--contents-side-padding)] bg-white">
+          <button class=" CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            공지사항
+          </button>
+          <button class="On CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            인재채용
+          </button>
+          <button class=" CenterCenter pc:flex-none w-[100px] pc:min-w-[180px] h-[38px] pc:h-[48px] text-[var(--text-color3)] text-[12px] pc:text-[16px] font-[600] border-solid border-[2px] border-[#e1e1e1] [&amp;.On]:text-[#279fb9] [&amp;.On]:border-[#279fb9]">
+            오시는길
+          </button>
+        </article>
+      </section>
+      <section class="mt-[60px] pc:mt-[80px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div>
+              <article class="CenterCenter max-pc:flex-col" data-aos="fade-up" data-aos-duration="500">
+                <div>
+                  <div class="text-[#161616] text-[16px] pc:text-[22px] font-[400]">
+                    더 나은 세상, 더 건강한 미래.
+                  </div>
+                </div>
+                <div class="max-pc:my-[10px] pc:mx-[50px]">
+                  <div class="w-[1px] pc:w-[80px] h-[20px] pc:h-[1px] bg-[#000] text-[0]"></div>
+                </div>
+                <div>
+                  <div class="text-[#161616] text-[16px] pc:text-[22px] font-[400]">
+                    더 나은 기술, 더 건강한 사람.
+                  </div>
+                </div>
+              </article>
+              <div class="mt-[50px] pc:mt-[60px]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                <div class="text-[#161616] text-[30px] pc:text-[60px] font-[700] leading-[38px] pc:leading-[78px] break-keep text-center">
+                  <span class="pc:block">본질에 충실하고</span>
+                  <span class="pc:block">처음 걷는 길을 두려워하지 않는</span>
+                  엠허브제노플랜 스러움에 도전하세요.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[50px] pc:mt-[100px]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+        <div>
+          <img class="pc:hidden aspect-[360/400] w-full" src="/assets/image/2309211028.jpg" alt="">
+          <img class="max-pc:hidden aspect-[1920/480] w-full" src="/assets/image/2309211028_pc.jpg" alt="">
+        </div>
+      </section>
+      <section class="WheelDownHScrollWrap" style="height: 1622px;">
+        <article class="Inner">
+
+          <div class="ScrollItem">
+            <article class="CenterCenter h-full">
+              <div>
+                <div class="text-[#161616] text-[36px] pc:text-[60px] font-[700] relative opacity-0 [.On_&amp;]:opacity-100 [.ScrollItem:first-child_&amp;]:opacity-100 top-[100px] [.On_&amp;]:top-[0] [.ScrollItem:first-child_&amp;]:top-[0] delay-100">
+                  <span class="text-[#279FB9]">본질</span>에 충실한
+                </div>
+                <div class="mt-[20px] pc:mt-[40px]">
+                  <article class="pc:flex pc:items-start pc:justify-between pc:gap-0">
+                    <div class="flex-auto">
+                      <div class="relative top-[100px] [.On_&amp;]:top-[0] [.ScrollItem:first-child_&amp;]:top-[0] opacity-0 [.On_&amp;]:opacity-100 [.ScrollItem:first-child_&amp;]:opacity-100">
+                        <img class="pc:hidden aspect-[320/360] w-full" src="/assets/image/2309211045_1.jpg" alt="">
+                        <img class="max-pc:hidden aspect-[800/440]" src="/assets/image/2309211045_1_pc.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="pc:min-w-[436px] relative flex-auto mt-[40px] pc:mt-[20px] pc:ml-[5.83%] pc:pb-[54px] max-pc:h-[196px]">
+                      <div class="relative top-[100px] [.On_&amp;]:top-[0] [.ScrollItem:first-child_&amp;]:top-[0] opacity-0 [.On_&amp;]:opacity-100 [.ScrollItem:first-child_&amp;]:opacity-100 delay-300">
+                        <div class="text-[#161616] text-[16px] pc:text-[22px] font-[400]">
+                          모든 일에는 언제나 어려움이 있기 마련입니다.
+                        </div>
+                        <div class="mt-[30px] pc:mt-[54px]">
+                          <div class="text-[#161616] text-[22px] pc:text-[36px] font-[600] leading-[28px] pc:leading-[44px] break-keep">
+                            하지만, 본질이 무엇인지<br>상기해보세요.<br>새로운 시각으로 다시,<br>시작 할 수 있습니다.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="z-10 absolute bottom-[0] left-[0] h-[4px] bg-black w-[0] [.On_&amp;]:w-full [.ScrollItem:first-child_&amp;]:w-full delay-400"></div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="ScrollItem">
+            <article class="CenterCenter h-full">
+              <div>
+                <div class="text-[#161616] text-[36px] pc:text-[60px] font-[700] relative opacity-0 [.On_&amp;]:opacity-100 [.ScrollItem:first-child_&amp;]:opacity-100 top-[100px] [.On_&amp;]:top-[0] [.ScrollItem:first-child_&amp;]:top-[0] delay-100">
+                  <span class="text-[#279FB9]">두려움</span>이 없는
+                </div>
+                <div class="mt-[20px] pc:mt-[40px]">
+                  <article class="pc:flex pc:items-start pc:justify-between pc:gap-0">
+                    <div class="flex-auto">
+                      <div class="relative top-[100px] [.On_&amp;]:top-[0] [.ScrollItem:first-child_&amp;]:top-[0] opacity-0 [.On_&amp;]:opacity-100 [.ScrollItem:first-child_&amp;]:opacity-100">
+                        <img class="pc:hidden aspect-[320/360] w-full" src="/assets/image/2309211045_2.jpg" alt="">
+                        <img class="max-pc:hidden aspect-[800/440]" src="/assets/image/2309211045_2_pc.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="pc:min-w-[436px] relative flex-auto mt-[40px] pc:mt-[20px] pc:ml-[5.83%] pc:pb-[54px] max-pc:h-[196px]">
+                      <div class="relative top-[100px] [.On_&amp;]:top-[0] [.ScrollItem:first-child_&amp;]:top-[0] opacity-0 [.On_&amp;]:opacity-100 [.ScrollItem:first-child_&amp;]:opacity-100 delay-300">
+                        <div class="text-[#161616] text-[16px] pc:text-[22px] font-[400]">
+                          시작에 두려움이 없을 수 없습니다.
+                        </div>
+                        <div class="mt-[30px] pc:mt-[54px]">
+                          <div class="text-[#161616] text-[22px] pc:text-[36px] font-[600] leading-[28px] pc:leading-[44px] break-keep">
+                            두려움을 혁신으로,<br>변화를 기회로,<br>경험의 기회를 놓치지 마세요.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="z-10 absolute bottom-[0] left-[0] h-[4px] bg-black w-[0] [.On_&amp;]:w-full [.ScrollItem:first-child_&amp;]:w-full delay-400"></div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="ScrollItem">
+            <article class="CenterCenter h-full">
+              <div>
+                <div class="text-[#161616] text-[36px] pc:text-[60px] font-[700] relative opacity-0 [.On_&amp;]:opacity-100 [.ScrollItem:first-child_&amp;]:opacity-100 top-[100px] [.On_&amp;]:top-[0] [.ScrollItem:first-child_&amp;]:top-[0] delay-100">
+                  함께 <span class="text-[#279FB9]">성장</span>하는
+                </div>
+                <div class="mt-[20px] pc:mt-[40px]">
+                  <article class="pc:flex pc:items-start pc:justify-between pc:gap-0">
+                    <div class="flex-auto">
+                      <div class="relative top-[100px] [.On_&amp;]:top-[0] [.ScrollItem:first-child_&amp;]:top-[0] opacity-0 [.On_&amp;]:opacity-100 [.ScrollItem:first-child_&amp;]:opacity-100">
+                        <img class="pc:hidden aspect-[320/360] w-full" src="/assets/image/2309211045_3.jpg" alt="">
+                        <img class="max-pc:hidden aspect-[800/440]" src="/assets/image/2309211045_3_pc.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="pc:min-w-[436px] relative flex-auto mt-[40px] pc:mt-[20px] pc:ml-[5.83%] pc:pb-[54px] max-pc:h-[196px]">
+                      <div class="relative top-[100px] [.On_&amp;]:top-[0] [.ScrollItem:first-child_&amp;]:top-[0] opacity-0 [.On_&amp;]:opacity-100 [.ScrollItem:first-child_&amp;]:opacity-100 delay-300">
+                        <div class="text-[#161616] text-[16px] pc:text-[22px] font-[400]">
+                          발전적인 자신을 만들고 싶으신가요?
+                        </div>
+                        <div class="mt-[30px] pc:mt-[54px]">
+                          <div class="text-[#161616] text-[22px] pc:text-[36px] font-[600] leading-[28px] pc:leading-[44px] break-keep">
+                            엠허브제노플랜에서는<br>함께 화합하며 성장하는 기쁨을<br>나눌 수 있습니다.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="z-10 absolute bottom-[0] left-[0] h-[4px] bg-black w-[0] [.On_&amp;]:w-full [.ScrollItem:first-child_&amp;]:w-full delay-400"></div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </article>
+        <img onerror="initWheelDownHScrollWrap(this)" src="">
+      </section>
+      <section>
+        <div class="HBox">
+          <div class="Inner">
+            <div>
+              <div class="text-[#161616] text-[18px] pc:text-[22px] font-[600]" data-aos="fade-up" data-aos-duration="500">
+                엠허브제노플랜만의 혜택
+              </div>
+              <div class="mt-[30px] pc:mt-[50px]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+
+                <div class="relative">
+                  <div id="_BaseSwiper-6794c6bc" class="swiper _BaseSwiper">
+                    <div id="_BaseSwiper-6794c6bc-Navigation" class="_BaseSwiper-Navigation top-1/2 -translate-y-1/2 bg-transparent">
+                      <div class="NavBtn PrevBtn">
+                        <img src="/assets/icon/swiper/2309211632_1.svg" alt="">
+                      </div>
+                      <div class="NavBtn NextBtn">
+                        <img src="/assets/icon/swiper/2309211632_2.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" data-key="">
+                        <div>
+
+                          <article class="grid grid-cols-2 gap-[40px_10px] pc:gap-[50px_4%]">
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_1.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    4대보험
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_2.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    경조사지원
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_3.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    명절선물
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_4.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    리프레시데이
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="swiper-slide" data-key="">
+                        <div>
+
+                          <article class="grid grid-cols-2 gap-[40px_10px] pc:gap-[50px_4%]">
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_5.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    리커버리데이
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_6.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    부서 회식비
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_7.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    체력단련 지원
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_8.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    통신지원
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="swiper-slide" data-key="">
+                        <div>
+
+                          <article class="grid grid-cols-2 gap-[40px_10px] pc:gap-[50px_4%]">
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_9.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    도서지원
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_10.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    유전자검사
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_11.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    생일선물
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                            <div class="border-[1px] border-solid border-[#ebebeb]">
+                              <article class="CenterCenter h-[134px] pc:h-[240px]">
+                                <div>
+                                  <img src="/assets/icon/2309211613_12.svg" alt="">
+                                </div>
+                              </article>
+                              <article class="CenterCenter h-[52px] pc:h-[64px] border-t-[1px] border-solid border-t-[#ebebeb]">
+                                <div>
+                                  <div class="text-[#161616] text-[14px] pc:text-[18px] font-[600] text-center">
+                                    인센티브
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <script>
+                    window.addEventListener('DOMContentLoaded', (evt) => {
+                      const navigation = {
+                        disabledClass: 'Disabled',
+                        hiddenClass: 'Hidden',
+                        prevEl: '#_BaseSwiper-6794c6bc-Navigation > .PrevBtn',
+                        nextEl: '#_BaseSwiper-6794c6bc-Navigation > .NextBtn',
+                      };
+
+                      const pagination_bullet = {
+                        el: '#_BaseSwiper-6794c6bc-Pagenation',
+                        type: 'bullets',
+                        clickable: true,
+                        modifierClass: 'Pagenation-',
+                        bulletClass: 'Dot',
+                        bulletActiveClass: 'On',
+                        renderBullet: function(index, className) {
+                          const num = (index + 1).toString().padStart(2, '0');
+                          return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
+                        },
+                      };
+
+                      const pagination_progress = {
+                        el: '#_BaseSwiper-6794c6bc-PagenationProgressbar',
+                        type: 'progressbar',
+                        modifierClass: 'Pagenation-',
+                        progressbarFillClass: 'FillBar',
+                        renderProgressbar: function(className) {
+                          return `<div class="${className}"></div>`;
+                        },
+                      };
+
+                      const swiper_option = {
+                        slidesPerView: 1.2, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+                        slidesPerGroup: 1,
+                        spaceBetween: 10,
+                        loop: false,
+                        navigation: navigation,
+                        pagination: pagination_bullet,
+                        pagination: pagination_progress,
+                        // autoplay: {
+                        //   delay: 1000,
+                        //   disableOnInteraction: false,
+                        // },
+                        init: false,
+                        // grabCursor: true,
+                        breakpoints: {
+                          1280: {
+                            slidesPerView: 3,
+                            spaceBetween: '1.25%',
+                            allowTouchMove: false,
+                          },
+                        }
+                      };
+
+                      const update_current_num = () => {
+                        const el_total = document.querySelector('#_BaseSwiper-6794c6bc-PagenationFraction > .total');
+                        if (!el_total) return;
+
+                        const slides = document.querySelectorAll('#_BaseSwiper-6794c6bc .swiper-slide');
+                        const real_length = slides.length;
+                        el_total.textContent = real_length;
+
+                        const el_current = document.querySelector('#_BaseSwiper-6794c6bc-PagenationFraction > .current');
+                        el_current.textContent = swiper.realIndex + 1;
+                      };
+
+                      let swiper = new Swiper('#_BaseSwiper-6794c6bc', swiper_option);
+
+                      swiper.on('init', function() {
+                        // console.log('init');
+                        update_current_num();
+                      });
+
+                      swiper.on('slideChange', function() {
+                        // console.log('slideChange');
+                        update_current_num();
+                      });
+
+                      swiper.on('slideChangeTransitionEnd', function() {
+                        // console.log('slideChangeTransitionEnd');
+                      });
+
+                      swiper.on('reachBeginning', function() {
+                        // console.log('reachBeginning');
+                      });
+
+                      swiper.on('reachEnd', function() {
+                        // console.log('reachEnd');
+                      });
+
+                      swiper.init();
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[94px] pc:mt-[180px]">
+        <div class="HBox">
+          <div class="Inner">
+            <div>
+              <div class="text-[#161616] text-[18px] pc:text-[22px] font-[600]">
+                엠허브제노플랜과 함께 하는 길
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-[30px] pc:mt-[50px]">
+          <div class="px-[var(--contents-side-padding)] py-[80px] pc:py-[90px] bg-[#F6F6F6]">
+            <div class="pc:px-[8.85%] w-full">
+              <article class="pc:flex pc:items-center pc:justify-center">
+                <div>
+                  <article class="CenterCenter">
+                    <article class="CenterCenter" data-aos="fade-up" data-aos-duration="500">
+                      <div>
+                        <div class="w-[150px] pc:w-[250px] aspect-square bg-white border-[2px] border-solid border-[#E1E1E1] rounded-full overflow-hidden">
+                          <div class="py-[42px] pc:py-[72px] h-full text-center">
+                            <div>
+                              <div class="text-[#279FB9] text-[20px] pc:text-[28px] font-[900]">
+                                01
+                              </div>
+                            </div>
+                            <div class="mt-[10px] pc:mt-[26px]">
+                              <div class="text-[#161616] text-[12px] pc:text-[18px] font-[600] leading-[18px] pc:leading-[26px] text-center">
+                                서류전형
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="w-[20px] pc:w-[34px] h-[2px] bg-[#E1E1E1] text-[0]"></div>
+                      </div>
+                    </article>
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                      <div class="w-[150px] pc:w-[250px] aspect-square bg-white border-[2px] border-solid border-[#E1E1E1] rounded-full overflow-hidden">
+                        <div class="py-[42px] pc:py-[72px] h-full text-center">
+                          <div>
+                            <div class="text-[#279FB9] text-[20px] pc:text-[28px] font-[900]">
+                              02
+                            </div>
+                          </div>
+                          <div class="mt-[10px] pc:mt-[26px]">
+                            <div class="text-[#161616] text-[12px] pc:text-[18px] font-[600] leading-[18px] pc:leading-[26px] text-center">
+                              실무진과 직무역량
+                              <br>
+                              심층 인터뷰
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="max-pc:hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                  <div class="w-[20px] pc:w-[34px] h-[2px] bg-[#E1E1E1] text-[0]"></div>
+                </div>
+                <div class="max-pc:mt-[40px]">
+                  <article class="CenterCenter">
+                    <article class="CenterCenter" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+                      <div>
+                        <div class="w-[150px] pc:w-[250px] aspect-square bg-white border-[2px] border-solid border-[#279FB9] rounded-full overflow-hidden">
+                          <div class="py-[42px] pc:py-[72px] h-full text-center">
+                            <div>
+                              <div class="text-[#279FB9] text-[20px] pc:text-[28px] font-[900]">
+                                03
+                              </div>
+                            </div>
+                            <div class="mt-[10px] pc:mt-[26px]">
+                              <div class="text-[#161616] text-[12px] pc:text-[18px] font-[600] leading-[18px] pc:leading-[26px] text-center">
+                                경영진과 성장 잠재력
+                                <br>
+                                심층 인터뷰
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="w-[20px] pc:w-[34px] h-[2px] bg-[#279FB9] text-[0]"></div>
+                      </div>
+                    </article>
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+                      <div class="w-[150px] pc:w-[250px] aspect-square bg-[#279FB9] border-[2px] border-solid border-[#05819C] rounded-full overflow-hidden">
+                        <div class="py-[42px] pc:py-[72px] h-full text-center">
+                          <div>
+                            <div class="text-white text-[20px] font-[900]">
+                              04
+                            </div>
+                          </div>
+                          <div class="mt-[10px] pc:mt-[26px]">
+                            <div class="text-white text-[12px] pc:text-[18px] font-[600] leading-[18px] pc:leading-[26px] text-center">
+                              엠허브제노플랜
+                              <br>
+                              입사 확정
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="Footer_1">
+      <div>
+        <section data-seq="20230816165525946" class="pt-[50px] pc:pt-[80px]">
+          <div class="HBox">
+            <div class="Inner">
+              <article class="pc:mr-[0.69%] pc:flex pc:items-start pc:justify-between pc:gap-0">
+                <div class="pc:pb-[104px]">
+                  <div>
+                    <img class="max-pc:w-[150px]" src="/assets/logo/logo_2.svg" alt="">
+                  </div>
+                  <div class="mt-[30px] pc:mt-[60px]">
+                    <div class="AddressBox_1">
+                      <div>상호명 : 엠허브제노플랜㈜</div>
+                      <div>대표이사 : 전병주 <span class="max-pc:hidden"> | 소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</span></div>
+                      <div class="pc:hidden">소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</div>
+                      <div>대표전화 : 1577-6370</div>
+                      <div>사업자 등록번호 : 120-88-12093</div>
+                      <div>통신판매업신고번호 : 2018-서울서초-2119</div>
+                    </div>
+                    <!--<article class='CopyrightBox_1 CenterLeft' style='margin-top:30px;'>
+                  <div>엠허브제노플랜㈜</div>
+                </article>-->
+                  </div>
+                </div>
+                <div class="max-pc:mt-[50px] max-pc:pb-[48px]">
+                  <a class="ButtonUi Style4 gap-[2px] min-w-[162px] pc:min-w-[190px] h-[40px] pc:h-[48px] text-[12px] pc:text-[16px] font-[600]" href="https://www.google.com" target="_blank">
+                    체질 30종 코드입력
+                    <img src="/assets/icon/2309261058.svg" alt="">
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

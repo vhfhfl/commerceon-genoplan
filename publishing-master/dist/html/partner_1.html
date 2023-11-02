@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="/assets/js/viewport.js"></script>
+  <!--Icon-->
+  <link rel="icon" href="data:," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/favicon-512x512.png" />
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <!--Data-->
+  <script src="/assets/js/report.js"></script>
+  <!--Library-->
+  <script src="/assets/lib/jquery-3.7.0.min.js"></script>
+  <link href="/assets/lib/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="/assets/lib/swiper-bundle.min.js"></script>
+  <!--Core-->
+  <script src="/assets/lib/tailwindcss_3.3.3.min.js"></script>
+  <script src="/assets/lib/tailwindcss.config.js"></script>
+  <script src="/assets/js/custom_method.js"></script>
+  <script src="/assets/lib/ua-parser.min.js"></script>
+  <script src="/assets/js/app_info.js"></script>
+  <link href="/assets/css/global.css" rel="stylesheet" />
+  <script src="/assets/js/util.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/ui_setter.js"></script>
+  <script src="/assets/js/enterframe.js"></script>
+  <link href="/assets/lib/aos_3.0.0.css" rel="stylesheet">
+  <script src="/assets/lib/aos_3.0.0.js"></script>
+
+</head>
+
+<body>
+
+  <div id="Modal"></div>
+  <div id="MoGnb_1" class="MoGnb_1">
+    <div class="Inner">
+      <div class="Content">
+        <div class="Head">
+          <article class="CenterCenter">
+            <button onclick="moGnbOff(this);">
+              <img src="/assets/icon/2308171015.svg" alt="">
+            </button>
+          </article>
+        </div>
+        <div class="Body">
+          <ul>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                MhubGenoplan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Service
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Partner
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                News
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                ESG
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page">
+    <header class="Header_2 FixedHeader">
+      <div data-only-view="MO">
+        <div class="MoTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a class="pointer-events-auto" href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <button class="pointer-events-auto" onclick="moGnbOn(this)">
+                    <img src="/assets/icon/2308170651.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-only-view="PC">
+        <div class="PcTopActionBar_1">
+          <div class="HBox h-full">
+            <div class="Inner h-full">
+              <article class="CenterBetween h-full">
+                <div>
+                  <a href="https://www.google.com" target="_blank">
+                    <img class="w-[170px]" src="/assets/logo/logo_1.svg" alt="">
+                  </a>
+                </div>
+                <div>
+                  <div class="GNB_2">
+                    <ul>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          MHUBGENOPLAN
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          SERVICE
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          PARTNER
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          NEWS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          ESG
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.com" target="_blank">
+                          CONTACT US
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+
+
+      <div class="SubVisual_1 relative h-[var(--suv-visual-height)]">
+        <div class="absolute z-0 top-0 left-0 w-full h-full" style="clip-path:inset(0);">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="/assets/image/2309201606_pc.jpg">
+            <img class="fixed z-0 top-[var(--header-hei)] left-0 w-full h-[var(--suv-visual-height)] object-cover" src="/assets/image/2309201606.jpg" alt="">
+          </picture>
+        </div>
+        <div class="HBox relative z-10 h-full">
+          <div class="Inner pt-[130px]">
+            <div class="text-white">
+              <div class="text-[30px] xl:text-[50px] leading-[38px] xl:leading-[62px] font-[600]">
+                견고한 파트너십
+              </div>
+              <div class="mt-[20px] text-[16px] xl:text-[18px] leading-[26px] xl:leading-[26px] font-[400]">
+                국내외 다수 선도기업으로부터<br>유전자 분석 기술력을 인정받았습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+
+      <div class="SubPageTitle_1 mt-[30px] pc:mt-[80px]">
+        <div class="HBox">
+          <div class="Inner">
+            <article class="CenterBetween">
+              <div>
+                <div class="text-[#303030] text-[28px] pc:text-[50px] font-[800]">
+                  PARTNER
+                </div>
+              </div>
+              <div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[40px] pc:mt-[80px]">
+        <div class="pt-[40px] pc:pt-[80px] pc:pb-[209px] max-pc:h-[638px] bg-[#F6F6F6]">
+          <section>
+            <div class="HBox">
+              <div class="Inner">
+                <div class="text-[#161616] text-[22px] pc:text-[40px] font-[600] text-center">
+                  병/의원 파트너
+                </div>
+                <div class="mt-[40px]">
+                  <div class="text-[#303030] text-[16px] font-[600]">
+                    병/의원 검색
+                  </div>
+                  <div class="mt-[12px]">
+                    <div class="InputUi Style1 w-full" data-form-hei="Lg">
+                      <input placeholder="병/의원을 검색하세요.">
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-[40px]">
+                  <div class="text-[#303030] text-[16px] font-[600]">
+                    병/의원 리스트
+                  </div>
+                  <div class="mt-[16px]">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="pc:hidden mt-[80px]">
+
+              <div class="relative">
+                <div id="_BaseSwiper-1c9252d4e" class="swiper _BaseSwiper">
+                  <div id="_BaseSwiper-1c9252d4e-Navigation" class="_BaseSwiper-Navigation top-1/2 -translate-y-1/2 bg-transparent">
+                    <div class="NavBtn PrevBtn ml-[20px]">
+                      <img src="/assets/icon/swiper/2309211632_1.svg" alt="">
+                    </div>
+                    <div class="NavBtn NextBtn mr-[20px]">
+                      <img src="/assets/icon/swiper/2309211632_2.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="swiper-slide" data-key="">
+                      <article class="grid grid-cols-2 gap-[10px]">
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_1.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_2.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_3.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_4.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_5.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_6.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_7.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_8.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                      </article>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide" data-key="">
+                      <article class="grid grid-cols-2 gap-[10px]">
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_9.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_10.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_11.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_12.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_13.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_14.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_15.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_16.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                      </article>
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide" data-key="">
+                      <article class="grid grid-cols-2 gap-[10px]">
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_17.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_18.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_19.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_20.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_21.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_22.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_23.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_24.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                      </article>
+                    </div>
+                    <!-- 4 -->
+                    <div class="swiper-slide" data-key="">
+                      <article class="grid grid-cols-2 gap-[10px]">
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_25.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_26.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_27.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_28.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_29.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                        <div class="bg-white p-[10px_15px]">
+                          <article class="CenterCenter">
+                            <div>
+                              <img class="w-[110px] aspect-[110/80]" src="/assets/image/2309261615_30.png" alt="">
+                            </div>
+                          </article>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+
+                <script>
+                  window.addEventListener('DOMContentLoaded', (evt) => {
+                    const navigation = {
+                      disabledClass: 'Disabled',
+                      hiddenClass: 'Hidden',
+                      prevEl: '#_BaseSwiper-1c9252d4e-Navigation > .PrevBtn',
+                      nextEl: '#_BaseSwiper-1c9252d4e-Navigation > .NextBtn',
+                    };
+
+                    const pagination_bullet = {
+                      el: '#_BaseSwiper-1c9252d4e-Pagenation',
+                      type: 'bullets',
+                      clickable: true,
+                      modifierClass: 'Pagenation-',
+                      bulletClass: 'Dot',
+                      bulletActiveClass: 'On',
+                      renderBullet: function(index, className) {
+                        const num = (index + 1).toString().padStart(2, '0');
+                        return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
+                      },
+                    };
+
+                    const pagination_progress = {
+                      el: '#_BaseSwiper-1c9252d4e-PagenationProgressbar',
+                      type: 'progressbar',
+                      modifierClass: 'Pagenation-',
+                      progressbarFillClass: 'FillBar',
+                      renderProgressbar: function(className) {
+                        return `<div class="${className}"></div>`;
+                      },
+                    };
+
+                    const swiper_option = {
+                      slidesPerView: 1.2, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+                      slidesPerGroup: 1,
+                      spaceBetween: 10,
+                      loop: false,
+                      navigation: navigation,
+                      pagination: pagination_bullet,
+                      pagination: pagination_progress,
+                      slidesOffsetBefore: 20,
+                      slidesOffsetAfter: 20,
+                      // autoplay: {
+                      //   delay: 1000,
+                      //   disableOnInteraction: false,
+                      // },
+                      init: false,
+                      // grabCursor: true,
+                      breakpoints: {
+                        1280: {
+                          slidesPerView: 3,
+                          spaceBetween: '1.25%',
+                          allowTouchMove: false,
+                        },
+                      }
+                    };
+
+                    const update_current_num = () => {
+                      const el_total = document.querySelector('#_BaseSwiper-1c9252d4e-PagenationFraction > .total');
+                      if (!el_total) return;
+
+                      const slides = document.querySelectorAll('#_BaseSwiper-1c9252d4e .swiper-slide');
+                      const real_length = slides.length;
+                      el_total.textContent = real_length;
+
+                      const el_current = document.querySelector('#_BaseSwiper-1c9252d4e-PagenationFraction > .current');
+                      el_current.textContent = swiper.realIndex + 1;
+                    };
+
+                    let swiper = new Swiper('#_BaseSwiper-1c9252d4e', swiper_option);
+
+                    swiper.on('init', function() {
+                      // console.log('init');
+                      update_current_num();
+                    });
+
+                    swiper.on('slideChange', function() {
+                      // console.log('slideChange');
+                      update_current_num();
+                    });
+
+                    swiper.on('slideChangeTransitionEnd', function() {
+                      // console.log('slideChangeTransitionEnd');
+                    });
+
+                    swiper.on('reachBeginning', function() {
+                      // console.log('reachBeginning');
+                    });
+
+                    swiper.on('reachEnd', function() {
+                      // console.log('reachEnd');
+                    });
+
+                    swiper.init();
+                  });
+                </script>
+              </div>
+            </div>
+            <div class="max-pc:hidden mt-[80px]">
+              <div class="px-[var(--contents-side-padding)]">
+                <article class="grid grid-cols-4 gap-[60px_5.55%]">
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_1.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_2.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_3.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_4.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_5.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_6.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_7.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_8.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_9.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_10.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_11.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_12.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_13.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_14.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_15.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_16.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_17.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_18.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_19.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_20.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_21.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_22.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_23.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_24.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_25.png" alt="">
+                    </article>
+                  </div>
+                  <div class="bg-white p-[10px_13.33%]">
+                    <article class="CenterCenter">
+                      <img class="aspect-[220/160]" src="/assets/image/2309261615_26.png" alt="">
+                    </article>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="Footer_1">
+      <div>
+        <section data-seq="20230816165525946" class="pt-[50px] pc:pt-[80px]">
+          <div class="HBox">
+            <div class="Inner">
+              <article class="pc:mr-[0.69%] pc:flex pc:items-start pc:justify-between pc:gap-0">
+                <div class="pc:pb-[104px]">
+                  <div>
+                    <img class="max-pc:w-[150px]" src="/assets/logo/logo_2.svg" alt="">
+                  </div>
+                  <div class="mt-[30px] pc:mt-[60px]">
+                    <div class="AddressBox_1">
+                      <div>상호명 : 엠허브제노플랜㈜</div>
+                      <div>대표이사 : 전병주 <span class="max-pc:hidden"> | 소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</span></div>
+                      <div class="pc:hidden">소재지 : 서울시 서초구 강남대로 465 교보타워 B동 21층</div>
+                      <div>대표전화 : 1577-6370</div>
+                      <div>사업자 등록번호 : 120-88-12093</div>
+                      <div>통신판매업신고번호 : 2018-서울서초-2119</div>
+                    </div>
+                    <!--<article class='CopyrightBox_1 CenterLeft' style='margin-top:30px;'>
+                  <div>엠허브제노플랜㈜</div>
+                </article>-->
+                  </div>
+                </div>
+                <div class="max-pc:mt-[50px] max-pc:pb-[48px]">
+                  <a class="ButtonUi Style4 gap-[2px] min-w-[162px] pc:min-w-[190px] h-[40px] pc:h-[48px] text-[12px] pc:text-[16px] font-[600]" href="https://www.google.com" target="_blank">
+                    체질 30종 코드입력
+                    <img src="/assets/icon/2309261058.svg" alt="">
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

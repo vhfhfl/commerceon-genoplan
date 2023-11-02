@@ -1,0 +1,422 @@
+:root {
+  --form-border-color: #e1e1e1;
+  --form-placeholder-color: #a6a6a6;
+  --form-hei-xl: 68px;
+  --form-hei-lg: 48px;
+  --form-hei-md: 38px;
+  --form-hei-sm: 38px;
+  --form-hei-xs: 20px;
+  /* 1280px 이상 화면*/
+  @media screen and (min-width: 1280px) {
+    --form-hei-xl: 68px;
+    --form-hei-lg: 60px;
+    --form-hei-md: 48px;
+    --form-hei-sm: 38px;
+    --form-hei-xs: 28px;
+  }
+}
+/**/
+[data-form-hei] {
+  border-radius: 0em;
+}
+[data-form-hei='Xl'] {
+  height: var(--form-hei-xl);
+  font-size: 18px;
+  font-weight: 600;
+}
+[data-form-hei='Lg'] {
+  height: var(--form-hei-lg);
+  font-size: 16px;
+  font-weight: 600;
+  /* 1280px 이상 화면*/
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
+}
+[data-form-hei='Md'] {
+  height: var(--form-hei-md);
+  font-size: 12px;
+  font-weight: 600;
+  /* 1280px 이상 화면*/
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+[data-form-hei='Sm'] {
+  height: var(--form-hei-sm);
+  font-size: 12px;
+  font-weight: 600;
+  /* 1280px 이상 화면*/
+  @media screen and (min-width: 1280px) {
+    font-size: 12px;
+  }
+}
+[data-form-hei='Xs'] {
+  height: var(--form-hei-xs);
+  font-size: 12px;
+  font-weight: 600;
+}
+/**/
+.TableUi1 {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  border-top: 3px solid black;
+  border-bottom: 1px solid #ececec;
+  &.CenterMode {
+    text-align: center;
+  }
+  th {
+    font-weight: 700;
+    background-color: #ffffd4;
+  }
+  th,
+  td {
+    border: 1px solid #ececec;
+    padding: 10px;
+  }
+}
+/**/
+.ButtonUi {
+  --side-padding: 0.3em;
+  //--icon-gap: 0.22em;
+  --icon-gap: 8px;
+}
+.ButtonUi {
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--icon-gap);
+  box-sizing: border-box;
+  padding: 0 var(--side-padding);
+  cursor: pointer;
+  &[data-form-hei='Xl'] {
+    padding: 0 10px;
+  }
+  &[data-form-hei='Lg'] {
+    padding: 0 10px;
+  }
+  &[data-form-hei='Md'] {
+    padding: 0 14px;
+  }
+  &[data-form-hei='Sm'] {
+    padding: 0 10px;
+  }
+  &[data-form-hei='Xs'] {
+    padding: 0 10px;
+  }
+  &.Style1 {
+    border: 2px solid #279fb9;
+    background-color: #279fb9;
+    color: white;
+    &:hover {
+      background-color: #05819c;
+      border-color: #05819c;
+    }
+    &:focus {
+      border-color: #05819c;
+      background-color: #05819c;
+    }
+    &:active {
+      background-color: #05819c;
+    }
+  }
+  &.Style2 {
+    border: 2px solid #e1e1e1;
+    background-color: white;
+    color: var(--text-color3);
+    &:hover {
+      color: #279fb9;
+      border-color: #279fb9;
+    }
+    &:focus {
+      color: #279fb9;
+      border-color: #279fb9;
+    }
+    &:active {
+      border-color: #279fb9;
+    }
+  }
+  &.Style3 {
+    border: 2px solid #e1e1e1;
+    background-color: white;
+    color: #e1e1e1;
+    &:hover {
+      color: #28d5e0;
+      border-color: #28d5e0;
+      box-shadow: 0px 0px 8px 0px rgba(40, 213, 224, 0.5);
+    }
+    &:focus {
+      color: #e1e1e1;
+      border-color: #e1e1e1;
+      box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4);
+    }
+    &:active {
+      color: #e1e1e1;
+      border-color: #e1e1e1;
+      box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4);
+    }
+  }
+  &.Style4 {
+    border: 2px solid #303030;
+    background-color: white;
+    color: #303030;
+    &:hover {
+      border-color: #303030;
+      background-color: #ebebeb;
+    }
+    &:focus {
+      border-color: #303030;
+      background-color: #ebebeb;
+    }
+    &:active {
+      border-color: #303030;
+      background-color: #ebebeb;
+    }
+    &.On {
+      color: white;
+      border-color: #ff3838;
+      background-color: #ff3838;
+    }
+
+    &.On2 {
+      color: #ff3838;
+      border-color: #ff3838;
+      background-color: white;
+    }
+  }
+  &.Style5 {
+    border: 1px solid #fbeded;
+    background-color: #fbeded;
+    color: #ff3838;
+    &:focus {
+      border-color: #ff3838;
+    }
+  }
+  &.Style6 {
+    border: 1px solid #f2f5ff;
+    background-color: #f2f5ff;
+    color: #4168f6;
+    &:focus {
+      border-color: #4168f6;
+    }
+  }
+  &.Style7 {
+    border: 1px solid #4168f6;
+    background-color: #4168f6;
+    color: #ffffff;
+  }
+  &.Style8 {
+    border: 1px solid #e03434;
+    background-color: #e03434;
+    color: #ffffff;
+  }
+  &[disabled] {
+    border: 2px solid #a6a6a6;
+    background-color: #e1e1e1;
+    color: #a6a6a6;
+  }
+}
+/**/
+.InputUi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  padding: 0px 1em;
+  outline: none;
+  background-color: white;
+  &.Style1 {
+    border: 1px solid var(--form-border-color);
+    &.Focus,
+    &:focus {
+      color: #161616;
+      border-color: #28D5E0;
+      background: #ffffff;
+      box-shadow: 0px 0px 6px 0px rgba(40, 213, 224, 0.6);
+    }
+    &.Error {
+      border-color: #ff3838;
+    }
+    &.Success {
+      border-color: #4168f6;
+    }
+    &.HasValue {
+      color: #161616;
+      background-color: white;
+    }
+    &.ReadOnly {
+      color: #a6a6a6;
+      pointer-events: none;
+      background-color: #e1e1e1;
+      border-color: #a6a6a6;
+    }
+  }
+  > input {
+    display: block;
+    outline: none;
+    border: none;
+    flex-grow: 1;
+    width: 0;
+    height: 100%;
+    background-color: transparent;
+    &::placeholder {
+      color: var(--form-placeholder-color);
+    }
+  }
+  > button {
+    font-size: inherit;
+    width: 1.5em;
+    height: 100%;
+  }
+}
+/**/
+.TextAreaUi {
+  width: 100%;
+  resize: vertical;
+  outline: none;
+  padding: 1em;
+  border: none;
+  border-radius: 0.5em;
+  color: #303030;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4em;
+  border: 1px solid var(--form-border-color);
+  background-color: white;
+
+  &::placeholder {
+    color: var(--form-placeholder-color);
+  }
+
+  &.Error {
+    border-color: #ff3838;
+  }
+}
+/**/
+.SelectUi {
+  appearance: none;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0px 0.5em;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  color: #a6a6a6;
+
+  &.Style1 {
+    border: 1px solid var(--form-border-color);
+    background-color: transparent;
+    background-image: url(/assets/icon/basic/sel_1.svg);
+    background-position: right var(--arrow-padding) center;
+    background-repeat: no-repeat;
+    background-position: right 0.5em center;
+    &.error {
+    }
+    &:focus {
+    }
+    &[disabled] {
+      color: #888888;
+      pointer-events: none;
+      background-color: #ececec;
+    }
+  }
+}
+input[type='checkbox'],
+input[type='radio'] {
+  + .LabalUi {
+    cursor: pointer;
+    margin-left: 6px;
+    color: #161616;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  &[data-size='Lg'] {
+    + .LabalUi {
+      font-size: 14px;
+    }
+  }
+}
+.CheckBoxUi {
+  width: 18px;
+  aspect-ratio: 1/1;
+  appearance: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &[data-size='Lg'] {
+    width: 24px;
+  }
+  &.Style1 {
+    background-image: url(/assets/icon/basic/chk_1.svg);
+    &:checked {
+      background-image: url(/assets/icon/basic/chk_1_on.svg);
+      + .LabalUi {
+        color: #ff3838 !important;
+      }
+    }
+    &[disabled] {
+      background-image: url(/assets/icon/basic/chk_1_disabled.svg);
+    }
+  }
+  &.Style2 {
+    background-image: url(/assets/icon/basic/chk_2.svg);
+    &:checked {
+      background-image: url(/assets/icon/basic/chk_2_on.svg);
+      + .LabalUi {
+        color: #ff3838;
+      }
+    }
+    &[disabled] {
+      background-image: url(/assets/icon/basic/chk_2_disabled.svg);
+    }
+  }
+}
+.RadioUi {
+  width: 18px;
+  aspect-ratio: 1/1;
+  appearance: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &[data-size='Lg'] {
+    width: 24px;
+  }
+  &.Style1 {
+    background-image: url(/assets/icon/basic/rdo_1.svg);
+    &:checked {
+      background-image: url(/assets/icon/basic/rdo_1_on.svg);
+    }
+    &[disabled] {
+      background-image: url(/assets/icon/basic/rdo_1_disabled.svg);
+    }
+  }
+}
+.ToggleUi {
+  width: 48px;
+  height: 28px;
+  appearance: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-image 300ms cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: auto;
+  &[data-size='Lg'] {
+    width: 24px;
+  }
+  &.Style1 {
+    background-image: url(/assets/icon/basic/toggle_1.svg);
+    &:checked {
+      background-image: url(/assets/icon/basic/toggle_1_on.svg);
+    }
+    &[disabled] {
+      opacity: 0.4;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+<div id='Modal' class='On'></div>
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <main class='py-0'>
+    <section class='relative'>
+      <div>
+        <img class='pc:hidden w-full' src='/assets/image/2310131500.jpg' alt='' />
+        <img class='max-pc:hidden w-full h-[1000px]' src='/assets/image/2310131500_pc.jpg' alt='' />
+      </div>
+      <div class='w-full h-full px-[var(--contents-side-padding)] absolute top-0 left-0'>
+        <div class='flex items-start justify-center gap-0'>
+          <div class='mt-[50px] pc:mt-[80px] w-full pc:w-[380px]'>
+            <div class='text-white text-[22px] pc:text-[30px] font-[600] leading-[30px] pc:leading-[40px] text-center'>
+              제노플랜 체질 검사
+              <span class='max-pc:block'>30종에 대한</span>
+              코드를 입력해 주세요.
+            </div>
+            <div class='mt-[30px] pc:mt-[40px] pc:px-[40px]'>
+              <div class='space-y-[20px]'>
+                <div>
+                  <div class='text-[#EBEBEB] text-[14px] font-[600]'>이름</div>
+                  <div class='mt-[8px]'>
+                    <div class='InputUi Style1 w-full h-[48px] text-[14px] font-[500]'>
+                      <input type='text' class='TargetInp w-full' placeholder='이름을 입력해주세요.' />
+                      <img onerror='initInputUi(this);' src='' />
+                      <button class='DelBtn invisible [&.On]:visible !w-[30px]'>
+                        <img src='/assets/icon/2310131541.svg' alt='' />
+                      </button>
+                      <img onerror='initSearchInp(this);' src='' alt='' />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class='text-[#EBEBEB] text-[14px] font-[600]'>연락처</div>
+                  <div class='mt-[8px]'>
+                    <div class='InputUi Style1 w-full h-[48px] text-[14px] font-[500] Focus'>
+                      <input type='text' class='TargetInp w-full' value='01012340000' />
+                      <img onerror='initInputUi(this);' src='' />
+                      <button class='DelBtn invisible [&.On]:visible !w-[30px]'>
+                        <img src='/assets/icon/2310131541.svg' alt='' />
+                      </button>
+                      <img onerror='initSearchInp(this);' src='' alt='' />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class='text-[#EBEBEB] text-[14px] font-[600]'>관리자 코드</div>
+                  <div class='mt-[8px]'>
+                    <div class='InputUi Style1 w-full h-[48px] text-[14px] font-[500]'>
+                      <input type='text' class='TargetInp w-full' placeholder='관리자 코드를 입력해주세요.' />
+                      <img onerror='initInputUi(this);' src='' />
+                      <button class='DelBtn invisible [&.On]:visible !w-[30px]'>
+                        <img src='/assets/icon/2310131541.svg' alt='' />
+                      </button>
+                      <img onerror='initSearchInp(this);' src='' alt='' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='mt-[70px]'>
+                <article class='CenterCenter gap-[10px]'>
+                  <button class='flex-1 ButtonUi Style2 h-[48px]'>취소</button>
+                  <button class='flex-1 ButtonUi Style1 h-[48px]'>확인</button>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>
+<div id='LayerPopup-21857efb6' class='LayerPopup On'>
+  <script>Include('/hbs/layer/Alert_1-c.hbs');</script>
+</div>
