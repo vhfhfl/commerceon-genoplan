@@ -2,7 +2,7 @@
 커머스온 제노플랜
 
 ## 📌 URL
-- https://commerceon-genoplan-uj7i.vercel.app/html/sitemap.html
+- [https://commerceon-genoplan-uj7i.vercel.app/html/sitemap.html](https://commerceon-genoplan.vercel.app/html/sitemap.html)
 
 ## 📌 개요
 - Static HTML ouput
