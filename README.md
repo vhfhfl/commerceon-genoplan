@@ -1,7 +1,10 @@
 # commerceon-genoplan
 커머스온 제노플랜
 
-## 📌 URL
+## 📌 Real Server
+- https://mhubgenoplan.com/
+
+## 📌 Stage Server
 - https://commerceon-genoplan-dltjdms-projects.vercel.app/html/sitemap.html
 
 ## 📌 개요
