@@ -1,11 +1,11 @@
 # commerceon-genoplan
 커머스온 제노플랜
 
-## 💡 개요
+## 💡 Summary
 - Static HTML ouput
 - 퍼블리싱 결과물은 dist 폴더에 있습니다.
 
-## 💡 로컬 테스트 서버 실행
+## 💡 Run Local Test Server Command
 ```
 npm run dev
 ```
