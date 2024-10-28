@@ -11,7 +11,7 @@ npm run dev
 ```
 
 ## 💡 Stage Server
-- https://commerceon-genoplan-dltjdms-projects.vercel.app/html/sitemap.html
+- https://agentsoft-easyai-dltjdms-projects.vercel.app/
 
 ## 💡 Real Server
-- https://mhubgenoplan.com/
+- 
